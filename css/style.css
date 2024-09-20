@@ -1,8 +1,0 @@
-@font-face {
-  font-family: 'YourFont';
-  src: url('../fonts/slkscrb.ttf') format('truetype');
-}
-
-.title {
-  font-family: 'YourFont', sans-serif; 
-}
