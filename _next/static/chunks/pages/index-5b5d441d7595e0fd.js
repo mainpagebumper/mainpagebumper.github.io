@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[405],{68517:function(n,u,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/",function(){return _(26237)}])},26237:function(n,u,_){"use strict";_.r(u);var t=_(11527);_(50959),u.default=()=>(0,t.jsx)("div",{})}},function(n){n.O(0,[774,888,179],function(){return n(n.s=68517)}),_N_E=n.O()}]);
+//# sourceMappingURL=index-5b5d441d7595e0fd.js.map
