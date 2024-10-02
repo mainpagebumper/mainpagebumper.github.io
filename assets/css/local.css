@@ -1,0 +1,1519 @@
+/* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
+/*-- -------------------------- -->
+<---    Flooz and How to Buy    -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #buy-kendu {
+    margin-top: -0.1em;
+    padding: var(--sectionPadding);
+    /* 100px - 200px */
+    padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
+    background-color: #272727;
+    /* clips anything overflowing */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #buy-kendu .metamask-link {
+    color: var(--bodyTextColorWhite);
+    text-decoration: none;
+  }
+  #buy-kendu .metamask-link:hover {
+    color: #CE0909;
+  }
+  #buy-kendu .cs-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    margin-top: 3em;
+    width: 80%;
+  }
+  #buy-kendu .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center !important;
+  }
+  #buy-kendu .cs-topper {
+    color: var(--secondary);
+    font-size: 1.25rem;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  }
+  #buy-kendu .cs-title {
+    margin: 0;
+    font-size: 3.25rem;
+    text-align: center;
+  }
+  #buy-kendu .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: stretch;
+    grid-auto-flow: row;
+    /* 24px - 32px */
+    gap: clamp(1.5rem, 3vw, 2rem);
+  }
+  #buy-kendu .cs-item {
+    list-style: none;
+    padding-bottom: 2rem;
+    border-bottom: #dcdcdc 1px solid;
+    display: flex;
+    align-items: center;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2vw, 1.5rem);
+    position: relative;
+  }
+  #buy-kendu .cs-item:last-of-type {
+    border-bottom: none;
+  }
+  #buy-kendu .cs-number {
+    /* 49px - 72px */
+    font-size: clamp(3.0625rem, 6vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.1875em;
+    color: #ffffff;
+    display: block;
+  }
+  #buy-kendu .only-on-eth {
+    font-weight: 700;
+    color: #CE0909;
+    font-size: 1.25em;
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  }
+  #buy-kendu .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.5rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.125em;
+    margin: 0 0 0.75rem 0;
+    color: #ffffff !important;
+  }
+  #buy-kendu .cs-item-text {
+    font-size: 0.75rem;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColor);
+    font-family: "Orienta", sans-serif;
+  }
+  #buy-kendu .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #buy-kendu .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    position: relative;
+    z-index: 3;
+  }
+  #buy-kendu .cs-title, #buy-kendu .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #buy-kendu .cs-text {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+  #buy-kendu .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #buy-kendu .cs-ul {
+    width: 100%;
+    max-width: 39.375rem;
+    margin: 0 0 2rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 1rem;
+    column-gap: 0.75rem;
+  }
+  #buy-kendu .cs-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    grid-column: span 4;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  #buy-kendu .cs-li-picture {
+    /* 60px - 80px */
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    position: relative;
+    z-index: 1;
+  }
+  #buy-kendu .cs-li-picture:before {
+    /* background color */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #1D1C1C;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #buy-kendu .cs-li-icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+  }
+  #buy-kendu .cs-li-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #buy-kendu .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #buy-kendu .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #buy-kendu .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #buy-kendu .cs-image-group {
+    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+    font-size: min(2vw, 0.7rem);
+    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+    width: 58.9375em;
+    height: 56.75em;
+    position: relative;
+    z-index: 2;
+    display: none;
+  }
+  #buy-kendu .cs-picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    object-fit: cover;
+  }
+  #buy-kendu .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #buy-kendu .cs-mask {
+    width: 101%;
+    height: 101%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+  #buy-kendu .floozApp {
+    width: 320px;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #buy-kendu .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  #buy-kendu .floozApp {
+    margin-left: 10%;
+    width: 600px;
+  }
+  #buy-kendu .cs-image-group {
+    /* set to inherit at Large Desktop */
+    font-size: min(1vw, 1rem);
+    flex: none;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    margin-left: -3em;
+  }
+  #buy-kendu .cs-image-group:before {
+    display: block;
+  }
+  #buy-kendu .cs-card-group {
+    width: 80%;
+  }
+  #buy-kendu .cs-content {
+    width: 51%;
+    align-items: flex-start !important;
+    text-align: left;
+  }
+  #buy-kendu .cs-wrapper {
+    margin-top: 0;
+    width: 80%;
+  }
+  #buy-kendu .cs-title {
+    width: 8em;
+    text-align: left;
+  }
+  #buy-kendu .cs-graphic {
+    bottom: -5em;
+  }
+  #buy-kendu .cs-topper {
+    align-items: left;
+  }
+}
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #buy-kendu .cs-image-group {
+    font-size: inherit;
+    width: 46.4375em;
+    height: 44.25em;
+  }
+  #buy-kendu .cs-li {
+    flex-direction: row;
+  }
+  #buy-kendu .cs-wrapper {
+    padding-left: 8em;
+  }
+  #buy-kendu .cs-graphic {
+    bottom: -5em;
+    width: 115%;
+    height: auto;
+  }
+  #buy-kendu .cs-item-text {
+    font-size: 1rem;
+  }
+}
+/* Desktop - 1600px */
+@media only screen and (min-width: 100rem) {
+  #buy-kendu .cs-graphic {
+    bottom: -7em;
+  }
+}
+/* Large Desktop - 2000px */
+@media only screen and (min-width: 125rem) {
+  #buy-kendu {
+    /* pushes down when the screen size gets too big and the graphic starts getting too tall and creeps up on the content above it */
+    padding-bottom: 9vw;
+  }
+  #buy-kendu .floozApp {
+    margin-right: 10em;
+    width: 700px;
+  }
+  #buy-kendu .cs-graphic {
+    bottom: -9em;
+  }
+}
+/* XL Desktop - 2200px */
+@media only screen and (min-width: 137.5rem) {
+  #buy-kendu .cs-graphic {
+    bottom: -11em;
+  }
+}
+/*-- -------------------------- -->
+<---         Exchanges          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  :root {
+    --slide-width: 120px;
+    --slide-height: 120px;
+    --gap-width: 80px;
+  }
+  #exchanges {
+    padding: var(--sectionPadding);
+    /* 200px - 300px - leaving extra space for the navigation */
+    padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
+    background-color: #272727;
+    overflow-x: visible;
+    position: relative;
+    margin-top: -0.2em;
+    z-index: 5;
+    height: 55em;
+  }
+  #exchanges .cs-container {
+    width: 100%;
+    max-width: 107.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 100px - 229px */
+    gap: clamp(6.25rem, 16vw, 14.3125rem);
+  }
+  #exchanges .cs-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin-bottom: -4em;
+    margin-top: 4em;
+  }
+  #exchanges .cs-flex {
+    margin-top: -13em;
+  }
+  #exchanges .cs-title {
+    max-width: 20ch;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--bodyTextColorWhite);
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  }
+  #exchanges .cs-topper {
+    text-align: center;
+    font-size: 1.05rem;
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  }
+  #exchanges .cs-icon {
+    width: 1.25rem;
+    height: auto;
+  }
+  #exchanges .carousel {
+    width: 110%;
+    z-index: 4;
+    position: absolute;
+    bottom: 5.5em;
+  }
+  #exchanges .carousel-track {
+    width: 100%;
+    display: flex;
+    gap: var(--gap-width);
+    animation: scroll var(--scroll-duration) linear infinite;
+  }
+  #exchanges .slide {
+    flex: 0 0 var(--slide-width);
+    position: relative;
+  }
+  #exchanges .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  #exchanges .overlay {
+    position: absolute;
+    bottom: 0;
+    background: var(--overlay-bg-color);
+    color: var(--overlay-text-color);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: var(--overlay-transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  #exchanges .slide:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  #exchanges .slide:hover .overlay {
+    opacity: 0;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-1 * var(--total-width)));
+    }
+  }
+  #exchanges .carousel:hover .carousel-track {
+    animation-play-state: paused;
+  }
+  #exchanges h10 {
+    font-size: 1rem;
+    margin-left: 5px !important;
+    letter-spacing: 0.8px;
+  }
+  #exchanges .item {
+    color: #ffffff;
+  }
+  #exchanges .item, #exchanges a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  #exchanges .item a {
+    padding: 0.87em 4em;
+  }
+  #exchanges .wrapper-dropdown {
+    position: absolute;
+    display: inline-block;
+    min-width: 231.5px;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 13em;
+    max-width: 483px;
+    padding: 0.85rem 0px;
+    min-height: 44px;
+    background-color: #CE0909;
+    text-align: center;
+    color: #fff;
+    bottom: 19em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    cursor: pointer;
+    border: solid 1px #272727;
+  }
+  #exchanges .scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+  }
+  #exchanges .arrow {
+    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+    rotate: 180deg;
+  }
+  #exchanges .selected-display {
+    margin-left: 20px;
+  }
+  #exchanges svg {
+    transition: all 0.3s;
+  }
+  #exchanges .wrapper-dropdown::before {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -2px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #fff transparent;
+  }
+  #exchanges .rotated {
+    transform: rotate(-180deg);
+  }
+  #exchanges .wrapper-dropdown .dropdown {
+    transition: 0.3s;
+    position: absolute;
+    top: 101%;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    border: solid 1px #272727;
+    max-height: 300px;
+    overflow-y: auto;
+    list-style: none;
+    z-index: 99;
+    box-shadow: inherit;
+    background: inherit;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #exchanges .wrapper-dropdown .dropdown li {
+    padding: 0 15px;
+    line-height: 45px;
+    overflow: hidden;
+  }
+  #exchanges .wrapper-dropdown .dropdown li:last-child {
+    border-bottom: none;
+  }
+  #exchanges .dropdown {
+    padding: 0.5rem !important;
+    background-color: #1d1c1c;
+  }
+  #exchanges .wrapper-dropdown .dropdown li:hover {
+    background-color: #CE0909;
+  }
+  #exchanges .wrapper-dropdown .dropdown li:last-child {
+    border-bottom: none;
+  }
+  #exchanges .wrapper-dropdown.active .dropdown {
+    opacity: 1;
+    visibility: visible;
+    background-color: #1d1c1c;
+  }
+  #exchanges .cs-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  #exchanges .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: bold;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    /* 16px - 32px */
+    padding: clamp(1rem, 2vw, 2rem);
+    color: var(--bodyTextColorWhite);
+    transition: color 0.3s;
+  }
+  #exchanges .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    max-width: 28.125rem;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #exchanges .cs-item-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #exchanges .cs-item-background:before {
+    /* background color overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    opacity: 0.24;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #exchanges .cs-item-background:after {
+    /* background color overlay */
+    content: "";
+    width: 100%;
+    height: 35%;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+  #exchanges .cs-item-background img {
+    width: 100%;
+    height: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.6s, opacity 0.3s;
+  }
+  #exchanges .cs-image-wrapper {
+    width: 100%;
+    /* changes to 90% at tablet, then back to 100% at desktop */
+    height: 80%;
+    min-height: 32.5rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #exchanges .cs-image-wrapper video,
+  #exchanges .cs-image-wrapper .cs-picture {
+    width: 100%;
+    height: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #exchanges .cs-image-wrapper video img,
+  #exchanges .cs-image-wrapper .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #exchanges .cs-graphic {
+    width: 100%;
+    min-width: 80rem;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+  }
+  #exchanges .cs-cex-graphic {
+    width: 120%;
+    min-width: 80rem;
+    height: 30em;
+    object-fit: cover;
+    position: absolute;
+    top: 31.75em;
+    left: 50%;
+    z-index: 1;
+    overflow: visible;
+    transform: translateX(-50%);
+  }
+  #exchanges .cs-graphic-top {
+    width: 120%;
+    min-width: 75rem;
+    object-fit: cover;
+    position: relative;
+    bottom: 17em;
+    left: 50%;
+    z-index: 7;
+    transform: translateX(-50%);
+    overflow: visible;
+  }
+  #exchanges .cs-dark {
+    display: none;
+  }
+}
+@media only screen and (min-width: 43.75rem) {
+  #exchanges .cs-graphic-top {
+    bottom: 19em;
+  }
+}
+@media only screen and (min-width: 50.5rem) {
+  #exchanges .cs-graphic-top {
+    bottom: 22em;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  :root {
+    --slide-width: 180px;
+    --slide-height: 180px;
+    --gap-width: 70px;
+  }
+  #exchanges .cs-card-group {
+    margin: 0;
+  }
+  #exchanges .cs-item {
+    grid-column: span 4;
+  }
+  #exchanges .cs-item:nth-of-type(4), #exchanges .cs-item:nth-of-type(5) {
+    grid-column: span 6;
+  }
+  #exchanges .cs-image-wrapper {
+    /* changes back to 100% at desktop */
+    height: 80%;
+  }
+  #exchanges .cs-content {
+    width: 80%;
+    justify-content: left;
+  }
+  #exchanges .cs-topper {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  #exchanges .cs-title {
+    font-size: 3rem;
+  }
+  #exchanges .slide {
+    height: var(--slide-height);
+  }
+  #exchanges .carousel {
+    bottom: 3.5em;
+  }
+  #exchanges .wrapper-dropdown {
+    bottom: 27em;
+    left: 80%;
+    transform: translateX(-50%);
+  }
+}
+/* Desktop - 1200px */
+@media only screen and (min-width: 75rem) {
+  #exchanges .cs-card-group {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  #exchanges .carousel {
+    width: 160%;
+  }
+  #exchanges .cs-item {
+    grid-column: span 1;
+  }
+  #exchanges .cs-item:nth-of-type(4), #exchanges .cs-item:nth-of-type(5) {
+    grid-column: span 1;
+  }
+  #exchanges .cs-box {
+    bottom: 3rem;
+  }
+}
+/*-- -------------------------- -->
+<---       About Kendu          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #about-kendu {
+    padding: var(--sectionPadding);
+    /* 100px - 200px */
+    background-color: #272727;
+    /* clips anything overflowing */
+    overflow: visible;
+    position: relative;
+    z-index: 4;
+    margin-top: -0.1em;
+    padding-bottom: 0;
+  }
+  #about-kendu .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    padding-bottom: 2em;
+  }
+  #about-kendu .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    position: relative;
+  }
+  #about-kendu .cs-topper {
+    font-size: 1.25rem;
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  }
+  #about-kendu .cs-title, #about-kendu .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #about-kendu .cs-title {
+    font-size: 2.5rem;
+  }
+  #about-kendu .cs-text {
+    margin-bottom: 1rem;
+    font-family: "Orienta", sans-serif;
+    font-size: 0.75em;
+  }
+  #about-kendu .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #about-kendu .cs-ul {
+    width: 100%;
+    max-width: 39.375rem;
+    margin: 0 0 2rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 1rem;
+    column-gap: 0.75rem;
+    align-items: center;
+  }
+  #about-kendu .cs-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-column: span 4;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  #about-kendu .cs-li-picture {
+    /* 60px - 80px */
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    position: relative;
+    z-index: 1;
+  }
+  #about-kendu .cs-li-picture:before {
+    /* background color */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #1D1C1C;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #about-kendu .cs-li-icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+  }
+  #about-kendu .cs-h3 {
+    /* 13px - 16px */
+    font-size: clamp(0.8125rem, 2vw, 1rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 0 0 0.75rem 0;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+  }
+  #about-kendu .cs-li-text {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    font-family: "Orienta", sans-serif;
+  }
+  #about-kendu .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    border: solid 1px #272727;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #about-kendu .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #560101;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #about-kendu .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #about-kendu .cs-image-group {
+    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+    font-size: min(2vw, 0.7rem);
+    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+    width: 40.1875em;
+    height: 38em;
+    position: relative;
+  }
+  #about-kendu .cs-picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    object-fit: cover;
+  }
+  #about-kendu .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #about-kendu .cs-mask {
+    width: 101%;
+    height: 101%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+  }
+  #about-kendu .cs-graphic {
+    width: 120%;
+    min-width: 75rem;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    bottom: -5em;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #about-kendu .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #about-kendu .cs-image-group {
+    /* set to inherit at Large Desktop */
+    font-size: min(1vw, 1rem);
+    flex: none;
+  }
+  #about-kendu .cs-image-group:before {
+    display: block;
+  }
+  #about-kendu .cs-content {
+    width: 51%;
+    text-align: left;
+    align-items: flex-start;
+  }
+  #about-kendu .cs-h3 {
+    text-align: left;
+  }
+  #about-kendu .cs-li {
+    align-items: flex-start;
+  }
+  #about-kendu .cs-text {
+    font-size: 0.8rem;
+  }
+}
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #about-kendu .cs-image-group {
+    font-size: inherit;
+  }
+  #about-kendu .cs-li {
+    flex-direction: row;
+  }
+  #about-kendu .cs-graphic {
+    bottom: -10%;
+  }
+  #about-kendu .total {
+    width: 6.7em;
+  }
+}
+/* Large Desktop - 2000px */
+@media only screen and (min-width: 125rem) {
+  #about-kendu {
+    /* pushes down when the screen size gets too big and the graphic starts getting too tall and creeps up on the content above it */
+    padding-bottom: 1vw;
+  }
+  #about-kendu .cs-graphic {
+    bottom: -15%;
+  }
+}
+/*-- -------------------------- -->
+<---         Kendu Chads        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #kendu-chads {
+    padding: var(--sectionPadding);
+    /* 100px - 200px */
+    padding-bottom: clamp(6.25rem, 8vw, 12.5rem);
+    background-color: #1d1c1c;
+    /* clips anything overflowing */
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+  }
+  #kendu-chads .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    margin-bottom: -5em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    padding-bottom: 6em;
+  }
+  #kendu-chads .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    position: relative;
+    z-index: 3;
+  }
+  #kendu-chads .cs-topper {
+    font-size: 1.25rem;
+  }
+  #kendu-chads .cs-title {
+    font-size: 2.5rem;
+  }
+  #kendu-chads .cs-title, #kendu-chads .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #kendu-chads .cs-text {
+    margin-bottom: 1rem;
+    font-family: "Orienta", sans-serif;
+    font-size: 0.95rem;
+    width: 80%;
+  }
+  #kendu-chads .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #kendu-chads .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    border: solid 1px #000;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #kendu-chads .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #560101;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #kendu-chads .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #kendu-chads .cs-image-group {
+    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+    font-size: min(2.1vw, 0.7rem);
+    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+    width: 40.1875em;
+    height: 38em;
+    position: relative;
+    z-index: 1;
+  }
+  #kendu-chads .cs-picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    object-fit: cover;
+  }
+  #kendu-chads .cs-picture img {
+    width: 36em;
+    height: 23em;
+    object-fit: cover;
+    rotate: 180deg;
+    position: absolute;
+    left: 2em;
+    top: 8em;
+  }
+  #kendu-chads .cs-mask {
+    width: 101%;
+    height: 101%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+  #kendu-chads .cs-graphic {
+    width: 100%;
+    min-width: 75rem;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+  #kendu-chads .cs-dark {
+    display: none;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #kendu-chads .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 10em;
+    padding-top: 2em;
+  }
+  #kendu-chads .cs-image-group {
+    /* set to inherit at Large Desktop */
+    font-size: min(1.1vw, 1rem);
+    flex: none;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #kendu-chads .cs-image-group:before {
+    display: block;
+  }
+  #kendu-chads .cs-content {
+    align-items: flex-start;
+  }
+  #kendu-chads .cs-text {
+    text-align: left;
+    width: 100%;
+  }
+  #kendu-chads .cs-content {
+    width: 51%;
+  }
+}
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #kendu-chads .cs-image-group {
+    font-size: inherit;
+  }
+  #kendu-chads .cs-li {
+    flex-direction: row;
+  }
+  #kendu-chads .cs-container {
+    padding-bottom: 7em;
+  }
+}
+/* Large Desktop - 2000px */
+@media only screen and (min-width: 125rem) {
+  #kendu-chads {
+    /* pushes down when the screen size gets too big and the graphic starts getting too tall and creeps up on the content above it */
+    padding-bottom: 9vw;
+  }
+}
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #faq {
+    padding: var(--sectionPadding);
+    background-color: #272727;
+    position: relative;
+    padding-top: 3em;
+    padding-bottom: 0;
+    margin-top: -0.1em;
+    z-index: 2;
+  }
+  #faq .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #faq .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    margin: auto 0;
+  }
+  #faq .cs-topper {
+    font-size: 1em;
+  }
+  #faq .cs-title {
+    max-width: 15ch;
+    font-size: 2.5em;
+    margin: 0 0 2rem;
+    color: var(--bodyTextColorWhite);
+  }
+  #faq .cs-button-text {
+    font-family: "Teko", sans-serif;
+  }
+  #faq .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #faq .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #faq .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #faq .cs-faq-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  #faq .cs-faq-item {
+    list-style: none;
+    width: 100%;
+    /* clips all corners of the button that overlap the rounded border */
+    overflow: hidden;
+    transition: border-bottom 0.3s;
+  }
+  #faq .cs-faq-item.active .cs-button {
+    background-color: var(--primary);
+    color: var(--bodyTextColorWhite);
+  }
+  #faq .cs-faq-item.active .cs-button:before {
+    background-color: var(--bodyTextColorWhite);
+    transform: rotate(315deg);
+  }
+  #faq .cs-faq-item.active .cs-button:after {
+    background-color: var(--bodyTextColorWhite);
+    transform: rotate(-315deg);
+  }
+  #faq .cs-faq-item.active .cs-item-text {
+    height: auto;
+    /* 16px - 24px */
+    padding: 1rem clamp(1rem, 2vw, 1.5rem);
+    opacity: 1;
+    border: 1px solid #767676;
+    font-family: "Orienta", sans-serif;
+  }
+  #faq .cs-button {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: bold;
+    line-height: 1.2em;
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 3.25rem;
+    background-color: transparent;
+    color: var(--bodyTextColorWhite);
+    border: 1px solid #767676;
+    display: block;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #faq .cs-button:before {
+    /* left line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--bodyTextColorWhite);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 1.125rem;
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+    /* animate the transform from the left side of the x axis, and the center of the y */
+    transform-origin: left center;
+  }
+  #faq .cs-button:after {
+    /* right line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--bodyTextColorWhite);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 1.3125rem;
+    transform: rotate(-45deg);
+    transition: transform 0.5s;
+    /* animate the transform from the right side of the x axis, and the center of the y */
+    transform-origin: right center;
+  }
+  #faq .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    height: 0;
+    margin: 0;
+    /* clips the text so it doesn't show up */
+    overflow: hidden;
+    color: var(--bodyTextColorWhite);
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s;
+  }
+  #faq .cs-gallery {
+    width: 100%;
+    /* changes to 1720 at tablet */
+    max-width: 36.5rem;
+    margin: clamp(3rem, 6vw, 4rem) auto 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+  }
+  #faq .cs-picture {
+    /* 210px - 400px */
+    min-height: clamp(13.125rem, 27vw, 25rem);
+    display: block;
+    grid-column: span 5;
+    grid-row: span 1;
+    position: relative;
+  }
+  #faq .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* makes it act like a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #faq .cs-graphic {
+    width: 120%;
+    min-width: 75rem;
+    overflow: visible;
+    object-fit: cover;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #faq .cs-container {
+    width: 80%;
+  }
+  #faq .cs-gallery {
+    max-width: 107.5rem;
+  }
+  #faq .cs-picture {
+    grid-column: span 1;
+  }
+  #faq .cs-graphic {
+    bottom: -7%;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #faq .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #faq .cs-content {
+    text-align: left;
+    width: 40%;
+    align-items: flex-start;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #faq .cs-gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  #faq .cs-picture {
+    grid-column: span 1;
+  }
+  #faq .cs-picture:nth-of-type(4), #faq .cs-picture:nth-of-type(5) {
+    grid-column: span 1;
+  }
+  #faq .cs-graphic {
+    bottom: -7%;
+  }
+}
+
+/*# sourceMappingURL=local.css.map */
