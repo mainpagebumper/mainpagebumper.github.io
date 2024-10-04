@@ -1,289 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Watch more on youtube @codecrypto TG @hirejoey -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolt on Base</title>
-    <!-- Add your CSS framework, e.g., CDN link for Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BUY $ticker</title>
+	<!-- Add your CSS framework, e.g., CDN link for Tailwind CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://boltonbase.netlify.app/dist/output.css" />
-    <link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="https://boltonbase.netlify.app/dist/output.css" />
+	<link rel="stylesheet" href="index.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
 
 
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="img/logo1.png">
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="img/logo1.png">
 
 </head>
 
 <body class="background-body">
 
-    <!-- Header Section -->
-    <nav class="nav-main ">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <!-- <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+	<!-- Header Section -->
+	<nav class="nav-main ">
+		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+			<!-- <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="./img/navbar-logo.png" class="h-12 rounded-full md:h-14" alt="etf" />
             </a> -->
-            <button data-collapse-toggle="navbar-default" type="button" style="color: cyan;"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-sm md:hidden hover:bg-cyan-500  "
-                aria-controls="navbar-default" aria-expanded="false" onclick="toggleMenu()">
-                <span class="sr-only">Open main menu</span>
-                <span id="menuIcon" class="menu-icon">
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </span>
-            </button>
-            <div class="w-full md:block md:w-auto hidden" id="navbar-default">
-                <ul
-                    class="font-medium flex flex-col  p-4 md:p-0 mt-4 border rounded-sm md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                    <li>
-                        <a href="index.html#"
-                            class="violet block py-2 px-3 text-white-600 text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
-                            aria-current="page"><i class="bx bx-coin"></i> HOME</a>
-                    </li>
-                    <li>
-                        <a href="index.html#about"
-                            class="violet block py-2 px-3 text-white-600 text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
-                            aria-current="page"><i class="bx bx-coin"></i> BUY</a>
-                    </li>
-                    <li>
-                        <a href="index.html#tokenomics"
-                            class="violet block py-2 px-3 text-white-600 text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
-                            aria-current="page"><i class="bx bx-coin"></i>HALL OF FAME</a>
-                    </li>
-                    <li>
-                        <a href="index.html#social"
-                            class="violet block py-2 px-3 text-white-600 text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0  ">
-                            <i class="bx bx-message-dots"></i> SOCIALS</a>
-                    </li>
-                </ul>
-            </div>
+			<button data-collapse-toggle="navbar-default" type="button" style="color: cyan;"
+				class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-sm md:hidden hover:bg-cyan-500  "
+				aria-controls="navbar-default" aria-expanded="false" onclick="toggleMenu()">
+				<span class="sr-only">Open main menu</span>
+				<span id="menuIcon" class="menu-icon">
+					<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+						viewBox="0 0 17 14">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M1 1h15M1 7h15M1 13h15" />
+					</svg>
+				</span>
+			</button>
+			<div class="w-full md:block md:w-auto hidden" id="navbar-default">
+				<ul
+					class="font-medium flex flex-col  p-4 md:p-0 mt-4 border rounded-sm md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+					<li>
+						<a href="index.html#"
+							class="violet block py-2 px-3 text-white-600 text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
+							aria-current="page"><i class="bx bx-coin"></i> HOME</a>
+					</li>
+					<li>
+						<a href="index.html#about"
+							class="violet block py-2 px-3 text-white-600 text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
+							aria-current="page"><i class="bx bx-coin"></i> BUY</a>
+					</li>
+					<li>
+						<a href="index.html#tokenomics"
+							class="violet block py-2 px-3 text-white-600 text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
+							aria-current="page"><i class="bx bx-coin"></i>HALL OF FAME</a>
+					</li>
+					<li>
+						<a href="index.html#social"
+							class="violet block py-2 px-3 text-white-600 text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0  ">
+							<i class="bx bx-message-dots"></i> SOCIALS</a>
+					</li>
+				</ul>
+			</div>
 
 
-            <div class="my-2 md:block md:w-auto hidden" id="navbar-default-btn">
-                <a href="https://pump.fun/$ca_pumpfun" class="">
-                    <button type="button"
-                        class="text-white bg-black hover:bg-white hover:text-black border border-white focus:outline-none focus:ring-4 focus:ring-white font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">
-                        Join the community
-                    </button>
-                </a>
-            </div>
-        </div>
-    </nav>
+			<div class="my-2 md:block md:w-auto hidden" id="navbar-default-btn">
+				<a href="https://pump.fun/$ca_pumpfun" class="">
+					<button type="button"
+						class="text-white bg-black hover:bg-white hover:text-black border border-white focus:outline-none focus:ring-4 focus:ring-white font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">
+						Join the community
+					</button>
+				</a>
+			</div>
+		</div>
+	</nav>
 
 
-    <!-- Hero Section -->
-    <section
-        class="hero-head flex flex-wrap justify-center items-center relative text-white text-center py-10 bg-cover bg-center">
+	<!-- Hero Section -->
+	<section
+		class="hero-head flex flex-wrap justify-center items-center relative text-white text-center py-10 bg-cover bg-center">
 
-        <div
-            class="container min-w-fit hero relative z-10 lg:h-screen flex justify-center flex-col-reverse md:flex-row lg:flex-row items-center mx-5 lg:mx-10 ">
-            <div
-                class="main-head text-white w-full m-0 md:m-10 lg:m-0 md:w-1/3 lg:w-1/2 flex flex-col justify-center items-center gap-10">
+		<div
+			class="container min-w-fit hero relative z-10 lg:h-screen flex justify-center flex-col-reverse md:flex-row lg:flex-row items-center mx-5 lg:mx-10 ">
+			<div
+				class="main-head text-white w-full m-0 md:m-10 lg:m-0 md:w-1/3 lg:w-1/2 flex flex-col justify-center items-center gap-10">
 
-                <h1 class="title">
-                    <span class="yellow"> Brett's Dog</span><br><span class="blue">$ticker</span>
-                </h1>
-                <div class="flex justify-center items-center gap-x-2 mx-auto w-full">
-                    <p class="text-black">CA: </p>
-                    <div id="hs-clipboard-basic" class=" text-white border border-blue-500 rounded-lg w-1/2 md:w-1/2">
-                        <input id="hs-clipboard-input" type="text"
-                            class="py-3 px-4 block rounded-lg text-sm w-full md:w-full placeholder:text-white focus:border-blue-500 focus:ring-blue-500 bg-gray-900 border-gray-700"
-                            value="$ca_pumpfun">
-                    </div>
-                    <button type="button"
-                        class="js-clipboard p-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-blue-500 bg-gray-500 text-white shadow-sm hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                        data-clipboard-target="#hs-clipboard-basic" data-clipboard-action="copy"
-                        data-clipboard-success-text="Copied" onclick="changeCopyText(this)">
-                        <svg class="js-clipboard-default w-4 h-4 group-hover:rotate-6 transition"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                        </svg>
+				<h1 class="title">
+					<span class="yellow"> Brett's Dog</span><br><span class="blue">$ticker</span>
+				</h1>
+				<div class="flex justify-center items-center gap-x-2 mx-auto w-full">
+					<p class="text-black">CA: </p>
+					<div id="hs-clipboard-basic" class=" text-white border border-blue-500 rounded-lg w-1/2 md:w-1/2">
+						<input id="hs-clipboard-input" type="text"
+							class="py-3 px-4 block rounded-lg text-sm w-full md:w-full placeholder:text-white focus:border-blue-500 focus:ring-blue-500 bg-gray-900 border-gray-700"
+							value="$ca_pumpfun">
+					</div>
+					<button type="button"
+						class="js-clipboard p-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-blue-500 bg-gray-500 text-white shadow-sm hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+						data-clipboard-target="#hs-clipboard-basic" data-clipboard-action="copy"
+						data-clipboard-success-text="Copied" onclick="changeCopyText(this)">
+						<svg class="js-clipboard-default w-4 h-4 group-hover:rotate-6 transition"
+							xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+							<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+						</svg>
 
-                        <svg class="js-clipboard-success hidden w-4 h-4 text-blue-600"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12" />
-                        </svg>
-                        <span class="copy-text">copy</span>
-                    </button>
-                </div>
-            </div>
-            <div class="main-logo  w-80 md:96 lg:w-1/2 ">
-                <img class="imglogo" src="img/hero-image.gif">
-            </div>
-        </div>
+						<svg class="js-clipboard-success hidden w-4 h-4 text-blue-600"
+							xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<polyline points="20 6 9 17 4 12" />
+						</svg>
+						<span class="copy-text">copy</span>
+					</button>
+				</div>
+			</div>
+			<div class="main-logo  w-80 md:96 lg:w-1/2 ">
+				<img class="imglogo" src="img/hero-image.gif">
+			</div>
+		</div>
 
-        <div class="chart z-10 w-full flex flex-col justify-center items-center ">
-        </div>
+		<div class="chart z-10 w-full flex flex-col justify-center items-center ">
+		</div>
 
-    </section>
+	</section>
 
-    <!-- about section -->
-    <section id="about" class="about shadow-2xl py-16">
-        <div class="flex flex-col items-center justify-center mx-5 lg:mx-20 gap-5">
-            <p class="text-4xl lg:text-5xl font-extrabold text-center text-white "></p>
-            <div class="hero lg:h-screen flex flex-col-reverse justify-between lg:flex-row items-center mx-5 lg:mx-10">
-                <div class="main-logo logo2 about-logo w-fill lg:w-1/3 rounded-full mt-8" style="margin-left: 10rem;">
-                    <img src="img/introduce-image.webp" alt="Animated" />
-                </div>
-                <div class="main-head text-white w-full lg:w-1/2 flex flex-col ">
-                    <div class="flex flex-col lg:flex-row items-center justify-center ">
-                        <p
-                            class="about-context about-text text-black mx-2 md:mx-12 text-left md:text-left md:text-xl lg:text-2xl mt-5  flex flex-col">
-                            <span>
-                                Imagine a world where loyalty isn't just a trait but a currency. 
-                                <br/>
-                                Enter $ticker, man's best friend on base, the alpha dog of the digital realm. 
-                                Inspired by the original character from Matt Furie, $ticker embodies community—a beacon of fun, inclusivity, and adventure in the meme universe.
-                                BRETT's beloved dog has become a cherished icon within his loyal pack.
-                                Join us as we walk our beloved $ticker to the top of the Solana chain
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<!-- about section -->
+	<section id="about" class="about shadow-2xl py-16">
+		<div class="flex flex-col items-center justify-center mx-5 lg:mx-20 gap-5">
+			<p class="text-4xl lg:text-5xl font-extrabold text-center text-white "></p>
+			<div class="hero lg:h-screen flex flex-col-reverse justify-between lg:flex-row items-center mx-5 lg:mx-10">
+				<div class="main-logo logo2 about-logo w-fill lg:w-1/3 rounded-full mt-8" style="margin-left: 10rem;">
+					<img src="img/introduce-image.webp" alt="Animated" />
+				</div>
+				<div class="main-head text-white w-full lg:w-1/2 flex flex-col ">
+					<div class="flex flex-col lg:flex-row items-center justify-center ">
+						<p
+							class="about-context about-text text-black mx-2 md:mx-12 text-left md:text-left md:text-xl lg:text-2xl mt-5  flex flex-col">
+							<span>
+								Imagine a world where loyalty isn't just a trait but a currency.
+								<br />
+								Enter $ticker, man's best friend on base, the alpha dog of the digital realm.
+								Inspired by the original character from Matt Furie, $ticker embodies community—a beacon
+								of fun, inclusivity, and adventure in the meme universe.
+								BRETT's beloved dog has become a cherished icon within his loyal pack.
+								Join us as we walk our beloved $ticker to the top of the Solana chain
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- Tokenomics Section -->
-    <section id="tokenomics" class=" text-black py-16">
-        <div class="container mx-auto text-center">
-            <div class="token1 flex flex-col-reverse md:flex-row md:items-center justify-start mx-4 md:mx-6 lg:mx-8">
-                <h1 class="token text-5xl lg:text-7xl font-extrabold mb-8 text-Black ">Hall of Fame</h1>
-                <img class="w-32 md:w-42 lg:w-64 px-5" src="https://boltonbase.netlify.app/images/tok.svg" alt="">
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 m-10 align-middle ">
-                <!-- Total Supply -->
-                <div class="nomics1 p-6 border-4 border-white rounded-lg shadow-2xl">
-                    <h1 class="text-8xl font-bold mb-4 text-white"><img src="img/1&#32;(1).jpg"></h1>
-                    <p>Ahh, missing the good old days</p>
-                </div>
-                <!-- Initial Liquidity -->
-                <div class="nomics1 p-6 border-4 border-white rounded-lg shadow-2x1">
-                    <h1 class="text-8xl font-bold mb-4 text-white"><img src="img/1&#32;(3).jpg"></h1>
-                    <p>Oops, sometimes i get too excited</p>
-                </div>
-                <!-- addd -->
-                <div class="nomics1 p-6 border-4 border-white rounded-lg shadow-2x1">
-                    <h1 class="text-8xl font-bold mb-4 text-white"><img src="img/1&#32;(2).jpg"></h1>
-                    <p>"Nah, people come and go. Im holding my self"</p>
-                </div>
-                <div class="nomics1 p-6 border-4 border-white rounded-lg shadow-2x1">
-                    <h1 class="text-8xl font-bold mb-4 text-white"><img src="img/tambahan.jpg"></h1>
-                    <p>Everyone wants to please the top dog</p>
-                </div>
-                <!-- addd -->
-                <div class="nomics1 p-6 border-4 border-white rounded-lg shadow-2x1">
-                    <h1 class="text-8xl font-bold mb-4 text-white"><img src="img/tambahan2.jpg"></h1>
-                    <p>Water the candles</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- social section -->
-    <section id="social">
-        <div class="flex flex-col-reverse items-center md:flex-row justify-between gap-5 ">
-            <div class="social w-full md:w-1/2 mx-4 px-4 flex justify-center items-center">
-                <img class="w-80 md:96 lg:w-[1000px] mx-8" src="img/logo1.png" alt="">
-            </div>
+	<!-- Tokenomics Section -->
+	<section id="tokenomics" class=" text-black py-16">
+		<div class="container mx-auto text-center">
+			<div class="token1 flex flex-col-reverse md:flex-row md:items-center justify-start mx-4 md:mx-6 lg:mx-8">
+				<h1 class="token text-5xl lg:text-7xl font-extrabold mb-8 text-Black ">Hall of Fame</h1>
+				<img class="w-32 md:w-42 lg:w-64 px-5" src="https://boltonbase.netlify.app/images/tok.svg" alt="">
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 m-10 align-middle ">
+				<!-- Total Supply -->
+				<div class="nomics1 p-6 border-4 border-white rounded-lg shadow-2xl">
+					<h1 class="text-8xl font-bold mb-4 text-white"><img src="img/1&#32;(1).jpg"></h1>
+					<p>Ahh, missing the good old days</p>
+				</div>
+				<!-- Initial Liquidity -->
+				<div class="nomics1 p-6 border-4 border-white rounded-lg shadow-2x1">
+					<h1 class="text-8xl font-bold mb-4 text-white"><img src="img/1&#32;(3).jpg"></h1>
+					<p>Oops, sometimes i get too excited</p>
+				</div>
+				<!-- addd -->
+				<div class="nomics1 p-6 border-4 border-white rounded-lg shadow-2x1">
+					<h1 class="text-8xl font-bold mb-4 text-white"><img src="img/1&#32;(2).jpg"></h1>
+					<p>"Nah, people come and go. Im holding my self"</p>
+				</div>
+				<div class="nomics1 p-6 border-4 border-white rounded-lg shadow-2x1">
+					<h1 class="text-8xl font-bold mb-4 text-white"><img src="img/tambahan.jpg"></h1>
+					<p>Everyone wants to please the top dog</p>
+				</div>
+				<!-- addd -->
+				<div class="nomics1 p-6 border-4 border-white rounded-lg shadow-2x1">
+					<h1 class="text-8xl font-bold mb-4 text-white"><img src="img/tambahan2.jpg"></h1>
+					<p>Water the candles</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- social section -->
+	<section id="social">
+		<div class="flex flex-col-reverse items-center md:flex-row justify-between gap-5 ">
+			<div class="social w-full md:w-1/2 mx-4 px-4 flex justify-center items-center">
+				<img class="w-80 md:96 lg:w-[1000px] mx-8" src="img/logo1.png" alt="">
+			</div>
 
-            <div class="social w-full md:w-1/2 mx-4 px-4">
-                <h1 class="text-center md:text-left text-3xl lg:text-4xl font-extrabold mb-8 text-black ">FOLLOW OUR SOCIAL MEDIA</h1>
-                <div class="flex items-center justify-center md:justify-start gap-3 ">
-                    <a href="$twitter">
-                        <img class="w-24 transform hover:scale-110 transition duration-200" src="img/twitter.png"
-                            alt="">
-                    </a>
-                    <a href="$telegram">
-                        <img class="w-24 transform hover:scale-110 transition duration-200"
-                            src="img/telegram.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="social w-full md:w-1/2 mx-4 px-4">
-                <h1 class="text-center md:text-left text-3xl lg:text-4xl font-extrabold mb-8 text-black ">GO SHOPPING</h1>
-                <div class="flex items-center justify-center md:justify-start gap-3 ">
-                    <a href="https://pump.fun/$ca_pumpfun">
-                        <img class="w-24 transform hover:scale-110 transition duration-200" src="img/CART.png"
-                            alt="">
-                    </a>
-                    <a href="https://jup.ag/swap/SOL-$ca_pumpfun">
-                        <img class="w-24 transform hover:scale-110 transition duration-200" src="img/shop-512.png"
-                            alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+			<div class="social w-full md:w-1/2 mx-4 px-4">
+				<h1 class="text-center md:text-left text-3xl lg:text-4xl font-extrabold mb-8 text-black ">FOLLOW OUR
+					SOCIAL MEDIA</h1>
+				<div class="flex items-center justify-center md:justify-start gap-3 ">
+					<a href="$twitter">
+						<img class="w-24 transform hover:scale-110 transition duration-200" src="img/twitter.png"
+							alt="">
+					</a>
+					<a href="$telegram">
+						<img class="w-24 transform hover:scale-110 transition duration-200" src="img/telegram.png"
+							alt="">
+					</a>
+				</div>
+			</div>
+			<div class="social w-full md:w-1/2 mx-4 px-4">
+				<h1 class="text-center md:text-left text-3xl lg:text-4xl font-extrabold mb-8 text-black ">GO SHOPPING
+				</h1>
+				<div class="flex items-center justify-center md:justify-start gap-3 ">
+					<a href="https://pump.fun/$ca_pumpfun">
+						<img class="w-24 transform hover:scale-110 transition duration-200" src="img/CART.png" alt="">
+					</a>
+					<a href="https://jup.ag/swap/SOL-$ca_pumpfun">
+						<img class="w-24 transform hover:scale-110 transition duration-200" src="img/shop-512.png"
+							alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-4 text-center mt-10">
-        <div class="container mx-auto">
-            <!-- Disclaimer, social media icons, copyright here -->
-            <marquee class="text-sm text-white">The best dog on Solana, $ticker.</marquee>
-        </div>
-    </footer>
+	<!-- Footer -->
+	<footer class="bg-blue-900 text-white py-4 text-center mt-10">
+		<div class="container mx-auto">
+			<!-- Disclaimer, social media icons, copyright here -->
+			<marquee class="text-sm text-white">The best dog on Solana, $ticker.</marquee>
+		</div>
+	</footer>
 
 </body>
 
 <script>
 
 
-    ScrollReveal().reveal(".token3", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 500 });
-    ScrollReveal().reveal(".token2", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 500 });
-    ScrollReveal().reveal(".token1", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 500 });
+	ScrollReveal().reveal(".token3", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 500 });
+	ScrollReveal().reveal(".token2", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 500 });
+	ScrollReveal().reveal(".token1", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 500 });
 
-    ScrollReveal().reveal(".chart", { delay: 100, reset: true, origin: 'bottom', distance: '500px', duration: 300 });
-    ScrollReveal().reveal(".main-head", { delay: 100, reset: true, origin: 'left', distance: '500px', duration: 300 });
-    ScrollReveal().reveal(".main-logo", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 300 });
-    ScrollReveal().reveal(".nav-main", { delay: 100, reset: true, origin: 'top', distance: '20px', duration: 300 });
+	ScrollReveal().reveal(".chart", { delay: 100, reset: true, origin: 'bottom', distance: '500px', duration: 300 });
+	ScrollReveal().reveal(".main-head", { delay: 100, reset: true, origin: 'left', distance: '500px', duration: 300 });
+	ScrollReveal().reveal(".main-logo", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 300 });
+	ScrollReveal().reveal(".nav-main", { delay: 100, reset: true, origin: 'top', distance: '20px', duration: 300 });
 
-    // button menu nav
-    function toggleMenu() {
-        var icon = document.getElementById("menuIcon");
-        var navbar = document.getElementById("navbar-default");
+	// button menu nav
+	function toggleMenu() {
+		var icon = document.getElementById("menuIcon");
+		var navbar = document.getElementById("navbar-default");
 
-        if (navbar.style.display === 'none' || navbar.style.display === '') {
-            icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: cyan;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>';
-            navbar.style.display = 'block';
-        } else {
-            icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: cyan;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>';
-            navbar.style.display = 'none';
-        }
-    }
+		if (navbar.style.display === 'none' || navbar.style.display === '') {
+			icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: cyan;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>';
+			navbar.style.display = 'block';
+		} else {
+			icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: cyan;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>';
+			navbar.style.display = 'none';
+		}
+	}
 
-    function changeCopyText(button) {
-        var copyTextElement = button.querySelector('.copy-text');
-        if (copyTextElement) {
-            copyTextElement.textContent = 'copied';
-        }
-    }
+	function changeCopyText(button) {
+		var copyTextElement = button.querySelector('.copy-text');
+		if (copyTextElement) {
+			copyTextElement.textContent = 'copied';
+		}
+	}
 
-    document.addEventListener('DOMContentLoaded', function () {
-        var clipboard = new ClipboardJS('.js-clipboard');
-    });
+	document.addEventListener('DOMContentLoaded', function () {
+		var clipboard = new ClipboardJS('.js-clipboard');
+	});
 
 
-    const menuIcon = document.querySelector('#menu-icon');
-    const navbar = document.querySelector('.navbar');
-    const navbg = document.querySelector('.nav-bg');
-    menuIcon.addEventListener('click', () => {
-        menuIcon.classList.toggle('bx-x');
-        navbar.classList.toggle('active');
-        navbg.classList.toggle('active');
-    });
+	const menuIcon = document.querySelector('#menu-icon');
+	const navbar = document.querySelector('.navbar');
+	const navbg = document.querySelector('.nav-bg');
+	menuIcon.addEventListener('click', () => {
+		menuIcon.classList.toggle('bx-x');
+		navbar.classList.toggle('active');
+		navbg.classList.toggle('active');
+	});
 </script>
 
 </html>
