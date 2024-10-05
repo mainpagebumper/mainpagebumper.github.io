@@ -1,335 +1,1615 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>YETI on Solana | $ticker</title>
-	<meta name="description" content="$ticker is a bold adventurer, leading a charge through the icy realms of crypto, carving a path for the community to rise and conquer.">
-	<meta property="og:title" content="$ticker on Solana">
-	<meta property="og:type" content="website">
-	<meta property="og:description" content="$ticker is a bold adventurer, leading a charge through the icy realms of crypto, carving a path for the community to rise and conquer.">
-	<meta property="og:site_name" content="$ticker on Solana">
-	<meta property="og:locale" content="en_US">
-	<meta property="og:image" content="https://yetionbase.com/assets/images/photo/about.png">
-	<meta property="og:url" content="https://yetionbase.com">
-	<link rel="canonical" href="https://yetionbase.com">
-	<link rel="shortcut icon" type="image/x-icon" href="https://yetionbase.com/assets/images/icon/favicon.ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://yetionbase.com/assets/css/styles.css">
-</head>
-<body>
-	<header>
-		<div class="container">
-			<div class="">
-				<a onclick="scrollSection($('#introSection'), 0)">
-					<br>
-					<img src="./logo.png" height="85" width="85"/>
-				</a>
-			</div>
-			<div class="menu">
-				<ul>
-					<li><a onclick="scrollSection($('#introSection'), 0)">HOME</a></li>
-					<li><a onclick="scrollSection($('#aboutSection'), 120)">ABOUT</a></li>
-					<li><a onclick="scrollSection($('#tokenomicsSection'), 120)">TOKENOMICS</a></li>
-					<li><a onclick="scrollSection($('#roadmapSection'), 120)">ROADMAP</a></li>
-					<li><a onclick="scrollSection($('#contactSection'), 120)">CONTACT</a></li>
-				</ul>
-			</div>
-			<div class="buy">
-				<a href="https://pump.fun/$ca_pumpfun" target="_blank" title="Buy Now"><span>BUY NOW</span></a>
-			</div>
-			<div class="menu-btn">
-				<a><span></span><span></span><span></span></a>
-			</div>
-			<div class="mobile-menu">
-				<ul>
-					<li><a onclick="scrollSection($('#introSection'), 0)">HOME</a></li>
-					<li><a onclick="scrollSection($('#aboutSection'), 100)">ABOUT</a></li>
-					<li><a onclick="scrollSection($('#tokenomicsSection'), 100)">TOKENOMICS</a></li>
-					<li><a onclick="scrollSection($('#roadmapSection'), 100)">ROADMAP</a></li>
-					<li><a onclick="scrollSection($('#contactSection'), 100)">CONTACT</a></li>
-					<li class="buy"><a href="https://pump.fun/$ca_pumpfun" target="_blank" title="Buy Now" rel="nofollow"><span>BUY NOW</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
-	<input type="hidden" id="contactAddress" value="$ca_pumpfun">
-	<div class="section intro" id="introSection">
-		<div class="wrapper">
-			<div class="photo">
-				<img src="https://yetionbase.com/assets/images/photo/intro.png" width="800" height="800" alt="Intro">
-			</div>
-			<div class="container">
-				<div class="content">
-					<h1 class="title">Join the $ticker's Ascent: Together, We Climb</h1>
-					<p>
-                        $ticker the yeti is more than just a token—it's a thrilling adventure through the icy peaks of the crypto world.
-                        With the power of the community behind it, $ticker is set to rise, breaking new ground and reaching heights no one thought possible.
-					</p>
-					<div class="contact-address">
-						<div class="inner">
-							<div class="label">CONTRACT ADDRESS</div>
-							<div class="value">$ca_pumpfun</div>
-							<div class="copy" onclick="copyAddress();">
-								<div class="info">Copied</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="section about" id="aboutSection">
-		<div class="container">
-			<h2 class="title">ABOUT $ticker</h2>
-			<div class="content">
-				<div class="photo">
-					<div class="snowflake snowflake-1"></div>
-					<div class="snowflake snowflake-2"></div>
-					<div class="snowflake snowflake-3"></div>
-					<div class="snowflake snowflake-4"></div>
-					<div class="snowflake snowflake-5"></div>
-					<img src="https://yetionbase.com/assets/images/photo/about.png" width="600" height="600" alt="">
-				</div>
-				<div class="text">
-					<p>
-                        $ticker the yeti on Solana is not just another memecoin; it's a symbol of bold exploration in the crypto wilderness. Born in the frosty heights of the Solana network, $ticker embodies strength, resilience, and community-driven growth. With its icy origins and a dedicated crew behind it, $ticker is on a mission to scale the digital peaks, delivering thrilling opportunities and rewards to those who dare to join the journey.
-                    </p>
-					<p>
-                        As a project built by adventurers for adventurers, $ticker invites everyone to be part of its ascent. The goal isn’t just to survive the climb but to thrive together, pushing this yeti to new heights and into the spotlight. Whether you’re a seasoned crypto enthusiast or just starting, $ticker the Solana Yeti offers a unique chance to grow alongside a fun, fearless community.
-                    </p>
-				</div>
-			</div>
-			<div class="buy">
-				<a href="https://pump.fun/$ca_pumpfun" target="_blank" title="Buy Now" rel="nofollow"><span>BUY NOW</span></a>
-			</div>
-		</div>
-		<div class="ellipse">
-			<img src="https://yetionbase.com/assets/images/background/about-ellipse.svg" width="1440" height="212" alt="About">
-		</div>
-	</div>
-	<div class="section how">
-		<div class="yeti">
-			<div class="inner">
-				<div class="list">
-					<div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div>
-				</div>
-			</div>
-			<div class="inner">
-				<div class="list">
-					<div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<h2 class="title">HOW TO BUY $ticker?</h2>
-			<div class="photo">
-				<img src="https://yetionbase.com/assets/images/photo/how.png" width="800" height="734" alt="How to Buy">
-			</div>
-			<div class="accordion">
-				<div class="acr-item">
-					<div class="acr-title">
-						<div class="photo"><img src="./phantom.png" width="80" height="80" alt="Metamask"></div>
-						<div class="name">Get a Wallet</div>
-					</div>
-					<div class="acr-content">
-						<p>
-                            Download and install a crypto wallet like Phantom or Solflare, which will serve as your digital key to the crypto world. Make sure to securely store your seed phrase, as it's the only way to recover your wallet.
-						</p>
-					</div>
-				</div>
-				<div class="acr-item">
-					<div class="acr-title">
-						<div class="photo"><img src="./pumpfun.png" width="80" height="80" alt="Uniswap"></div>
-						<div class="name">Go to PumpFun</div>
-					</div>
-					<div class="acr-content">
-						<p>
-                            Visit the PumpFun platform, where you'll be able to swap your Solana for $ticker tokens. Ensure your wallet is connected for a smooth transaction.
-                        </p>
-					</div>
-				</div>
-				<div class="acr-item">
-					<div class="acr-title">
-						<div class="photo"><img src="./solana.png" width="80" height="80" alt="Base Network"></div>
-						<div class="name">Get some Solana</div>
-					</div>
-					<div class="acr-content">
-						<p>
-							Buy some Solana on whichever exchange you prefer or bridge it from other networks.
-						</p>
-					</div>
-				</div>
-				<div class="acr-item">
-					<div class="acr-title">
-						<div class="photo"><img src="https://yetionbase.com/assets/images/photo/yeti-token.png" width="80" height="80" alt="Swap YETI"></div>
-						<div class="name">Swap for $ticker</div>
-					</div>
-					<div class="acr-content">
-						<p>
-                            On PumpFun, connect your wallet and exchange your Solana for $ticker tokens. You’re now officially part of the $ticker adventure—welcome to the community!
-                        </p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="ellipse">
-			<img src="https://yetionbase.com/assets/images/background/how-ellipse.svg" width="1440" height="212" alt="">
-		</div>
-	</div>
-	<div class="section tokenomics" id="tokenomicsSection">
-		<div class="wrapper">
-			<div class="container">
-				<h2 class="title">TOKENOMICS</h2>
-				<p>
-                    The Tokenomics of $ticker, the yeti on Solana are designed to fuel long-term growth and community engagement.
-					The default PumpFun supply is 1B tokens that will be assigned firstly on the bonding curve and after that on the seeded pool once we hit Raydium.
-				</p>
-				<div class="photo">
-					<div class="yeti">
-						<div class="snowflake snowflake-1"></div>
-						<div class="snowflake snowflake-2"></div>
-						<div class="snowflake snowflake-3"></div>
-						<div class="snowflake snowflake-4"></div>
-						<div class="snowflake snowflake-5"></div>
-						
-					</div>
-					<div class="infographic">
-						<img src="https://yetionbase.com/assets/images/photo/tokenomics.png" width="690" height="580" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="ellipse">
-			<img src="https://yetionbase.com/assets/images/background/tokenomics-ellipse.svg" width="1440" height="212" alt="">
-		</div>
-	</div>
-	<div class="section roadmap" id="roadmapSection">
-		<div class="container">
-			<h3 class="title">ROADMAP</h3>
-			<p>
-                The Roadmap outlines our strategic vision and milestones for Yeti, detailing key phases of development, community initiatives, and ambitious goals that will guide our journey to success and ensure we remain on track to deliver value to our supporters.
-			</p>
-			<div class="content">
-				<div class="photo">
-					<img src="https://yetionbase.com/assets/images/photo/roadmap.png" width="640" height="640" alt="">
-				</div>
-				<div class="list">
-					<div class="item">
-						<div class="number">1</div>
-						<div class="text">
-							<div class="inner">
-								<ul>
-									<li>Fair Launch on PumpFun</li>
-									<li>Build A Community</li>
-									<li>NFT Collection</li>
-									<li>Marketing & PR</li>
-									<li>Airdrop Campaigns</li>
-									<li>5,000+ Holders</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="number">2</div>
-						<div class="text">
-							<div class="inner">
-								<ul>
-									<li>First CEX Listing</li>
-									<li>CoinGecko Application</li>
-									<li>Coinmarketcap Application</li>
-                                    <li>Airdrop Campaigns</li>
-									<li>Governance Model</li>
-									<li>20,000+ Holders</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="number">3</div>
-						<div class="text">
-							<div class="inner">
-								<ul>
-									<li>T1 Exchange Listing</li>
-									<li>NFT Marketplace</li>
-									<li>DAO Governance</li>
-									<li>Official Partnerships</li>
-									<li>Staking dApp</li>
-									<li>100,000+ Holders</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="section strip">
-		<div class="line-1">
-			<div class="line">
-				<div class="inner">
-					<div class="list">
-						<div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div>
-					</div>
-				</div>
-				<div class="inner">
-					<div class="list">
-						<div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="line-2">
-			<div class="line">
-				<div class="inner">
-					<div class="list">
-						<div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div>
-					</div>
-				</div>
-				<div class="inner">
-					<div class="list">
-						<div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div><div class="item">$ticker</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="section contact" id="contactSection">
-		<div class="container">
-			<h3 class="title">CONTACT US</h3>
-			<p>
-                Have questions or want to get involved? Reach out to us through the Contact Us section, where our team is ready to assist with any inquiries, feedback, or support you need as we grow Yeti together.
-			</p>
-			<div class="contact-address">
-				<div class="inner">
-					<div class="label">CONTRACT ADDRESS</div>
-					<div class="value">$ca_pumpfun</div>
-					<div class="copy" onclick="copyAddress();">
-						<div class="info">Copied</div>
-					</div>
-				</div>
-			</div>
-			<div class="social">
-				<ul>
-					<li><a href="$telegram" target="_blank" title="Telegram" rel="nofollow" class="telegram"><span></span></a></li>
-					<li><a href="$twitter" target="_blank" title="X" rel="nofollow" class="twitter"><span></span></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<footer>
-		<div class="wrapper">
-			<div class="tree-left"></div>
-			<div class="tree-right"></div>
-			<div class="yeti"></div>
-			<div class="container">
-				<div class="copyright">
-					Copyright &copy; 2024 All Rights Reserved | $ticker on Solana				</div>
-			</div>
-		</div>
-	</footer>
-	<script src="https://yetionbase.com/assets/js/jquery-3.7.1.min.js"></script>
-	<script src="https://yetionbase.com/assets/js/scripts.js"></script>
-</body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl496321'},{'dcenter':'p3'},{'cp_id':'9941216'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--metatextblock-->
+    <title>$ticker BOAR</title>
+    <meta property="og:url" content="http://cryptoboar.meme" />
+    <meta property="og:title" content="Crypto Boar" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="http://cryptoboar.meme">
+    <!--/metatextblock-->
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="https://ws.tildacdn.com">
+    <link rel="dns-prefetch" href="https://static.tildacdn.one">
+    <link rel="shortcut icon" href="https://static.tildacdn.one/tild6662-6130-4738-b734-373862663039/Logo-_14_.ico" type="image/x-icon" />
+    <!-- Assets -->
+    <script src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js" async charset="utf-8"></script>
+    <link rel="stylesheet" href="https://static.tildacdn.one/css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" />
+    <link rel="stylesheet" href="https://static.tildacdn.one/ws/project10707277/tilda-blocks-page55466433.min.css?t=1728049463" type="text/css" media="all" onerror="this.loaderr='y';" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&subset=latin,cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://static.tildacdn.one/css/tilda-animation-2.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" />
+    <script nomodule src="https://static.tildacdn.one/js/tilda-polyfill-1.0.min.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript">
+        
+      function t_onReady(func) {
+        if (document.readyState != 'loading') {
+          func();
+        } else {
+          document.addEventListener('DOMContentLoaded', func);
+        }
+      }
+
+      function t_onFuncLoad(funcName, okFunc, time) {
+        if (typeof window[funcName] === 'function') {
+          okFunc();
+        } else {
+          setTimeout(function() {
+            t_onFuncLoad(funcName, okFunc, time);
+          }, (time || 100));
+        }
+      }
+
+      function t396_initialScale(t) {
+        t = document.getElementById("rec" + t);
+        if (t) {
+          t = t.querySelector(".t396__artboard");
+          if (t) {
+            var e, r = document.documentElement.clientWidth,
+              a = [];
+            if (i = t.getAttribute("data-artboard-screens"))
+              for (var i = i.split(","), l = 0; l < i.length; l++) a[l] = parseInt(i[l], 10);
+            else a = [320, 480, 640, 960, 1200];
+            for (l = 0; l < a.length; l++) {
+              var n = a[l];
+              n <= r && (e = n)
+            }
+            var o = "edit" === window.allrecords.getAttribute("data-tilda-mode"),
+              d = "center" === t396_getFieldValue(t, "valign", e, a),
+              c = "grid" === t396_getFieldValue(t, "upscale", e, a),
+              s = t396_getFieldValue(t, "height_vh", e, a),
+              u = t396_getFieldValue(t, "height", e, a),
+              g = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(" OPR/");
+            if (!o && d && !c && !s && u && !g) {
+              for (var _ = parseFloat((r / e).toFixed(3)), f = [t, t.querySelector(".t396__carrier"), t.querySelector(".t396__filter")], l = 0; l < f.length; l++) f[l].style.height = Math.floor(parseInt(u, 10) * _) + "px";
+              t396_scaleInitial__getElementsToScale(t).forEach(function(t) {
+                t.style.zoom = _
+              })
+            }
+          }
+        }
+      }
+
+      function t396_scaleInitial__getElementsToScale(t) {
+        return t ? Array.prototype.slice.call(t.children).filter(function(t) {
+          return t && (t.classList.contains("t396__elem") || t.classList.contains("t396__group"))
+        }) : []
+      }
+
+      function t396_getFieldValue(t, e, r, a) {
+        var i = a[a.length - 1],
+          l = r === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + r);
+        if (!l)
+          for (var n = 0; n < a.length; n++) {
+            var o = a[n];
+            if (!(o <= r) && (l = o === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + o))) break
+          }
+        return l
+      }
+    </script>
+    <script src="https://static.tildacdn.one/js/tilda-scripts-3.0.min.js" charset="utf-8" defer onerror="this.loaderr='y';"></script>
+    <script src="https://static.tildacdn.one/ws/project10707277/tilda-blocks-page55466433.min.js?t=1728049463" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script src="https://static.tildacdn.one/js/tilda-lazyload-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script src="https://static.tildacdn.one/js/tilda-animation-2.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script src="https://static.tildacdn.one/js/tilda-zero-1.1.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script src="https://static.tildacdn.one/js/tilda-animation-sbs-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script src="https://static.tildacdn.one/js/tilda-zero-scale-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script src="https://static.tildacdn.one/js/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+    </script>
+    <script type="text/javascript">
+      (function() {
+        if ((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent)) === false && typeof(sessionStorage) != 'undefined' && sessionStorage.getItem('visited') !== 'y' && document.visibilityState) {
+          var style = document.createElement('style');
+          style.type = 'text/css';
+          style.innerHTML = '@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';
+          document.getElementsByTagName('head')[0].appendChild(style);
+
+          function t_setvisRecs() {
+            var alr = document.querySelectorAll('.t-records');
+            Array.prototype.forEach.call(alr, function(el) {
+              el.classList.add("t-records_animated");
+            });
+            setTimeout(function() {
+              Array.prototype.forEach.call(alr, function(el) {
+                el.classList.add("t-records_visible");
+              });
+              sessionStorage.setItem("visited", "y");
+            }, 400);
+          }
+          document.addEventListener('DOMContentLoaded', t_setvisRecs);
+        }
+      })();
+    </script>
+  </head>
+  <body class="t-body" style="margin:0;">
+    <!--allrecords-->
+    <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="10707277" data-tilda-page-id="55466433" data-tilda-formskey="5081dde52c403b6343c5ebe510707277" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="one">
+      <div id="rec803111708" class="r t-rec t-rec_pt_0" style="padding-top:0px; " data-animationappear="off" data-record-type="396">
+        <!-- T396 -->
+        <style>
+          #rec803111708 .t396__artboard {
+            min-height: 1080px;
+            height: 100vh;
+            background-color: #080808;
+          }
+
+          #rec803111708 .t396__filter {
+            min-height: 1080px;
+            height: 100vh;
+          }
+
+          #rec803111708 .t396__carrier {
+            min-height: 1080px;
+            height: 100vh;
+            background-position: center center;
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+
+          @media screen and (max-width:1919px) {
+
+            #rec803111708 .t396__artboard,
+            #rec803111708 .t396__filter,
+            #rec803111708 .t396__carrier {
+              min-height: 1024px;
+            }
+
+            #rec803111708 .t396__filter {}
+
+            #rec803111708 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+
+            #rec803111708 .t396__artboard,
+            #rec803111708 .t396__filter,
+            #rec803111708 .t396__carrier {}
+
+            #rec803111708 .t396__filter {}
+
+            #rec803111708 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+
+          @media screen and (max-width:959px) {
+
+            #rec803111708 .t396__artboard,
+            #rec803111708 .t396__filter,
+            #rec803111708 .t396__carrier {}
+
+            #rec803111708 .t396__filter {}
+
+            #rec803111708 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+
+            #rec803111708 .t396__artboard,
+            #rec803111708 .t396__filter,
+            #rec803111708 .t396__carrier {
+              min-height: 1224px;
+            }
+
+            #rec803111708 .t396__filter {}
+
+            #rec803111708 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+
+          @media screen and (max-width:479px) {
+
+            #rec803111708 .t396__artboard,
+            #rec803111708 .t396__filter,
+            #rec803111708 .t396__carrier {}
+
+            #rec803111708 .t396__filter {}
+
+            #rec803111708 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581813"] {
+            color: #f39d00;
+            text-align: CENTER;
+            z-index: 2;
+            top: calc(50vh - 540px + 116px);
+            left: calc(50% - 960px + 106px);
+            width: 1708px;
+            -webkit-filter: blur(8px);
+            filter: blur(8px);
+          }
+
+          #rec803111708 .tn-elem.t396__elem--anim-hidden[data-elem-id="1727291581813"] {
+            opacity: 0;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581813"] .tn-atom {
+            color: #f39d00;
+            font-size: 140px;
+            font-family: 'Creepster', Arial, sans-serif;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581813"] {
+              top: 116px;
+              left: calc(50% - 600px + -254px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581813"] .tn-atom {
+              font-size: 110px;
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581813"] {
+              top: 88px;
+              left: calc(50% - 480px + -374px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581813"] .tn-atom {
+              font-size: 92px;
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581813"] {
+              left: calc(50% - 320px + -534px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581813"] .tn-atom {
+              font-size: 56px;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581813"] {
+              left: calc(50% - 240px + 54px);
+              width: 372px;
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581813"] {
+              left: calc(50% - 160px + -26px);
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581811"] {
+            color: #ffffff;
+            text-align: CENTER;
+            z-index: 3;
+            top: calc(50vh - 540px + -88px);
+            left: calc(50% - 960px + 106px);
+            width: 1708px;
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+          }
+
+          #rec803111708 .tn-elem.t396__elem--anim-hidden[data-elem-id="1727291581811"] {
+            opacity: 0;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581811"] .tn-atom {
+            color: #ffffff;
+            font-size: 140px;
+            font-family: 'Creepster', Arial, sans-serif;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581811"] {
+              top: -45px;
+              left: calc(50% - 600px + -254px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581811"] .tn-atom {
+              font-size: 110px;
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581811"] {
+              left: calc(50% - 480px + -374px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581811"] .tn-atom {
+              font-size: 92px;
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581811"] {
+              top: 3px;
+              left: calc(50% - 320px + -534px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581811"] .tn-atom {
+              font-size: 56px;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581811"] {
+              left: calc(50% - 240px + 54px);
+              width: 372px;
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581811"] {
+              left: calc(50% - 160px + -26px);
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727356645515"] {
+            z-index: 4;
+            top: calc(50vh - 540px + -710px);
+            left: calc(50% - 960px + 552px);
+            width: 1654px;
+            height: 667px;
+            -webkit-filter: blur(50px);
+            filter: blur(50px);
+            border-radius: 3000px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727356645515"] .tn-atom {
+            border-radius: 3000px;
+            opacity: 0.6;
+            background-color: #f39e00;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727356645515"] {
+              top: -690px;
+              left: calc(50% - 600px + 432px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {}
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727356645515"] {
+              top: -600px;
+              left: calc(50% - 320px + 232px);
+            }
+          }
+
+          @media screen and (max-width:639px) {}
+
+          @media screen and (max-width:479px) {}
+
+          #rec803111708 .tn-elem[data-elem-id="1727356645512"] {
+            z-index: 5;
+            top: calc(50vh - 540px + -557px);
+            left: calc(50% - 960px + -358px);
+            width: 1343px;
+            height: 523px;
+            -webkit-filter: blur(50px);
+            filter: blur(50px);
+            border-radius: 3000px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727356645512"] .tn-atom {
+            border-radius: 3000px;
+            opacity: 0.6;
+            background-color: #f3c200;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727356645512"] {
+              top: -537px;
+              left: calc(50% - 600px + -478px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {}
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727356645512"] {
+              top: -497px;
+            }
+          }
+
+          @media screen and (max-width:639px) {}
+
+          @media screen and (max-width:479px) {}
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581805"] {
+            z-index: 6;
+            top: calc(50vh - 540px + 70px);
+            left: calc(50% - 960px + 595px);
+            width: 731px;
+            height: 657px;
+          }
+
+          @media (min-width:1200px) {
+            #rec803111708 .tn-elem.t396__elem--anim-hidden[data-elem-id="1727291581805"] {
+              opacity: 0;
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581805"] .tn-atom {
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {}
+
+          @media screen and (max-width:1199px) {}
+
+          @media screen and (max-width:959px) {}
+
+          @media screen and (max-width:639px) {}
+
+          @media screen and (max-width:479px) {}
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581803"] {
+            z-index: 7;
+            top: calc(50vh - 540px + 885px);
+            left: calc(50% - 960px + 1280px);
+            width: 1654px;
+            height: 667px;
+            -webkit-filter: blur(50px);
+            filter: blur(50px);
+            border-radius: 3000px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581803"] .tn-atom {
+            border-radius: 3000px;
+            opacity: 0.6;
+            background-color: #f39e00;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581803"] .tn-atom {
+            -webkit-transform: rotate(330deg);
+            -moz-transform: rotate(330deg);
+            transform: rotate(330deg);
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581803"] {
+              left: calc(50% - 600px + 550px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581803"] {
+              top: 915px;
+              left: calc(50% - 480px + 251px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581803"] .tn-atom {
+              -webkit-transform: rotate(0deg);
+              -moz-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581803"] {
+              top: 955px;
+              left: calc(50% - 320px + 240px);
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581803"] {
+              top: 1044px;
+              left: calc(50% - 240px + 184px);
+            }
+          }
+
+          @media screen and (max-width:479px) {}
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581801"] {
+            z-index: 8;
+            top: calc(50vh - 540px + 896px);
+            left: calc(50% - 960px + -831px);
+            width: 1343px;
+            height: 523px;
+            -webkit-filter: blur(50px);
+            filter: blur(50px);
+            border-radius: 3000px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581801"] .tn-atom {
+            border-radius: 3000px;
+            opacity: 0.6;
+            background-color: #f3c200;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581801"] .tn-atom {
+            -webkit-transform: rotate(34deg);
+            -moz-transform: rotate(34deg);
+            transform: rotate(34deg);
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581801"] {
+              left: calc(50% - 600px + -801px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581801"] {
+              top: 904px;
+              left: calc(50% - 480px + -650px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581801"] .tn-atom {
+              -webkit-transform: rotate(5deg);
+              -moz-transform: rotate(5deg);
+              transform: rotate(5deg);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581801"] {
+              top: 936px;
+              left: calc(50% - 320px + -861px);
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581801"] {
+              top: 1071px;
+              left: calc(50% - 240px + -784px);
+            }
+          }
+
+          @media screen and (max-width:479px) {}
+
+          #rec803111708 .tn-elem[data-elem-id="1727511372210"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 9;
+            top: calc(50vh - 540px + 721px);
+            left: calc(50% - 960px + 584px);
+            width: 560px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727511372210"] .tn-atom {
+            color: #ffffff;
+            font-size: 32px;
+            font-family: 'Arial', Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 600;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727511372210"] {
+              top: 591px;
+              left: calc(50% - 600px + 224px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727511372210"] {
+              top: 551px;
+              left: calc(50% - 480px + 104px);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727511372210"] {
+              top: 524px;
+              left: calc(50% - 320px + 40px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727511372210"] .tn-atom {
+              font-size: 18px;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727511372210"] {
+              top: 564px;
+              left: calc(50% - 240px + -40px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727511372210"] {
+              top: 534px;
+              left: calc(50% - 160px + -1387px);
+              width: 326px;
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727513337089"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 10;
+            top: calc(50vh - 540px + 793px);
+            left: calc(50% - 960px + 828px);
+            width: 265px;
+            height: 64px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727513337089"] .tn-atom {
+            color: #ffffff;
+            font-size: 35px;
+            font-family: 'Creepster', Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-width: 1px;
+            border-radius: 25px;
+            background-position: center center;
+            border-color: #ffffff;
+            border-style: solid;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727513337089"] {
+              top: 678px;
+              left: calc(50% - 600px + 468px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727513337089"] {
+              top: 628px;
+              left: calc(50% - 480px + 348px);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727513337089"] {
+              top: 574px;
+              left: calc(50% - 320px + 187px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727513337089"] .tn-atom {
+              opacity: 1;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727513337089"] {
+              top: 644px;
+              left: calc(50% - 240px + 107px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727513337089"] {
+              top: 674px;
+              left: calc(50% - 160px + 28px);
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727517731198"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 11;
+            top: calc(50vh - 540px + 666px);
+            left: calc(50% - 960px + 680px);
+            width: 560px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727517731198"] .tn-atom {
+            color: #ffffff;
+            font-size: 64px;
+            font-family: 'Creepster', Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+            animation: flicker 3s infinite alternate, glow 1s infinite alternate;
+            animation-delay: 0s, 4.5s;
+          }
+
+          @keyframes flicker {
+            0%   { opacity: 1; }
+            10%  { opacity: 0.9; }
+            20%  { opacity: 0.85; }
+            30%  { opacity: 0.8; }
+            40%  { opacity: 0.7; }
+            50%  { opacity: 0.85; }
+            60%  { opacity: 1; }
+            70%  { opacity: 0.9; }
+            80%  { opacity: 0.7; }
+            90%  { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #f39e00, 0 0 10px #f39e00, 0 0 15px #f39e00;
+            }
+            100% {
+                text-shadow: 0 0 20px #f39e00, 0 0 30px #f39e00, 0 0 40px #f39e00;
+            }
+        }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727517731198"] {
+              top: 536px;
+              left: calc(50% - 600px + 320px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727517731198"] {
+              top: 496px;
+              left: calc(50% - 480px + 200px);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727517731198"] {
+              top: 496px;
+              left: calc(50% - 320px + 40px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727517731198"] .tn-atom {
+              font-size: 18px;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727517731198"] {
+              top: 536px;
+              left: calc(50% - 240px + -40px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727517731198"] {
+              top: 536px;
+              left: calc(50% - 160px + -120px);
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727518622276"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 12;
+            top: calc(50vh - 540px + 691px);
+            left: calc(50% - 960px + -2161px);
+            width: 560px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727518622276"] .tn-atom {
+            color: #ffffff;
+            font-size: 32px;
+            font-family: 'Noto Sans', Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 600;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727518622276"] {
+              top: 481px;
+              left: calc(50% - 600px + -1731px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727518622276"] {
+              top: 335px;
+              left: calc(50% - 480px + -2175px);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727518622276"] {
+              top: 332px;
+              left: calc(50% - 320px + -1609px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727518622276"] .tn-atom {
+              font-size: 18px;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727518622276"] {
+              top: 299px;
+              left: calc(50% - 240px + -1849px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727518622276"] {
+              top: 582px;
+              left: calc(50% - 160px + -3px);
+              width: 326px;
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581797"] {
+            z-index: 13;
+            top: calc(50vh - 540px + 886px);
+            left: calc(50% - 960px + 670px);
+            width: 265px;
+          }
+
+          #rec803111708 .tn-elem.t396__elem--anim-hidden[data-elem-id="1727291581797"] {
+            opacity: 0;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581797"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581797"] {
+              top: 784px;
+              left: calc(50% - 600px + 310px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581797"] {
+              top: 714px;
+              left: calc(50% - 480px + 207px);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581797"] {
+              top: 674px;
+              left: calc(50% - 320px + 187px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581797"] .tn-atom {
+              opacity: 1;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581797"] {
+              top: 736px;
+              left: calc(50% - 240px + 107px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581797"] {
+              top: 766px;
+              left: calc(50% - 160px + 26px);
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581786"] {
+            z-index: 14;
+            top: calc(50vh - 540px + 868px);
+            left: calc(50% - 960px + -2560px);
+            width: 523px;
+            height: 523px;
+            -webkit-filter: blur(50px);
+            filter: blur(50px);
+            border-radius: 3000px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581786"] .tn-atom {
+            border-radius: 3000px;
+            opacity: 0.9;
+            background-color: #f39e00;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581786"] .tn-atom {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+
+          @media screen and (max-width:1919px) {}
+
+          @media screen and (max-width:1199px) {}
+
+          @media screen and (max-width:959px) {}
+
+          @media screen and (max-width:639px) {}
+
+          @media screen and (max-width:479px) {}
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581783"] {
+            z-index: 15;
+            top: calc(50vh - 540px + 1074px);
+            left: calc(50% - 960px + -2280px);
+            width: 523px;
+            height: 523px;
+            -webkit-filter: blur(50px);
+            filter: blur(50px);
+            border-radius: 3000px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581783"] .tn-atom {
+            border-radius: 3000px;
+            opacity: 0.9;
+            background-color: #f3c200;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581783"] .tn-atom {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+
+          @media screen and (max-width:1919px) {}
+
+          @media screen and (max-width:1199px) {}
+
+          @media screen and (max-width:959px) {}
+
+          @media screen and (max-width:639px) {}
+
+          @media screen and (max-width:479px) {}
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581780"] {
+            z-index: 16;
+            top: calc(50vh - 540px + 886px);
+            left: calc(50% - 960px + 985px);
+            width: 265px;
+          }
+
+          #rec803111708 .tn-elem.t396__elem--anim-hidden[data-elem-id="1727291581780"] {
+            opacity: 0;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581780"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581780"] {
+              top: 784px;
+              left: calc(50% - 600px + 624px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581780"] {
+              top: 714px;
+              left: calc(50% - 480px + 488px);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581780"] {
+              top: 774px;
+              left: calc(50% - 320px + 187px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581780"] .tn-atom {
+              opacity: 1;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581780"] {
+              top: 828px;
+              left: calc(50% - 240px + 107px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581780"] {
+              top: 858px;
+              left: calc(50% - 160px + 26px);
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581775"] {
+            z-index: 17;
+            top: calc(50vh - 540px + 656px);
+            left: calc(50% - 960px + 419px);
+            width: 1058px;
+            height: 343px;
+            pointer-events: none;
+          }
+
+          #rec803111708 .tn-elem.t396__elem--anim-hidden[data-elem-id="1727291581775"] {
+            opacity: 0;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581775"] .tn-atom {
+            background-color: #080808;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581775"] {
+              top: 536px;
+              left: calc(50% - 600px + 102px);
+              height: 388px;
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581775"] {
+              top: 496px;
+              left: calc(50% - 480px + -19px);
+              height: 307px;
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581775"] {
+              top: 504px;
+              width: 996px;
+              height: 343px;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581775"] {
+              top: 525px;
+              left: calc(50% - 240px + -19px);
+              width: 996px;
+              height: 405px;
+            }
+          }
+
+          @media screen and (max-width:479px) {}
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581773"] {
+            color: #f39d00;
+            text-align: CENTER;
+            z-index: 18;
+            top: calc(50vh - 540px + 446px);
+            left: calc(50% - 960px + 496px);
+            width: 928px;
+            -webkit-filter: blur(8px);
+            filter: blur(8px);
+          }
+
+          #rec803111708 .tn-elem.t396__elem--anim-hidden[data-elem-id="1727291581773"] {
+            opacity: 0;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581773"] .tn-atom {
+            color: #f39d00;
+            font-size: 140px;
+            font-family: 'Denam', Arial, sans-serif;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581773"] {
+              top: 356px;
+              left: calc(50% - 600px + 136px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581773"] .tn-atom {
+              font-size: 110px;
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581773"] {
+              top: 336px;
+              left: calc(50% - 480px + 16px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581773"] .tn-atom {
+              font-size: 92px;
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581773"] {
+              top: 376px;
+              left: calc(50% - 320px + -144px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581773"] .tn-atom {
+              font-size: 56px;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581773"] {
+              top: 416px;
+              left: calc(50% - 240px + -224px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581773"] {
+              left: calc(50% - 160px + -304px);
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581771"] {
+            color: #ffffff;
+            text-align: CENTER;
+            z-index: 19;
+            top: calc(50vh - 540px + 446px);
+            left: calc(50% - 960px + 496px);
+            width: 928px;
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+          }
+
+          #rec803111708 .tn-elem.t396__elem--anim-hidden[data-elem-id="1727291581771"] {
+            opacity: 0;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581771"] .tn-atom {
+            color: #ffffff;
+            font-size: 140px;
+            font-family: 'Denam', Arial, sans-serif;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581771"] {
+              top: 356px;
+              left: calc(50% - 600px + 136px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581771"] .tn-atom {
+              font-size: 110px;
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581771"] {
+              top: 336px;
+              left: calc(50% - 480px + 16px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581771"] .tn-atom {
+              font-size: 92px;
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581771"] {
+              top: 376px;
+              left: calc(50% - 320px + -144px);
+            }
+
+            #rec803111708 .tn-elem[data-elem-id="1727291581771"] .tn-atom {
+              font-size: 56px;
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581771"] {
+              top: 416px;
+              left: calc(50% - 240px + -224px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581771"] {
+              left: calc(50% - 160px + -304px);
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581760"] {
+            z-index: 20;
+            top: calc(50vh - 540px + 39px);
+            left: calc(50% - 960px + 339px);
+            width: 63px;
+            height: 47px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581760"] .tn-atom {
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581760"] {
+              left: calc(50% - 600px + 99px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581760"] {
+              left: calc(50% - 480px + 449px);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581760"] {
+              top: 39px;
+              left: calc(50% - 320px + 289px);
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581760"] {
+              left: calc(50% - 240px + 209px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581760"] {
+              left: calc(50% - 160px + 129px);
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581756"] {
+            z-index: 21;
+            top: calc(50vh - 540px + 38px);
+            left: calc(50% - 960px + 1550px);
+            width: 48px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581756"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581756"] {
+              left: calc(50% - 600px + 1053px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581756"] {
+              left: calc(50% - 480px + -990px);
+            }
+          }
+
+          @media screen and (max-width:959px) {}
+
+          @media screen and (max-width:639px) {}
+
+          @media screen and (max-width:479px) {}
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581747"] {
+            z-index: 22;
+            top: calc(50vh - 540px + 39px);
+            left: calc(50% - 960px + 1480px);
+            width: 48px;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727291581747"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581747"] {
+              left: calc(50% - 600px + 993px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727291581747"] {
+              left: calc(50% - 480px + -850px);
+            }
+          }
+
+          @media screen and (max-width:959px) {}
+
+          @media screen and (max-width:639px) {}
+
+          @media screen and (max-width:479px) {}
+
+          #rec803111708 .tn-elem[data-elem-id="1727357267476"] {
+            z-index: 23;
+            top: calc(50vh - 540px + -115px);
+            left: calc(50% - 960px + 154px);
+            width: 1612px;
+            height: 1204px;
+            pointer-events: none;
+            -webkit-filter: blur(11px);
+            filter: blur(11px);
+          }
+
+          #rec803111708 .tn-elem.t396__elem--anim-hidden[data-elem-id="1727357267476"] {
+            opacity: 0;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727357267476"] .tn-atom {
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727357267476"] {
+              top: -165px;
+              left: calc(50% - 600px + -206px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727357267476"] {
+              top: -215px;
+              left: calc(50% - 480px + -326px);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727357267476"] {
+              top: -195px;
+              left: calc(50% - 320px + -486px);
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727357267476"] {
+              top: -155px;
+              left: calc(50% - 240px + -566px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727357267476"] {
+              top: -19px;
+              left: calc(50% - 160px + -442px);
+              width: 1204px;
+              height: 898px;
+            }
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727518015432"] {
+            z-index: 24;
+            top: calc(50vh - 540px + -115px);
+            left: calc(50% - 960px + 154px);
+            width: 1612px;
+            height: 1204px;
+            pointer-events: none;
+          }
+
+          #rec803111708 .tn-elem.t396__elem--anim-hidden[data-elem-id="1727518015432"] {
+            opacity: 0;
+          }
+
+          #rec803111708 .tn-elem[data-elem-id="1727518015432"] .tn-atom {
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-color: transparent;
+            border-style: solid;
+          }
+
+          @media screen and (max-width:1919px) {
+            #rec803111708 .tn-elem[data-elem-id="1727518015432"] {
+              top: -165px;
+              left: calc(50% - 600px + -206px);
+            }
+          }
+
+          @media screen and (max-width:1199px) {
+            #rec803111708 .tn-elem[data-elem-id="1727518015432"] {
+              top: -215px;
+              left: calc(50% - 480px + -326px);
+            }
+          }
+
+          @media screen and (max-width:959px) {
+            #rec803111708 .tn-elem[data-elem-id="1727518015432"] {
+              top: -195px;
+              left: calc(50% - 320px + -486px);
+            }
+          }
+
+          @media screen and (max-width:639px) {
+            #rec803111708 .tn-elem[data-elem-id="1727518015432"] {
+              top: -155px;
+              left: calc(50% - 240px + -566px);
+            }
+          }
+
+          @media screen and (max-width:479px) {
+            #rec803111708 .tn-elem[data-elem-id="1727518015432"] {
+              top: -19px;
+              left: calc(50% - 160px + -442px);
+              width: 1204px;
+              height: 898px;
+            }
+          }
+        </style>
+        <div class='t396'>
+          <div class="t396__artboard" data-artboard-recid="803111708" data-artboard-screens="320,480,640,960,1200,1920" data-artboard-height="1080" data-artboard-valign="center" data-artboard-height_vh="100" data-artboard-upscale="grid" data-artboard-height-res-480="1224" data-artboard-height-res-1200="1024">
+            <div class="t396__carrier" data-artboard-recid="803111708"></div>
+            <div class="t396__filter" data-artboard-recid="803111708"></div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581813 t396__elem--anim-hidden' data-elem-id='1727291581813' data-elem-type='text' data-field-top-value="116" data-field-left-value="106" data-field-width-value="1708" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="intoview" data-animate-sbs-trg="1" data-animate-sbs-trgofst="0" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':0,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':700,'ea':'0','dt':4500}]" data-field-left-res-320-value="-26" data-field-left-res-480-value="54" data-field-width-res-480-value="372" data-field-left-res-640-value="-534" data-field-top-res-960-value="88" data-field-left-res-960-value="-374" data-field-top-res-1200-value="116" data-field-left-res-1200-value="-254">
+              <div class='tn-atom' field='tn_text_1727291581813'>$ticker BOAR </div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581811 t396__elem--anim-hidden' data-elem-id='1727291581811' data-elem-type='text' data-field-top-value="-88" data-field-left-value="106" data-field-width-value="1708" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="intoview" data-animate-sbs-trg="1" data-animate-sbs-trgofst="0" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':0,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':700,'ea':'0','dt':4500}]" data-field-left-res-320-value="-26" data-field-left-res-480-value="54" data-field-width-res-480-value="372" data-field-top-res-640-value="3" data-field-left-res-640-value="-534" data-field-left-res-960-value="-374" data-field-top-res-1200-value="-45" data-field-left-res-1200-value="-254">
+              <div class='tn-atom' field='tn_text_1727291581811'>
+                <br>$ticker BOAR
+              </div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727356645515 t-animate' data-elem-id='1727356645515' data-elem-type='shape' data-field-top-value="-710" data-field-left-value="552" data-field-height-value="667" data-field-width-value="1654" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeindown" data-animate-duration="0.7" data-animate-delay="1" data-animate-distance="100" data-animate-mobile="y" data-field-top-res-640-value="-600" data-field-left-res-640-value="232" data-animate-delay-res-960="4" data-field-top-res-1200-value="-690" data-field-left-res-1200-value="432">
+              <div class='tn-atom'></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727356645512 t-animate' data-elem-id='1727356645512' data-elem-type='shape' data-field-top-value="-557" data-field-left-value="-358" data-field-height-value="523" data-field-width-value="1343" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeindown" data-animate-duration="0.7" data-animate-delay="1" data-animate-distance="100" data-animate-mobile="y" data-field-top-res-640-value="-497" data-animate-delay-res-960="4" data-field-top-res-1200-value="-537" data-field-left-res-1200-value="-478">
+              <div class='tn-atom'></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581803 t-animate' data-elem-id='1727291581803' data-elem-type='shape' data-field-top-value="885" data-field-left-value="1280" data-field-height-value="667" data-field-width-value="1654" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="0.7" data-animate-delay="1" data-animate-distance="100" data-animate-mobile="y" data-field-top-res-480-value="1044" data-field-left-res-480-value="184" data-field-top-res-640-value="955" data-field-left-res-640-value="240" data-field-top-res-960-value="915" data-field-left-res-960-value="251" data-field-left-res-1200-value="550">
+              <div class='tn-atom'></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581801 t-animate' data-elem-id='1727291581801' data-elem-type='shape' data-field-top-value="896" data-field-left-value="-831" data-field-height-value="523" data-field-width-value="1343" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="0.7" data-animate-delay="1" data-animate-distance="100" data-animate-mobile="y" data-field-top-res-480-value="1071" data-field-left-res-480-value="-784" data-field-top-res-640-value="936" data-field-left-res-640-value="-861" data-field-top-res-960-value="904" data-field-left-res-960-value="-650" data-field-left-res-1200-value="-801">
+              <div class='tn-atom'></div>
+            </div>
+            <div class='t396__elem tn-elem example-3-btn tn-elem__8031117081727513337089' data-elem-id='1727513337089' data-elem-type='button' data-field-top-value="793" data-field-left-value="828" data-field-height-value="64" data-field-width-value="265" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-320-value="674" data-field-left-res-320-value="28" data-field-top-res-480-value="644" data-field-left-res-480-value="107" data-field-top-res-640-value="574" data-field-left-res-640-value="187" data-field-top-res-960-value="628" data-animate-sbs-event="hover" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1.07,'sy':1.07,'op':1,'ro':0,'ti':100,'ea':'0','dt':0}]" data-field-left-res-960-value="348" data-field-top-res-1200-value="678" data-field-left-res-1200-value="468">
+                <a class='tn-atom' href="https://pump.fun/$ca_pumpfun" target="_blank">Buy $ticker</a>
+            </div>
+            <div class='t396__elem tn-elem example-3-txt tn-elem__8031117081727517731198' data-elem-id='1727517731198' data-elem-type='text' data-field-top-value="666" data-field-left-value="680" data-field-width-value="560" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="536" data-field-left-res-320-value="-120" data-field-top-res-480-value="536" data-field-left-res-480-value="-40" data-field-top-res-640-value="496" data-field-left-res-640-value="40" data-field-top-res-960-value="496" data-field-left-res-960-value="200" data-field-top-res-1200-value="536" data-field-left-res-1200-value="320">
+              <div class='tn-atom' field='tn_text_1727517731198'>Join us now</div>
+            </div>
+            <div class='t396__elem tn-elem example-3-txt tn-elem__8031117081727518622276' data-elem-id='1727518622276' data-elem-type='text' data-field-top-value="691" data-field-left-value="-2161" data-field-width-value="560" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="582" data-field-left-res-320-value="-3" data-field-width-res-320-value="326" data-field-top-res-480-value="299" data-field-left-res-480-value="-1849" data-field-top-res-640-value="332" data-field-left-res-640-value="-1609" data-field-top-res-960-value="335" data-field-left-res-960-value="-2175" data-field-top-res-1200-value="481" data-field-left-res-1200-value="-1731">
+              <div class='tn-atom' field='tn_text_1727518622276'>Fear the Boar</div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581797 ' data-elem-id='1727291581797' data-elem-type='image' data-field-top-value="886" data-field-left-value="670" data-field-width-value="265" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="hover" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1.07,'sy':1.07,'op':1,'ro':0,'ti':100,'ea':'0','dt':0}]" data-field-filewidth-value="265" data-field-fileheight-value="64" data-field-top-res-320-value="766" data-field-left-res-320-value="26" data-field-top-res-480-value="736" data-field-left-res-480-value="107" data-field-top-res-640-value="674" data-field-left-res-640-value="187" data-field-top-res-960-value="714" data-field-left-res-960-value="207" data-field-top-res-1200-value="784" data-field-left-res-1200-value="310">
+              <a class='tn-atom' href="$telegram" target="_blank">
+                <img class='tn-atom__img t-img' data-original='https://static.tildacdn.one/tild6435-3663-4165-b631-633838613662/Telegram.svg' alt='' imgfield='tn_img_1727291581797' />
+              </a>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581786 t-animate' data-elem-id='1727291581786' data-elem-type='shape' data-field-top-value="868" data-field-left-value="-2560" data-field-height-value="523" data-field-width-value="523" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="1" data-animate-delay="5" data-animate-distance="100">
+              <div class='tn-atom'></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581783 t-animate' data-elem-id='1727291581783' data-elem-type='shape' data-field-top-value="1074" data-field-left-value="-2280" data-field-height-value="523" data-field-width-value="523" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="1" data-animate-delay="5" data-animate-distance="100">
+              <div class='tn-atom'></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581780 ' data-elem-id='1727291581780' data-elem-type='image' data-field-top-value="886" data-field-left-value="985" data-field-width-value="265" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="hover" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1.07,'sy':1.07,'op':1,'ro':0,'ti':100,'ea':'0','dt':0}]" data-field-filewidth-value="265" data-field-fileheight-value="64" data-field-top-res-320-value="858" data-field-left-res-320-value="26" data-field-top-res-480-value="828" data-field-left-res-480-value="107" data-field-top-res-640-value="774" data-field-left-res-640-value="187" data-field-top-res-960-value="714" data-field-left-res-960-value="488" data-field-top-res-1200-value="784" data-field-left-res-1200-value="624">
+              <a class='tn-atom' href="$twitter" target="_blank">
+                <img class='tn-atom__img t-img' data-original='https://static.tildacdn.one/tild3130-6531-4135-b238-313266663338/Twitter.svg' alt='' imgfield='tn_img_1727291581780' />
+              </a>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581775 ' data-elem-id='1727291581775' data-elem-type='shape' data-field-top-value="656" data-field-left-value="419" data-field-height-value="343" data-field-width-value="1058" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="intoview" data-animate-sbs-trg="1" data-animate-sbs-trgofst="0" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':0,'ro':0,'ti':700,'ea':'0','dt':4000}]" data-field-top-res-480-value="525" data-field-left-res-480-value="-19" data-field-height-res-480-value="405" data-field-width-res-480-value="996" data-field-top-res-640-value="504" data-field-height-res-640-value="343" data-field-width-res-640-value="996" data-field-top-res-960-value="496" data-field-left-res-960-value="-19" data-field-height-res-960-value="307" data-field-top-res-1200-value="536" data-field-left-res-1200-value="102" data-field-height-res-1200-value="388">
+              <div class='tn-atom'></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581773 t396__elem--anim-hidden' data-elem-id='1727291581773' data-elem-type='text' data-field-top-value="446" data-field-left-value="496" data-field-width-value="928" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="intoview" data-animate-sbs-trg="1" data-animate-sbs-trgofst="0" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':0,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':700,'ea':'0','dt':4500}]" data-field-left-res-320-value="-304" data-field-top-res-480-value="416" data-field-left-res-480-value="-224" data-field-top-res-640-value="376" data-field-left-res-640-value="-144" data-field-top-res-960-value="336" data-field-left-res-960-value="16" data-field-top-res-1200-value="356" data-field-left-res-1200-value="136">
+              <div class='tn-atom' field='tn_text_1727291581773'></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581771 t396__elem--anim-hidden' data-elem-id='1727291581771' data-elem-type='text' data-field-top-value="446" data-field-left-value="496" data-field-width-value="928" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="intoview" data-animate-sbs-trg="1" data-animate-sbs-trgofst="0" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':0,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':700,'ea':'0','dt':4500}]" data-field-left-res-320-value="-304" data-field-top-res-480-value="416" data-field-left-res-480-value="-224" data-field-top-res-640-value="376" data-field-left-res-640-value="-144" data-field-top-res-960-value="336" data-field-left-res-960-value="16" data-field-top-res-1200-value="356" data-field-left-res-1200-value="136">
+              <div class='tn-atom' field='tn_text_1727291581771'></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581760 t-animate' data-elem-id='1727291581760' data-elem-type='shape' data-field-top-value="39" data-field-left-value="339" data-field-height-value="40" data-field-width-value="40" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="1" data-animate-delay="5" data-animate-distance="100" data-animate-mobile="y" data-field-left-res-320-value="129" data-field-left-res-480-value="209" data-field-top-res-640-value="39" data-field-left-res-640-value="289" data-field-left-res-960-value="449" data-field-left-res-1200-value="99">
+              <div class='tn-atom t-bgimg' data-original="./Logo.png" height="15" width="15"></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581756 t-animate' data-elem-id='1727291581756' data-elem-type='image' data-field-top-value="38" data-field-left-value="1550" data-field-width-value="48" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="1" data-animate-delay="5" data-animate-distance="100" data-field-filewidth-value="48" data-field-fileheight-value="48" data-field-left-res-960-value="-990" data-field-left-res-1200-value="1053">
+              <a class='tn-atom' href="$telegram" target="_blank">
+                <img class='tn-atom__img t-img' data-original='https://static.tildacdn.one/tild3561-3637-4762-b138-376363353132/svg.svg' alt='' imgfield='tn_img_1727291581756' />
+              </a>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727291581747 t-animate' data-elem-id='1727291581747' data-elem-type='image' data-field-top-value="39" data-field-left-value="1480" data-field-width-value="48" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="1" data-animate-delay="5" data-animate-distance="100" data-field-filewidth-value="48" data-field-fileheight-value="48" data-field-left-res-960-value="-850" data-field-left-res-1200-value="993">
+              <a class='tn-atom' href="$twitter">
+                <img class='tn-atom__img t-img' data-original='https://static.tildacdn.one/tild6236-6338-4233-a630-653861396438/svg_2.svg' alt='' imgfield='tn_img_1727291581747' />
+              </a>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727357267476 t396__elem--anim-hidden' data-elem-id='1727357267476' data-elem-type='shape' data-field-top-value="-115" data-field-left-value="154" data-field-height-value="1204" data-field-width-value="1612" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="intoview" data-animate-sbs-trg="0.5" data-animate-sbs-trgofst="0" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':0,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':200,'ea':'0','dt':1000},{'mx':0,'my':0,'sx':0.9,'sy':0.9,'op':1,'ro':0,'ti':100,'ea':'0','dt':1500},{'mx':0,'my':0,'sx':0.85,'sy':0.85,'op':1,'ro':0,'ti':100,'ea':'0','dt':0},{'mx':0,'my':0,'sx':0.9,'sy':0.9,'op':1,'ro':0,'ti':50,'ea':'0','dt':0}]" data-field-top-res-320-value="-19" data-field-left-res-320-value="-442" data-field-height-res-320-value="898" data-field-width-res-320-value="1204" data-field-top-res-480-value="-155" data-field-left-res-480-value="-566" data-field-top-res-640-value="-195" data-field-left-res-640-value="-486" data-field-top-res-960-value="-215" data-field-left-res-960-value="-326" data-field-top-res-1200-value="-165" data-field-left-res-1200-value="-206">
+              <div class='tn-atom t-bgimg' data-original="https://static.tildacdn.one/tild6130-3238-4963-a463-326437303562/photo.png"></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__8031117081727518015432 t396__elem--anim-hidden' data-elem-id='1727518015432' data-elem-type='shape' data-field-top-value="-115" data-field-left-value="154" data-field-height-value="1204" data-field-width-value="1612" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="intoview" data-animate-sbs-trg="0.5" data-animate-sbs-trgofst="0" data-animate-sbs-opts="[{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':0,'ro':0,'ti':0,'ea':'0','dt':0},{'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'ti':200,'ea':'0','dt':1000},{'mx':0,'my':0,'sx':0.9,'sy':0.9,'op':1,'ro':0,'ti':100,'ea':'0','dt':1500},{'mx':0,'my':0,'sx':0.85,'sy':0.85,'op':1,'ro':0,'ti':100,'ea':'0','dt':0},{'mx':0,'my':0,'sx':0.9,'sy':0.9,'op':1,'ro':0,'ti':50,'ea':'0','dt':0}]" data-field-top-res-320-value="-19" data-field-left-res-320-value="-442" data-field-height-res-320-value="898" data-field-width-res-320-value="1204" data-field-top-res-480-value="-155" data-field-left-res-480-value="-566" data-field-top-res-640-value="-195" data-field-left-res-640-value="-486" data-field-top-res-960-value="-215" data-field-left-res-960-value="-326" data-field-top-res-1200-value="-165" data-field-left-res-1200-value="-206">
+              <div class='tn-atom t-bgimg' data-original="https://static.tildacdn.one/tild6130-3238-4963-a463-326437303562/photo.png"></div>
+            </div>
+          </div>
+        </div>
+        <script>
+          t_onReady(function() {
+            t_onFuncLoad('t396_init', function() {
+              t396_init('803111708');
+            });
+          });
+        </script>
+        <!-- /T396 -->
+      </div>
+      <div id="rec804164734" class="r t-rec" style=" " data-animationappear="off" data-record-type="131">
+        <!-- T123 -->
+        <div class="t123">
+          <div class="t-container_100 ">
+            <div class="t-width t-width_100 ">
+              <!-- nominify begin -->
+              <head>
+                <!-- Підключення jQuery -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <style>
+                  .example-3-btn {
+                    cursor: pointer;
+                  }
+                </style>
+              </head>
+              <!-- nominify end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/allrecords-->
+    <!-- Stat -->
+    <script type="text/javascript">
+      if (!window.mainTracker) {
+        window.mainTracker = 'tilda';
+      }
+      window.tildastatcookie = 'no';
+      setTimeout(function() {
+        (function(d, w, k, o, g) {
+          var n = d.getElementsByTagName(o)[0],
+            s = d.createElement(o),
+            f = function() {
+              n.parentNode.insertBefore(s, n);
+            };
+          s.type = "text/javascript";
+          s.async = true;
+          s.key = k;
+          s.id = "tildastatscript";
+          s.src = g;
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else {
+            f();
+          }
+        })(document, window, '76112b1982f4e8c1f92f52aaca1247ce', 'script', 'https://static.tildacdn.one/js/tilda-stat-1.0.min.js');
+      }, 2000);
+    </script>
+  </body>
+</html>
