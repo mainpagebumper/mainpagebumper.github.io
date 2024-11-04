@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$HONK</title>
+    <link rel="icon" href="honkler.io_files/hero.png">
+    <link rel="stylesheet" href="honkler.io_files/index.css">
+    <link rel="stylesheet" href="honkler.io_files/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: auto; /* Allow body to scroll */
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes full viewport height */
+        }
+        
+        header {
+            background-color: #350F7E;
+            width: 100%;
+            height: 100px; /* Adjust height as needed */
+            display: flex;
+            align-items: center; /* Center content vertically */
+            position: relative; /* Ensure proper positioning */
+            padding: 0 20px; /* Add padding for spacing */
+            overflow: hidden; /* Ensure no overflow */
+            z-index: 10;
+        }
+        
+        .header-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .title {
+            font-family: 'Single Day', cursive;
+            font-size: 58px; /* Font size for smaller screens */
+            color: #fff;
+            margin: 0;
+            line-height: 1.2; /* Adjust line height to be proportional to font size */
+            position: absolute; /* Absolute positioning for horizontal centering */
+            left: 50%;
+            transform: translateX(-50%); /* Center horizontally */
+        }
+        
+                
+         .top-right {
+            position: absolute; /* Absolute positioning for alignment */
+            top: 50%; /* Center vertically relative to header */
+            right: 20px; /* Adjust right position */
+            transform: translateY(-50%); /* Center vertically */
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between items */
+        }
+        
+        .gif1 {
+            position: absolute;
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            width: 80px; /* Adjust size as needed */
+            height: auto; /* Maintain aspect ratio */
+            animation: rotateAnimation 4s infinite linear;
+        }
+        
+        .gif2 {
+            position: absolute;
+            bottom: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            width: 200px; /* Adjust size as needed */
+            height: auto; /* Maintain aspect ratio */
+            
+        }
+        
+        .gif4 {
+            position: absolute;
+            bottom: 10px; /* Adjust as needed */
+            right: 10px; /* Adjust as needed */
+            width: 200px; /* Adjust size as needed */
+            height: auto; /* Maintain aspect ratio */
+            
+        }
+        
+        @keyframes rotateAnimation {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+        }
+        
+        main {
+            flex: 1;
+            background-color: #6A1FFD;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            position: relative; /* Ensure relative positioning for proper layout */
+            overflow-y: auto; /* Enable vertical scrolling within main */
+        }
+        
+        h1 {
+            margin: 20px 0;
+            font-size: 36px;
+            transition: opacity 0.5s; /* Smooth transition for hiding text */
+        }
+        
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Single Day', cursive;
+            font-size: 28px;
+            position: relative; /* Ensure proper positioning */
+        }
+        
+        #instruction {
+            position: relative; /* Make it part of the document flow */
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transition: opacity 0.5s; /* Smooth transition for hiding text */
+            margin-bottom: 20px; /* Space between instruction text and other elements */
+        }
+        
+        #canvas {
+            border: 1px solid #ccc;
+            background-color: #fff;
+            margin: 20px 0 30px;
+            display: none; /* Hide the canvas initially */
+            touch-action: none; /* Prevent default touch actions for better control */
+        }
+        
+        .buttons {
+            margin-top: 10px; /* Space between canvas and buttons */
+            font-family: 'Single Day', cursive;
+            font-size: 18px;
+            display: flex;
+            flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+            justify-content: center; /* Center buttons horizontally */
+            gap: 10px; /* Space between buttons */
+        }
+        
+        .buttons2 {
+            margin-top: 10px; /* Space between canvas and buttons */
+            font-family: 'Single Day', cursive;
+            font-size: 18px;
+            display: flex;
+            flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+            justify-content: center; /* Center buttons horizontally */
+            gap: 10px; /* Space between buttons */
+        }
+        
+        button {
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-family: 'Single Day', cursive;
+            cursor: pointer;
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .top-right a {
+            display: flex; /* Ensure items are aligned horizontally */
+            align-items: center; /* Center items vertically */
+        }
+        
+        .top-right img {
+            width: 24px; /* Adjust size as needed */
+            height: auto;
+        }
+        
+        .btn.single {
+            background-color: #fff;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none;
+            display: flex; /* Align text center */
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
+        }
+        
+        .btn.single:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .hidden {
+            display: none; /* Class to hide elements */
+        }
+        
+        label[for="upload"] {
+            background-color: #fff;
+            color: #000;
+            padding: 15px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+
+        footer {
+            background-color: #350F7E;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Single Day', cursive;
+            font-size: 12px;
+            width: 100%;
+        }
+        
+        .toggle-button {
+            background: none; /* White background for visibility */
+            border: none;
+            color: #FFFFFF; /* Dark color for contrast */
+            font-size: 40px; /* Larger size for better visibility */
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px; /* Rounded corners */
+            display: none; /* Hide by default */
+            z-index: 1002; /* Ensure it appears above other content */
+            position: absolute; /* Absolute positioning for precise placement */
+            right: 10px;
+        }
+		
+		.menu {
+            position: fixed;
+            top: 50px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.8); /* Transparent background */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            min-width: 150px;
+            padding: 10px;
+            z-index: 1003; /* Ensure it appears above other content */
+            
+        }
+        .menu a {
+            padding: 10px;
+            text-decoration: none;
+            color: #350F7E;
+            border-bottom: 1px solid #ddd;
+            display: block; /* Make links block elements for easier clicking */
+        }
+
+        .menu a:last-child {
+            border-bottom: none;
+        }	
+
+        .menu.show {
+            display: flex; /* Show menu when toggle button is clicked */
+        }		
+        
+        #toggle-Button:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light hover effect for better visibility */
+        }
+        
+        #shareButton {
+            display: none;
+        }
+        
+
+        @media (max-width: 768px) {
+            header {
+                height: 80px; /* Adjust header height for smaller screens */
+            }
+            .top-right {
+                display: none; /* Hide top-right on mobile */
+            }
+            
+			.toggle-button {
+                display: block; /* Show toggle button on mobile */
+            }
+            
+            .header-container {
+                display: none; /* Hide the header content on mobile if desired */
+            }
+        
+
+            .title {
+                font-size: 40px; /* Adjust font size for smaller screens */
+                line-height: 120px; /* Adjust line height */
+            }
+        
+            .gif1 {
+                width: 60px; /* Adjust gif size */
+            }
+            
+            .gif2 {
+                width: 160px; /* Adjust gif size */
+            }
+            
+            .gif4 {
+                width: 100px; /* Adjust gif size */
+            }
+        
+            main {
+                padding: 10px; /* Adjust padding */
+            }
+        
+            h1 {
+                font-size: 26px; /* Adjust font size */
+            }
+        
+            button {
+                padding: 8px 15px; /* Adjust button size */
+                font-size: 14px; /* Adjust font size */
+            }
+        
+            #canvas {
+                margin: 10px 0; /* Adjust margin to remove gaps */
+            }
+             #saveButton {
+                display: none; /* Hide Save button on mobile */
+            }
+    #shareButton {
+                display: block; /* Show Share button on mobile */
+            }
+}
+            
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <button id="toggleButton" class="toggle-button">☰</button>
+            <img src="honkler.io_files/honk1.gif" alt="" class="gif1">
+            <h1 class="title">Honk-It!</h1>
+            
+            <div id="menu" class="menu">
+                <a href="https://app.uniswap.org/swap?outputCurrency=0xd8e8438cf7beed13cfabc82f300fb6573962c9e3" target="_blank">Buy Honk</a>
+                <a href="honkit.html#https://x.com/honkpepoclown">X</a>
+                <a href="honkit.html#https://t.me/HONKCTOETH">Telegram</a>
+            </div>
+            <div class="top-right">
+                <a href="https://app.uniswap.org/swap?outputCurrency=0xd8e8438cf7beed13cfabc82f300fb6573962c9e3" class="btn single">
+                    Buy $HONK
+                </a>
+                <a href="https://x.com/honkpepoclown">
+                    <img src="honkler.io_files/twitter.png" alt="">
+                </a>
+                <a href="https://t.me/HONKCTOETH">
+                    <img src="honkler.io_files/telegram.png" alt="">
+                </a>
+            </div>
+           </header>
+    <main id="main-content">
+        <div class="wrapper">
+            <h1 id="instruction">Select the image you want to Honk!<br><br>Add Clown Accessories and adjust as per your creativity.<br><br>Save it to your device and share the smiles!</h1>
+            <canvas id="canvas"></canvas>
+            <label for="upload">Select Image</label>
+            <input type="file" id="upload" accept="image/*" style="display:none;">
+            <div class="buttons">
+                <button id="wigButton">Rainbow Wig</button>
+                <button id="noseButton">Red Nose</button>
+                <button id="bowButton">BowTie</button>
+            </div>
+            
+            <div class="buttons2">
+                <button id="removeButton">Remove</button>
+                <button id="saveButton">Save</button>
+                <button id="shareButton">Share</button>
+            </div>
+        </div>
+        <img src="honkler.io_files/honk2.gif" alt="" class="gif2">
+        <img src="honkler.io_files/honk4.webp" alt="" class="gif4">
+    </main>
+    <footer>
+            <a href="https://honkler.io">
+                <p>Disclaimer: Our meme tool is all about fun. We don’t take responsibility for the memes you make—just enjoy and share the smiles!</p>
+                <p>Copyright © 2024 Honk . All Rights Reserved</p>
+            </a>
+    </footer>
+    <script>
+        const upload = document.getElementById('upload');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const instruction = document.getElementById('instruction');
+        const mainContent = document.getElementById('main-content');
+        
+        const wigButton = document.getElementById('wigButton');
+        const noseButton = document.getElementById('noseButton');
+        const bowButton = document.getElementById('bowButton');
+        const removeButton = document.getElementById('removeButton');
+        
+        let image = new Image();
+        let accessories = [];
+        let selectedAccessory = null;
+        let resizingHandle = null;
+        let dragging = false;
+        let startX, startY;
+        let startWidth, startHeight;
+        
+        function setCanvasSize() {
+            const containerWidth = window.innerWidth - 40; // Adjusting margin/padding
+            const containerHeight = window.innerHeight - 180; // Adjusting for header/footer height
+        
+            const aspectRatio = image.width / image.height; // Use the image's aspect ratio
+        
+            let newWidth = containerWidth;
+            let newHeight = newWidth / aspectRatio;
+        
+            if (newHeight > containerHeight) {
+                newHeight = containerHeight;
+                newWidth = newHeight * aspectRatio;
+            }
+        
+            canvas.width = newWidth;
+            canvas.height = newHeight;
+            draw();
+        }
+        
+        window.addEventListener('resize', setCanvasSize);
+        
+        upload.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    image.src = e.target.result;
+                    image.onload = function() {
+                        setCanvasSize(); // Adjust canvas size based on image dimensions
+                        canvas.style.display = 'block'; // Show the canvas after image is loaded
+                        instruction.classList.add('hidden'); // Hide the text
+                        draw();
+                    }
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+        
+        function addAccessory(src) {
+            let accessory = new Image();
+            accessory.src = src;
+            accessory.onload = function() {
+                const scaleFactor = 0.5; // 1/2 size of the canvas
+                const newWidth = canvas.width * scaleFactor;
+                const newHeight = accessory.height * (newWidth / accessory.width);
+                const x = canvas.width / 2 - newWidth / 2;
+                const y = canvas.height / 2 - newHeight / 2;
+                const newAccessory = {
+                    image: accessory,
+                    x: x,
+                    y: y,
+                    width: newWidth,
+                    height: newHeight
+                };
+                accessories.push(newAccessory);
+                selectAccessory(newAccessory);
+                draw();
+            }
+        }
+        
+        function selectAccessory(accessory) {
+            selectedAccessory = accessory;
+            draw();
+        }
+        
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            if (image.src) {
+                ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+            }
+            accessories.forEach(accessory => {
+                ctx.drawImage(accessory.image, accessory.x, accessory.y, accessory.width, accessory.height);
+        
+                if (selectedAccessory === accessory) {
+                    ctx.save();
+                    ctx.strokeStyle = 'rgba(255, 0, 0, 0.5)';
+                    ctx.lineWidth = 2;
+                    ctx.strokeRect(accessory.x, accessory.y, accessory.width, accessory.height);
+                    ctx.restore();
+                    drawResizeHandles(accessory);
+                }
+            });
+        }
+        
+        function drawResizeHandles(accessory) {
+            const handles = getResizeHandles(accessory);
+            handles.forEach((handle) => {
+                ctx.save();
+                ctx.fillStyle = 'rgba(255, 0, 0, 0.5)';
+                ctx.beginPath();
+                ctx.arc(handle.x, handle.y, 8, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.restore();
+            });
+        }
+        
+        function getResizeHandles(accessory) {
+            const { x, y, width, height } = accessory;
+            return [
+                { x: x, y: y }, // top-left
+                { x: x + width, y: y }, // top-right
+                { x: x, y: y + height }, // bottom-left
+                { x: x + width, y: y + height }, // bottom-right
+                { x: x + width / 2, y: y }, // top-center (for height adjustment)
+                { x: x + width, y: y + height / 2 }, // right-center (for width adjustment)
+                { x: x + width / 2, y: y + height }, // bottom-center (for height adjustment)
+                { x: x, y: y + height / 2 }  // left-center (for width adjustment)
+            ];
+        }
+        
+        function handleResize(e) {
+            if (selectedAccessory) {
+                const { offsetX, offsetY } = e;
+                if (resizingHandle !== null) {
+                    const dx = offsetX - startX;
+                    const dy = offsetY - startY;
+                    switch (resizingHandle) {
+                        case 0: // top-left
+                            selectedAccessory.width = startWidth - dx;
+                            selectedAccessory.height = startHeight - dy;
+                            selectedAccessory.x = selectedAccessory.x + dx;
+                            selectedAccessory.y = selectedAccessory.y + dy;
+                            break;
+                        case 1: // top-right
+                            selectedAccessory.width = startWidth + dx;
+                            selectedAccessory.height = startHeight - dy;
+                            selectedAccessory.y = selectedAccessory.y + dy;
+                            break;
+                        case 2: // bottom-left
+                            selectedAccessory.width = startWidth - dx;
+                            selectedAccessory.height = startHeight + dy;
+                            selectedAccessory.x = selectedAccessory.x + dx;
+                            break;
+                        case 3: // bottom-right
+                            selectedAccessory.width = startWidth + dx;
+                            selectedAccessory.height = startHeight + dy;
+                            break;
+                        case 4: // top-center (height adjustment)
+                            selectedAccessory.height = startHeight - dy;
+                            selectedAccessory.y = selectedAccessory.y + dy;
+                            break;
+                        case 5: // right-center (width adjustment)
+                            selectedAccessory.width = startWidth + dx;
+                            break;
+                        case 6: // bottom-center (height adjustment)
+                            selectedAccessory.height = startHeight + dy;
+                            break;
+                        case 7: // left-center (width adjustment)
+                            selectedAccessory.width = startWidth - dx;
+                            selectedAccessory.x = selectedAccessory.x + dx;
+                            break;
+                    }
+                    draw();
+                } else if (dragging) {
+                    selectedAccessory.x += offsetX - startX;
+                    selectedAccessory.y += offsetY - startY;
+                    startX = offsetX;
+                    startY = offsetY;
+                    draw();
+                }
+            }
+        }
+        
+        function handleEnd() {
+            dragging = false;
+            resizingHandle = null;
+        }
+        
+        canvas.addEventListener('mousedown', function(e) {
+            const { offsetX, offsetY } = e;
+            let accessorySelected = false;
+            dragging = false;
+            resizingHandle = null;
+        
+            accessories.forEach(accessory => {
+                if (offsetX >= accessory.x && offsetX <= accessory.x + accessory.width &&
+                    offsetY >= accessory.y && offsetY <= accessory.y + accessory.height) {
+                    selectAccessory(accessory);
+                    accessorySelected = true;
+                    const handles = getResizeHandles(accessory);
+                    handles.forEach((handle, index) => {
+                        const distance = Math.hypot(offsetX - handle.x, offsetY - handle.y);
+                        if (distance < 15) { // Adjust handle size for touch
+                            resizingHandle = index;
+                            startWidth = accessory.width;
+                            startHeight = accessory.height;
+                            startX = offsetX;
+                            startY = offsetY;
+                            draw();
+                            return;
+                        }
+                    });
+        
+                    if (!resizingHandle) {
+                        dragging = true;
+                        startX = offsetX;
+                        startY = offsetY;
+                    }
+                }
+            });
+        
+            if (!accessorySelected) {
+                selectedAccessory = null;
+                draw();
+            }
+        });
+        
+        canvas.addEventListener('mousemove', handleResize);
+        canvas.addEventListener('mouseup', handleEnd);
+        
+        canvas.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const { offsetX, offsetY } = getTouchPosition(touch);
+            let accessorySelected = false;
+            dragging = false;
+            resizingHandle = null;
+        
+            accessories.forEach(accessory => {
+                if (offsetX >= accessory.x && offsetX <= accessory.x + accessory.width &&
+                    offsetY >= accessory.y && offsetY <= accessory.y + accessory.height) {
+                    selectAccessory(accessory);
+                    accessorySelected = true;
+                    const handles = getResizeHandles(accessory);
+                    handles.forEach((handle, index) => {
+                        const distance = Math.hypot(offsetX - handle.x, offsetY - handle.y);
+                        if (distance < 15) { // Adjust handle size for touch
+                            resizingHandle = index;
+                            startWidth = accessory.width;
+                            startHeight = accessory.height;
+                            startX = offsetX;
+                            startY = offsetY;
+                            draw();
+                            return;
+                        }
+                    });
+        
+                    if (!resizingHandle) {
+                        dragging = true;
+                        startX = offsetX;
+                        startY = offsetY;
+                    }
+                }
+            });
+        
+            if (!accessorySelected) {
+                selectedAccessory = null;
+                draw();
+            }
+        });
+        
+        canvas.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const { offsetX, offsetY } = getTouchPosition(touch);
+            handleResize({ offsetX, offsetY });
+        });
+        
+        canvas.addEventListener('touchend', handleEnd);
+        
+        function getTouchPosition(touch) {
+            const rect = canvas.getBoundingClientRect();
+            return {
+                offsetX: touch.clientX - rect.left,
+                offsetY: touch.clientY - rect.top
+            };
+        }
+        
+        wigButton.addEventListener('click', () => addAccessory('images/wig.png'));
+        noseButton.addEventListener('click', () => addAccessory('images/nose.png'));
+        bowButton.addEventListener('click', () => addAccessory('images/bow.png'));
+        removeButton.addEventListener('click', () => {
+            if (selectedAccessory) {
+                accessories = accessories.filter(acc => acc !== selectedAccessory);
+                selectedAccessory = null;
+                draw();
+            }
+        });
+        
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.getElementById('toggleButton');
+            const menu = document.getElementById('menu');
+            const header = document.querySelector('header');
+
+            toggleButton.addEventListener('click', (e) => {
+                menu.classList.toggle('show'); // Toggle the 'show' class
+                e.stopPropagation(); // Prevent the click event from bubbling up
+            });
+
+            // Click outside to close menu
+            document.addEventListener('click', (e) => {
+                if (!header.contains(e.target)) {
+                    menu.classList.remove('show');
+                }
+            });
+
+    document.getElementById('shareButton').addEventListener('click', async function() {
+            try {
+                const canvas = document.getElementById('canvas');
+                const dataURL = canvas.toDataURL('image/png');
+                const blob = await (await fetch(dataURL)).blob();
+                const file = new File([blob], 'HonkMeme.png', { type: 'image/png' });
+        
+                if (navigator.share) {
+                    await navigator.share({
+                        files: [file],
+                        title: 'Check out this Honk Meme!',
+                        text: 'Here is an image I created using Honk-It.',
+                    });
+                } else {
+                    alert('Web Share API is not supported in this browser.');
+                }
+            } catch (error) {
+                console.error('Error sharing:', error);
+            }
+        });
+        
+    
+    
+    document.getElementById('saveButton').addEventListener('click', async function() {
+            const canvas = document.getElementById('canvas');
+            const dataURL = canvas.toDataURL('image/png');
+            const blob = await (await fetch(dataURL)).blob();
+            const file = new File([blob], 'Honkmeme.png', { type: 'image/png' });
+        
+            // Check for Web Share API support and device type
+            if (navigator.share && window.matchMedia('(pointer: coarse)').matches) {
+                // Mobile device with Web Share API support
+                try {
+                    await navigator.share({
+                        files: [file],
+                        title: 'Check out this Honk Meme!',
+                        text: 'Here is an image I created using Honkit.',
+                    });
+                } catch (error) {
+                    console.error('Error sharing:', error);
+                }
+            } else {
+                // Desktop or mobile without Web Share API support
+                const link = document.createElement('a');
+                link.href = dataURL;
+                link.download = 'HonkMeme.png';
+                link.click();
+            }
+        });
+    });    
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>
