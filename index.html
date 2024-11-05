@@ -1,481 +1,318 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>$ticker &#8211; The Cheetah.</title>
-      <meta name="robots" content="noindex, nofollow">
-      <script>
-         window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/savantai.finance\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2"}};
-         /*! This file is auto-generated */
-         !function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
-      </script>
-      <style>
-         img.wp-smiley,
-         img.emoji {
-         display: inline !important;
-         border: none !important;
-         box-shadow: none !important;
-         height: 1em !important;
-         width: 1em !important;
-         margin: 0 0.07em !important;
-         vertical-align: -0.1em !important;
-         background: none !important;
-         padding: 0 !important;
-         }
-		 
-		 .ctactive{
-			transform:translateY(35px) !important;
-			max-height:unset !important;
-		 }
-		 @media only screen and (max-width: 767px) {
-			.ctmenu{
-				right:0 !important;
-			 }
-		 }
-      </style>
-      <link rel="stylesheet" id="wp-block-library-css" href="https://ocicat.club/css/RdOd2Lps5sL3.css" media="all">
-      <link rel="stylesheet" id="classic-theme-styles-css" href="https://ocicat.club/css/VpKiR6rkubYi.css" media="all">
-      <style id="global-styles-inline-css">
-         body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('https://ocicat.club/index_1.html');--wp--preset--duotone--grayscale: url('https://ocicat.club/index_1.html');--wp--preset--duotone--purple-yellow: url('https://ocicat.club/index_1.html');--wp--preset--duotone--blue-red: url('https://ocicat.club/index_1.html');--wp--preset--duotone--midnight: url('https://ocicat.club/index_1.html');--wp--preset--duotone--magenta-yellow: url('https://ocicat.club/index_1.html');--wp--preset--duotone--purple-green: url('https://ocicat.club/index_1.html');--wp--preset--duotone--blue-orange: url('https://ocicat.club/index_1.html');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-         .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
-         :where(.wp-block-columns.is-layout-flex){gap: 2em;}
-         .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
-      </style>
-      <link rel="stylesheet" id="hello-elementor-css" href="https://ocicat.club/css/8zecsSfW2kzI.css" media="all">
-      <link rel="stylesheet" id="hello-elementor-theme-style-css" href="https://ocicat.club/css/TIrnLKC91BDz.css" media="all">
-      <link rel="stylesheet" id="elementor-frontend-css" href="https://ocicat.club/css/qaaUGM4w42PV.css" media="all">
-      <link rel="stylesheet" id="elementor-post-5-css" href="https://ocicat.club/css/iWsZLUFiHKNA.css" media="all">
-      <link rel="stylesheet" id="elementor-icons-css" href="https://ocicat.club/css/gaenJ9zcEFfG.css" media="all">
-      <link rel="stylesheet" id="elementor-pro-css" href="https://ocicat.club/css/rcEonzsChUWX.css" media="all">
-      <link rel="stylesheet" id="elementor-global-css" href="https://ocicat.club/css/DRz2grH9vvB5.css" media="all">
-      <link rel="stylesheet" id="elementor-post-11-css" href="https://ocicat.club/css/GEOnJbXljG2v.css" media="all">
-      <link rel="stylesheet" id="elementor-post-47-css" href="https://ocicat.club/css/HsGqYIjc9bR6.css" media="all">
-      <link rel="stylesheet" id="elementor-post-411-css" href="https://ocicat.club/css/RVWJ6rjnPlTp.css" media="all">
-      <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Orbitron%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSpace+Grotesk%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAclonica%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CZen+Dots%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.2" media="all">
-      <link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://ocicat.club/css/FbSPv2H0QtVK.css" media="all">
-      <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://ocicat.club/css/c8blAYK4Ap9o.css" media="all">
-      <link rel="stylesheet" id="elementor-icons-fa-brands-css" href="https://ocicat.club/css/y32xd1CdDVFk.css" media="all">
-      <script src="https://ocicat.club/js/Kn1xgEbu4AgZ.js" id="jquery-core-js"></script>
-      <script src="https://ocicat.club/js/u2HOF4puXQUz.js" id="jquery-migrate-js"></script>
-      <link rel="canonical" href="index.html">
-      <link rel="shortlink" href="index.html">
-      <meta name="theme-color" content="#150208">
-      <link rel="icon" href="https://ocicat.club/images/IMG_4008.png" sizes="32x32">
-      <link rel="icon" href="https://ocicat.club/images/IMG_4008.png" sizes="192x192">
-      <link rel="apple-touch-icon" href="https://ocicat.club/images/IMG_4008.png">
-   </head>
-   <body class="home page-template page-template-elementor_header_footer page page-id-11 elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-11">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-         <defs>
-            <filter id="wp-duotone-dark-grayscale">
-               <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
-               <fecomponenttransfer color-interpolation-filters="sRGB">
-                  <fefuncr type="table" tableValues="0 0.49803921568627"/>
-                  <fefuncg type="table" tableValues="0 0.49803921568627"/>
-                  <fefuncb type="table" tableValues="0 0.49803921568627"/>
-                  <fefunca type="table" tableValues="1 1"/>
-               </fecomponenttransfer>
-               <fecomposite in2="SourceGraphic" operator="in"/>
-            </filter>
-         </defs>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-         <defs>
-            <filter id="wp-duotone-grayscale">
-               <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
-               <fecomponenttransfer color-interpolation-filters="sRGB">
-                  <fefuncr type="table" tableValues="0 1"/>
-                  <fefuncg type="table" tableValues="0 1"/>
-                  <fefuncb type="table" tableValues="0 1"/>
-                  <fefunca type="table" tableValues="1 1"/>
-               </fecomponenttransfer>
-               <fecomposite in2="SourceGraphic" operator="in"/>
-            </filter>
-         </defs>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-         <defs>
-            <filter id="wp-duotone-purple-yellow">
-               <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
-               <fecomponenttransfer color-interpolation-filters="sRGB">
-                  <fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"/>
-                  <fefuncg type="table" tableValues="0 1"/>
-                  <fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"/>
-                  <fefunca type="table" tableValues="1 1"/>
-               </fecomponenttransfer>
-               <fecomposite in2="SourceGraphic" operator="in"/>
-            </filter>
-         </defs>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-         <defs>
-            <filter id="wp-duotone-blue-red">
-               <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
-               <fecomponenttransfer color-interpolation-filters="sRGB">
-                  <fefuncr type="table" tableValues="0 1"/>
-                  <fefuncg type="table" tableValues="0 0.27843137254902"/>
-                  <fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"/>
-                  <fefunca type="table" tableValues="1 1"/>
-               </fecomponenttransfer>
-               <fecomposite in2="SourceGraphic" operator="in"/>
-            </filter>
-         </defs>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-         <defs>
-            <filter id="wp-duotone-midnight">
-               <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
-               <fecomponenttransfer color-interpolation-filters="sRGB">
-                  <fefuncr type="table" tableValues="0 0"/>
-                  <fefuncg type="table" tableValues="0 0.64705882352941"/>
-                  <fefuncb type="table" tableValues="0 1"/>
-                  <fefunca type="table" tableValues="1 1"/>
-               </fecomponenttransfer>
-               <fecomposite in2="SourceGraphic" operator="in"/>
-            </filter>
-         </defs>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-         <defs>
-            <filter id="wp-duotone-magenta-yellow">
-               <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
-               <fecomponenttransfer color-interpolation-filters="sRGB">
-                  <fefuncr type="table" tableValues="0.78039215686275 1"/>
-                  <fefuncg type="table" tableValues="0 0.94901960784314"/>
-                  <fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"/>
-                  <fefunca type="table" tableValues="1 1"/>
-               </fecomponenttransfer>
-               <fecomposite in2="SourceGraphic" operator="in"/>
-            </filter>
-         </defs>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-         <defs>
-            <filter id="wp-duotone-purple-green">
-               <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
-               <fecomponenttransfer color-interpolation-filters="sRGB">
-                  <fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"/>
-                  <fefuncg type="table" tableValues="0 1"/>
-                  <fefuncb type="table" tableValues="0.44705882352941 0.4"/>
-                  <fefunca type="table" tableValues="1 1"/>
-               </fecomponenttransfer>
-               <fecomposite in2="SourceGraphic" operator="in"/>
-            </filter>
-         </defs>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-         <defs>
-            <filter id="wp-duotone-blue-orange">
-               <fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
-               <fecomponenttransfer color-interpolation-filters="sRGB">
-                  <fefuncr type="table" tableValues="0.098039215686275 1"/>
-                  <fefuncg type="table" tableValues="0 0.66274509803922"/>
-                  <fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"/>
-                  <fefunca type="table" tableValues="1 1"/>
-               </fecomponenttransfer>
-               <fecomposite in2="SourceGraphic" operator="in"/>
-            </filter>
-         </defs>
-      </svg>
-      <a class="skip-link screen-reader-text" href="index.html#content">
-      Skip to content</a>
-      <div data-elementor-type="header" data-elementor-id="47" class="elementor elementor-47 elementor-location-header">
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-d0cb261 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="d0cb261" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-default">
-               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c90116e" data-id="c90116e" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <div class="elementor-element elementor-element-2973a1e elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="2973a1e" data-element_type="widget" data-widget_type="image.default">
-                        <div class="elementor-widget-container">
-                           <style>/*! elementor - v3.8.1 - 13-11-2022 */
-                              .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}
-                           </style>
-                           <a href="index.html">
-                           <img width="512" height="512" src="https://ocicat.club/images/oci4.png" class="attachment-large size-large" alt loading="lazy" srcset="https://ocicat.club/images/oci4.png 512w, https://ocicat.club/images/3LfsnYRGAQZh.png 300w, https://ocicat.club/images/EKug7NrC6deT.png 150w" sizes="(max-width: 512px) 100vw, 512px">								</a>
-                        </div>
-                     </div>
-                     <div class="elementor-element elementor-element-dd0bc8a elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="dd0bc8a" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                           <style>/*! elementor - v3.8.1 - 13-11-2022 */
-                              .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}
-                           </style>
-                           <h2 class="elementor-heading-title elementor-size-default"><a href="index.html">$ticker</a></h2>
-                        </div>
-                     </div>
-                     <div class="elementor-element elementor-element-3e21cbc elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="3e21cbc" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                        </div>
-                     </div>
-                     <div class="elementor-element elementor-element-ef0ae98 elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="ef0ae98" data-element_type="widget" data-widget_type="image.default">
-                        <div class="elementor-widget-container">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-067081d" data-id="067081d" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <div class="elementor-element elementor-element-200b8d2 elementor-nav-menu--stretch elementor-widget__width-auto elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="200b8d2" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
-                     </div>
-                     
-                  </div>
-               </div>
-            </div>
-         </section>
-      </div>
-      <div data-elementor-type="wp-page" data-elementor-id="11" class="elementor elementor-11">
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-cf5fd04 elementor-section-height-min-height elementor-section-items-stretch elementor-section-full_width elementor-section-height-default" data-id="cf5fd04" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-            <div class="elementor-background-overlay"></div>
-            <div class="elementor-container elementor-column-gap-default">
-               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-70915cc" data-id="70915cc" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-23e0e1a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="23e0e1a" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-default">
-                           <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-cf732ad" data-id="cf732ad" data-element_type="column">
-                              <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-eca8074 bounceMe elementor-widget elementor-widget-image" data-id="eca8074" data-element_type="widget" data-widget_type="image.default">
-                                    <div class="elementor-widget-container">
-                                       <img decoding="async" src="https://ocicat.club/images/IMG_4005.png" class="attachment-full size-full" alt loading="lazy">															
-                                    </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-a6c1169 elementor-widget elementor-widget-heading" data-id="a6c1169" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                       <h1 class="elementor-heading-title elementor-size-default">$ticker The Cheetah</h1>
-                                    </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-a9de621 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="a9de621" data-element_type="widget" data-widget_type="button.default">
-                                    <div class="elementor-widget-container">
-                                       <div class="elementor-button-wrapper">
-                                          <a href="https://pump.fun/$ca_pumpfun" target="_blank" rel="nofollow" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-                                          <span class="elementor-button-content-wrapper">
-                                          <span class="elementor-button-text">PumpFun</span>
-                                          </span>
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-a9de621 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="a9de621" data-element_type="widget" data-widget_type="button.default">
-                                    <div class="elementor-widget-container">
-                                       <div class="elementor-button-wrapper">
-                                          <a href="https://jup.ag/swap/SOL-$ca_pumpfun" target="_blank" rel="nofollow" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-                                          <span class="elementor-button-content-wrapper">
-                                          <span class="elementor-button-text">Jupiter</span>
-                                          </span>
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </section>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-6a37fb4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6a37fb4" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-default">
-               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3aa15ff" data-id="3aa15ff" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-b6f131c elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b6f131c" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-default">
-                           <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-89712bf" data-id="89712bf" data-element_type="column">
-                              <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-f108b0e elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="f108b0e" data-element_type="widget" data-settings="{&quot;highlighted_text&quot;:&quot;AI&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;marker&quot;:&quot;circle&quot;,&quot;highlight_animation_duration&quot;:1200}" data-widget_type="animated-headline.default">
-                                    <div class="elementor-widget-container">
-                                       <link rel="stylesheet" href="https://ocicat.club/css/IXeog8rOdSdZ.css">
-                                       <h3 class="elementor-headline">
-                                          <span class="elementor-headline-plain-text elementor-headline-text-wrapper">$ticker</span>
-                                          <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
-                                          </span>
-                                       </h3>
-                                    </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-625d092 elementor-widget elementor-widget-text-editor" data-id="625d092" data-element_type="widget" data-widget_type="text-editor.default">
-                                    <div class="elementor-widget-container">
-                                       <p><span data-slate-fragment="JTdCJTIyb2JqZWN0JTIyJTNBJTIyZG9jdW1lbnQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJpc1ZvaWQlMjIlM0FmYWxzZSUyQyUyMmRhdGElMjIlM0ElN0IlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMlRoZSUyMHdvcmxkcyUyMGZpcnN0JTIwQUklMjBtZW1lJTIwdG9rZW4lMjB3aXRoJTIwVVNEVCUyMHJld2FyZHMuJTIwQUklMjBXb3JsZCUyMGFpbXMlMjB0byUyMGJlJTIwdGhlJTIwbW9zdCUyMG1hcmtldGluZy1jZW50cmljJTIwbWVtZSUyMHRva2VuJTIwb24lMjB0aGUlMjBCaW5hbmNlJTIwU21hcnQlMjBDaGFpbi4lMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCUyQyUyMnNlbGVjdGlvbnMlMjIlM0ElNUIlNUQlN0QlNUQlMkMlMjJrZXklMjIlM0ElMjJmNWE0M2FlYWI3MzU0MDA0YjI4NGI2NzJkMzkxYzViYSUyMiU3RCU1RCUyQyUyMmtleSUyMiUzQSUyMjVhMmU2ZTZjZDBjMjQxNDNhY2JkOTZlY2E4ZTM5NDIyJTIyJTdEJTVEJTJDJTIya2V5JTIyJTNBJTIyMzg1OTVkYzNmYzVlNGY1NThhMTUwOWJmMjY4NmI3NDQlMjIlN0Q=">$ticker is a unique deflationary token launched for the purpose of bringing
-                                          people together and establishing elastic partnership for growth and
-                                          development. $ticker will unify crypto enthusiasts and dreamers from every
-                                          nation to form a giant community which can positively influence the success
-                                          of our ecosystem. $ticker offers platforms that provide systems that every
-                                          dreamer can leverage on to bring their dreams to reality. Every dream is like
-                                          a tiny seed but with huge potential to feed the nations.</span>
-                                       </p>
-                                    </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-94ba028 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="94ba028" data-element_type="widget" data-widget_type="button.default">
-                                    <div class="elementor-widget-container">
-                                       <div class="elementor-button-wrapper">
-                                          <a href="https://pump.fun/$ca_pumpfun" target="_blank" rel="nofollow" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-                                          <span class="elementor-button-content-wrapper">
-                                          <span class="elementor-button-text">Join the team!</span>
-                                          </span>
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9725880" data-id="9725880" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-1808f59 e-transform bounceMe elementor-widget elementor-widget-image" data-id="1808f59" data-element_type="widget" data-settings="{&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;_transform_rotateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.2,&quot;sizes&quot;:[]},&quot;_transform_rotateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-0.2,&quot;sizes&quot;:[]},&quot;_transform_perspective_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:25,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_perspective_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_perspective_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-																<a href="index.html#" target="_blank">
-							<img decoding="async" width="512" height="512" src="https://ocicat.club/images/IMG_4004.png" class="attachment-full size-full" alt loading="lazy" srcset="https://ocicat.club/images/IMG_4004.png 512w, https://ocicat.club/images/3LfsnYRGAQZh.png 300w, https://ocicat.club/images/EKug7NrC6deT.png 150w" sizes="(max-width: 512px) 100vw, 512px">								</a>
-															</div>
-				</div>
+	<head>
+		<!-- Meta setup -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="">
+		<meta name="decription" content="">
+		<meta name="author" content="Baby toshi">
+		
+		<!-- Title -->
+		<title>BABY TOSHI</title>
+		
+		<!-- Fav Icon -->
+		<link rel="icon" href="img/fav.png"/>	
+
+		<!-- Include Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Include aos -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		
+		<!-- Main StyleSheet -->
+		<link rel="stylesheet" href="style.css"/>	
+
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="css/responsive.css"/>	
+		
+	</head>
+	<body>
+
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+		<!-- nev area start -->
+		<header>
+			<div class="container ">
+				<nav>
+					<div class="menu-logo">
+						<a href="index.html#" class="logo"><img src="img/fav.png" alt="logo"></a>
 					</div>
-		</div>
+					<div class="s-icon">
+						<a href="$twitter"><img src="img/fi_x.png" class="img-fluid" alt=""></a>
+						<a href="$telegram"><img src="img/fi_t.png" class="img-fluid" alt=""></a>
+					</div>
+					<div class="menu-bar">
+						<div class="menu-bar-wraper">
+							<div class="s-icon mobile-icon-ss">
+								<ul>
+									<li><a href="$twitter"><img src="img/fi_x.png" class="img-fluid" alt=""></a>
+										<a href="$telegram"><img src="img/fi_t.png" class="img-fluid" alt=""></a></li>
+								</ul>
+							</div>
+							<a data-bs-toggle="offcanvas" href="index.html#offcanvasExample" role="button" aria-controls="offcanvasExample">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							 </a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- hero-area-start -->
+		<section class="hero-area overflow-hidden" id="home">
+			<div class="container hero-container">
+				<div class="row">
+					<div class="col-md-6 col-lg-5">
+						<div class="hero-img" data-aos="fade-up">
+							<img src="img/hero-img.png" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-7">
+						<div class="hero-title">
+							<h2 data-aos="fade-up">$ticker</h2>
+							<p data-aos="fade-up" style="text-align: center; font-family: 'Cuprum', sans-serif; font-size: 36px; font-weight: bold; letter-spacing: 2px;">The Baby Kitten</p>
+							<ul data-aos="fade-up">
+								<li><a href="https://pump.fun/$ca_pumpfun">PumpFun</a></li>
+								<li><a href="https://jup.ag/swap/SOL-$ca_pumpfun">Jupiter</a></li>
+							</ul>
+							
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</section>
+		<!-- hero-area-end -->
+
+		<!-- about area start -->
+		<section class="about-area overflow-hidden" id="about">
+			<span class="about-ssp1"><img src="img/1.png" class="img-fluid" alt=""></span>
+			<span class="about-ssp2"><img src="img/2.png" class="img-fluid" alt=""></span>
+			<span class="about-ssp3"><img src="img/4.png" class="img-fluid" alt=""></span>
+			<div class="container">
+				<div class="max-abouts">
+					<div class="row g-0">
+						<div class="col-md-6 col-lg-6">
+							<div data-aos="fade-right" class="about-left">
+								<img src="img/about.png" class="img-fluid" alt="">
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6">
+							<div class="about-right">
+								
+								<h2 data-aos="fade-up">About US</h2>
+							
+								<p data-aos="fade-up">
+									Say meow most lovable cat on SOL! $ticker The Baby Kitten is a symbol of the beauty of Web3 beyond its complexity. It is the face of the next generation of finance and a viral sensation for mainstream adoption. 
+								</p>
+								<p data-aos="fade-up">$ticker is a kitten from a long generation of cats that can be traced back to the Satoshi era. They’ve been the guardians of the blocks and the watch-cats that have kept miners and validators in check. Baby Toshi inherits the most attractive and valiant traits from its cat ancestors.
+</p>
+						
+						<p data-aos="fade-up">
+							$ticker is the centre of attraction of SOL that will onboard the next million users! 🚀
+							</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!-- about area end -->
+
+		<!-- our partners area end -->
+
+		<!-- Tokenomics area end  -->
+		<section class="tokenomics-area overflow-hidden" id="Tokenomics">
+            <div class="container">
+                <div class="tokenomic-title">
+                    <h2 data-aos="fade-up">tokenomics</h2>
+                </div>
+                <div class="cs-row">
+					<div class="custom-col-2s">
+                        <div class="token-right " data-aos="fade-right">
+							<div class="token-right-rr">
+                                <h2>Token Distribution</h2>
+                                <ul>
+                                    <li><img src="img/cr1.png" alt="">PumpFun Listing</li>
+                                    <li>75%</li>
+                                </ul>
+                                <ul>
+                                    <li><img src="img/cr2.png" alt="">Ray Listing</li>
+                                    <li>25%</li>
+                                </ul>
+                            </div>
+                            <div class="token-right-ll">
+                                <img src="img/cr.png" class="img-fluid" alt="">
+                            </div>
+                            
                         </div>
-                     </section>
-                  </div>
-               </div>
+                    </div>
+                    <div class="custom-col-1s">
+                        <div class="token-left tkn1" data-aos="fade-left">
+                            <div class="token-left-item">
+                                <h2>About Token</h2>
+                                <ul>
+                                    <li>Token Symbol:</li>
+                                    <li>$ticker</li>
+                                </ul>
+                                <ul>
+                                    <li>Total Supply</li>
+                                    <li>1,000,000,000</li>
+                                </ul>
+								<ul>
+                                    <li>Token Address:</li>
+                                    <li><div class="wallet-address">
+										<p>$ca_pumpfun<img src="img/copy.png" alt=""></p>
+									</div></li>
+                                </ul>
+								
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
             </div>
-         </section>
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-c0a5b5c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c0a5b5c" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-default">
-               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d039273" data-id="d039273" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-55e9248 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="55e9248" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-default">
-                           <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a45cbc4" data-id="a45cbc4" data-element_type="column">
-                              <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-05e483d elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="05e483d" data-element_type="widget" data-settings="{&quot;marker&quot;:&quot;underline&quot;,&quot;highlighted_text&quot;:&quot;Distribution&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;highlight_animation_duration&quot;:1200}" data-widget_type="animated-headline.default">
-                                    <div class="elementor-widget-container">
-                                       <h3 class="elementor-headline">
-                                          <span class="elementor-headline-plain-text elementor-headline-text-wrapper">$ticker</span>
-                                          <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
-                                          <span class="elementor-headline-dynamic-text elementor-headline-text-active">Distribution</span>
-                                          </span>
-                                       </h3>
-                                    </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-0762549 elementor-widget elementor-widget-heading" data-id="0762549" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                       <h2 class="elementor-heading-title elementor-size-default">1,000,000,000 $ticker</h2>
-                                    </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-7e3064e bounceMe elementor-widget__width-initial elementor-absolute e-transform elementor-widget elementor-widget-image" data-id="7e3064e" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-13,&quot;sizes&quot;:[]},&quot;_transform_rotateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;_transform_rotateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_perspective_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_perspective_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_perspective_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image.default">
-                                    <div class="elementor-widget-container">
-                                       <img decoding="async" width="512" height="512" src="https://ocicat.club/images/IMG_4004.png" class="attachment-large size-large" alt loading="lazy" srcset="https://ocicat.club/images/IMG_4004.png 512w, https://ocicat.club/images/3LfsnYRGAQZh.png 300w, https://ocicat.club/images/EKug7NrC6deT.png 150w" sizes="(max-width: 512px) 100vw, 512px">															
-                                    </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-bc647f5 elementor-widget elementor-widget-text-editor" data-id="bc647f5" data-element_type="widget" data-widget_type="text-editor.default">
-                                    <div class="elementor-widget-container">
-                                       <p><strong>Total Supply</strong>: 1,000,000,000</p>
-                                       <p><strong> Current Circulating Supply</strong>: 750,000,000</p>
-                                       <p><strong>Liquidity pool</strong>: Locked</p>
-                                       <p><strong> Ownership</strong>: Renounced</p><br>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </section>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </div>
-      <div data-elementor-type="footer" data-elementor-id="411" class="elementor elementor-411 elementor-location-footer">
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-8c6236f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8c6236f" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-default">
-               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-45c65d4" data-id="45c65d4" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <div class="elementor-element elementor-element-ad14a56 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="ad14a56" data-element_type="widget" data-widget_type="image.default">
-                        <div class="elementor-widget-container">
-                           <a href="index.html">
-                           <img width="512" height="512" src="https://ocicat.club/images/IMG_4004.png" class="attachment-large size-large" alt loading="lazy" srcset="https://ocicat.club/images/IMG_4004.png 512w, https://ocicat.club/images/3LfsnYRGAQZh.png 300w, https://ocicat.club/images/EKug7NrC6deT.png 150w" sizes="(max-width: 512px) 100vw, 512px">								</a>
-                        </div>
-                     </div>
-                     <div class="elementor-element elementor-element-b83cd6b elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="b83cd6b" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
-                           <h2 class="elementor-heading-title elementor-size-default"><a href="index.html">$ticker</a></h2>
-                        </div>
-                     </div>
-                     <div class="elementor-element elementor-element-0eec8d4 elementor-widget elementor-widget-text-editor" data-id="0eec8d4" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                           <p><span data-slate-fragment="JTdCJTIyb2JqZWN0JTIyJTNBJTIyZG9jdW1lbnQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJpc1ZvaWQlMjIlM0FmYWxzZSUyQyUyMmRhdGElMjIlM0ElN0IlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMlRoZSUyMHdvcmxkcyUyMGZpcnN0JTIwQUklMjBtZW1lJTIwdG9rZW4lMjB3aXRoJTIwVVNEVCUyMHJld2FyZHMuJTIwQUklMjBXb3JsZCUyMGFpbXMlMjB0byUyMGJlJTIwdGhlJTIwbW9zdCUyMG1hcmtldGluZy1jZW50cmljJTIwbWVtZSUyMHRva2VuJTIwb24lMjB0aGUlMjBCaW5hbmNlJTIwU21hcnQlMjBDaGFpbi4lMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCUyQyUyMnNlbGVjdGlvbnMlMjIlM0ElNUIlNUQlN0QlNUQlMkMlMjJrZXklMjIlM0ElMjI4MzRhYmVjZDQ5ZmY0OTFmYjk4ZDg1OTMzYzk4Yzc1YiUyMiU3RCU1RCUyQyUyMmtleSUyMiUzQSUyMjBiMDI2YWVhODM1MTQ2NGM5MWUxODU1OGU3MzM2ZjU2JTIyJTdEJTVEJTJDJTIya2V5JTIyJTNBJTIyYTFiMjYxY2MyMTBmNDQ0YmEwZmY4NGRjYmRjMGI5MGMlMjIlN0Q=">THE CHEETAH ON SOL</span></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d65a624" data-id="d65a624" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-17da7e5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="17da7e5" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-default">
-                           <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7fff210" data-id="7fff210" data-element_type="column">
-                              <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-aa01c4d elementor-widget elementor-widget-heading" data-id="aa01c4d" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                       <h2 class="elementor-heading-title elementor-size-default">Social</h2>
-                                    </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-4772bdd elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4772bdd" data-element_type="widget" data-widget_type="icon-list.default">
-                                    <div class="elementor-widget-container">
-                                       <ul class="elementor-icon-list-items">
-                                          <li class="elementor-icon-list-item">
-                                             <a href="$twitter" target="_blank" rel="nofollow">
-                                             <span class="elementor-icon-list-text">Twitter</span>
-                                             </a>
-                                          </li>
-                                          <li class="elementor-icon-list-item">
-                                             <a href="$telegram" target="_blank" rel="nofollow">
-                                             <span class="elementor-icon-list-text">Telegram</span>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </section>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-b5d6bd6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b5d6bd6" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-default">
-               <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4e8652b" data-id="4e8652b" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                     <div class="elementor-element elementor-element-c41b4d0 elementor-widget elementor-widget-text-editor" data-id="c41b4d0" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                           <p>Disclaimer &#8211; No Investment Advice.</p>
-                           <p>The information provided on this website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website&#8217;s content as such. $ticker does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.</p>
-                           <p>$ticker is not an investment advice. Do your own research before investing and always remember : Only risk money that you can afford to lose</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </div>
-		<script src="https://ocicat.club/js/jquery.min.js"></script>
-      <script src="https://ocicat.club/js/VqVJbAPATMWi.js" id="hello-theme-frontend-js"></script>
-      <script src="https://ocicat.club/js/SsEI8BCkLMbH.js" id="smartmenus-js"></script>
-      <script src="https://ocicat.club/js/nqZki8yK16On.js" id="elementor-pro-webpack-runtime-js"></script>
-      <script src="https://ocicat.club/js/VUuHdXp9XjCB.js" id="elementor-webpack-runtime-js"></script>
-      <script src="https://ocicat.club/js/VUmRiofaas13.js" id="elementor-frontend-modules-js"></script>
-      <script src="https://ocicat.club/js/XWKAToLdbyGE.js" id="wp-polyfill-inert-js"></script>
-      <script src="https://ocicat.club/js/yNGGF2yytj0l.js" id="regenerator-runtime-js"></script>
-      <script src="https://ocicat.club/js/izpZl4PywQwF.js" id="wp-polyfill-js"></script>
-      <script src="https://ocicat.club/js/78ow9yUTJDjP.js" id="wp-hooks-js"></script>
-      <script src="https://ocicat.club/js/ERYO5FmgzrRZ.js" id="wp-i18n-js"></script>
-      <script id="wp-i18n-js-after">
-         wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-      </script>
-      <script src="https://ocicat.club/js/uZT2boPzF8pJ.js" id="elementor-pro-frontend-js"></script>
-      <script src="https://ocicat.club/js/stFR5wuivFWj.js" id="elementor-waypoints-js"></script>
-      <script src="https://ocicat.club/js/4pLUsvpNOaEQ.js" id="jquery-ui-core-js"></script>
-      <script id="elementor-frontend-js-before">
-         var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.8.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"page-transitions":true,"notes":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/savantai.finance\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":11,"title":"Savant%20AI%20%E2%80%93%20The%20worlds%20first%20AI%20meme%20token%20with%20USDT%20rewards.","excerpt":"","featuredImage":false}};
-      </script>
-      <script src="https://ocicat.club/js/Ymp9Bzhyd6Ko.js" id="elementor-frontend-js"></script>
-      <script src="https://ocicat.club/js/gBYLn18HOkYP.js" id="pro-elements-handlers-js"></script>
+        </section>
+		<!-- Tokenomics area end  -->
+
+		<!-- Our Roadmap start -->
+		<section class="our-roadmap-area overflow-hidden" id="Roadmap">
+			<div class="container">
+				<div class="roadmap-title">
+					<h2 data-aos="fade-up">Our Roadmap</h2>
+					<p data-aos="fade-up">Qui galisum optio hic animi praesentium ea nihil ipsum aut sunt omnis id vitae molestiae.</p>
+				</div>
+				<div class="row g-0">
+					<div class="col-md-6 col-lg-4">
+						<div data-aos="fade-right" class="roadmap-item rd1">
+							<img src="img/r1.png" alt="">
+							<h3>Phase I</h3>
+							<ul>
+								<li>PumpFun Launch</li>
+								<li>Raydium Listing</li>
+								<li>Coingecko/Coinmarketcap Listings</li>
+								<li>Trending on AveDex, Dexview & other <br> data aggregators</li>
+								<li>Listing on Major Exchanges</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div data-aos="fade-up" class="roadmap-item rd2">
+							<img src="img/r2.png" alt="">
+							<h3>Phase II</h3>
+							<ul>
+								<li>$ticker on the News</li>
+								<li>Community Growth</li>
+								<li>Huge Marketing Push</li>
+								<li>Influencer Calls</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div data-aos="fade-left" class="roadmap-item rd3">
+							<img src="img/3.png" alt="">
+							<h3>Phase II</h3>
+							<ul>
+								<li>Partnerships</li>
+								<li>100,000+ holders</li>
+								<li>Meme Takeover</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Our Roadmap end -->
+
+		<!-- Our featured start -->
+		<section class="our-featured-area overflow-hidden" id="Roadmap">
+			<div class="container ">
+				<div class="disclaimer-wrapper" data-aos="zoom-in">
+					<h2>disclaimer </h2>
+					<p>$ticker is a SOL token with no intrinsic value or expectation of financial return. It’s built with love to exhibit and unlock the entertainment & community-building potential of dog-themed tokens. Invest at your own risk.</p>
+				</div>
+				<div class="footer-social-inner" data-aos="fade-up">
+					<span><img src="https://babytoshi.io/img/pb.png" alt=""></span>
+						
+						<ul>
+							<li><a href="$telegram"><img src="img/fi_t.png" alt=""></a></li>
+							<li><a href="$twitter"><img src="img/fi_x.png" alt=""></a></li>
+						</ul>
+				</div>
+			</div>
+		</section>
+		<!-- featured end -->
+
+		<!-- footer start -->
+		<footer>
+			<div class="container">
+				<div class="footer-wrapper">
+					<a href="index.html#"><img src="img/fav.png" alt=""></a>
+					<p>© 2024 by $ticker. All rights reserved!</p>
+				</div>
+			</div>
+		</footer>
+		<!-- footer  end-->
+		
+			
+		<!-- Main jQuery -->
+		<script src="js/jquery-3.6.0.min.js"></script>		
+
+		<!-- Bootstrap Js -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+	   <!-- aos Js -->
+	   <script src="js/aos.min.js"></script>
+
 		<script>
-			$(".elementor-menu-toggle").click(function(){
-				$(".ctmenu").toggleClass("ctactive");
+			$(document).ready(function() {
+				$( window ).scroll(function() {
+					var height = $(window).scrollTop();
+					if(height >= 100) {
+						$('header').addClass('fixed-menu');
+					} else {
+						$('header').removeClass('fixed-menu');
+					}
+				});
 			});
 		</script>
-   </body>
+
+		<!-- smartscroll Js -->
+		<script src="js/smartscroll.js"></script>
+		<script>
+			(function ($) {
+				"use strict";
+				// all parameters are optional
+				smartScroll.init({
+					speed: 700, // default 500
+					addActive: false, // default true
+					activeClass: "active", // default active
+					offset: 80 // default 100
+				}, function () {
+					console.log("callback");
+				});
+			})(jQuery);
+		</script>
+		
+		<!-- Fontawesome Script -->
+		<script src="https://kit.fontawesome.com/e7f2043049.js"></script>
+		
+		<!-- Custom jQuery -->
+		<script src="js/scripts.js"></script>
+		
+		<!-- Scroll-Top button -->
+		<a href="index.html#" class="scrolltotop" style="display: inline;">
+			<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+			<span class="pluse"></span>
+			<span class="pluse2"></span>
+		</a>
+		
+	</body>
 </html>
