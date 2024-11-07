@@ -1,1423 +1,671 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>$NeoPepe - Anon Pepe</title>
-	<link rel="icon" type="image/png" href="images/00pfpgif.gif">
-	<link href="https://fonts.googleapis.com/css?family=Rubik Pixels" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<style>
-		body {
-			margin: 10px;
-			padding: 0;
-			user-select: none;
-			font-family: "YourFont", sans-serif;
-			cursor: url('images/cursor2.png'), auto;
-			background: black;
-
-		}
-
-		.loading-container {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			background: black;
-			color: white;
-			z-index: 2000;
-		}
-
-		.loading-image {
-			width: 100px;
-			height: auto;
-			margin-bottom: 20px;
-		}
-
-		.loading-bar {
-			width: 80%;
-			height: 20px;
-			background: rgba(0, 128, 0, 0.2);
-			border: 2px solid green;
-			border-radius: 10px;
-			overflow: hidden;
-			margin-top: 20px;
-		}
-
-		.loading-bar-fill {
-			height: 100%;
-			width: 0;
-			background: green;
-			animation: loadingAnimation 3s linear forwards;
-		}
-
-		@keyframes loadingAnimation {
-			0% {
-				width: 0;
-			}
-
-			100% {
-				width: 100%;
-			}
-		}
-
-		.header {
-			background-color: rgba(0, 128, 0, 0.2);
-			height: 7vh;
-			width: 100%;
-			position: fixed;
-			top: 0;
-			z-index: 1000;
-			left: 0;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			padding: 0 10px;
-			border: 2px solid green;
-			box-shadow: 0 0 10px green;
-		}
-
-		.title-container {
-			display: flex;
-			align-items: center;
-		}
-
-		.logo {
-			width: 50px;
-			height: auto;
-		}
-
-		.title {
-			color: white;
-			font-size: 50px;
-			font-weight: bold;
-			font-family: "YourFont", sans-serif;
-			margin: 0 10px;
-			animation: glow-animation1 1.5s ease-in-out infinite alternate;
-		}
-
-		.subtitle {
-			font-size: 14px;
-			color: white;
-		}
-
-		.button-container {
-			display: inline-flex;
-			align-items: center;
-			gap: 20px;
-			margin: 0 30px;
-		}
-
-		.connect-btn {
-			background-color: white;
-			color: green;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-			white-space: nowrap;
-			font-weight: bold;
-			font-family: "YourFont", sans-serif;
-			font-size: 20px;
-			animation: glow-animation1 1.5s ease-in-out infinite alternate;
-			cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="green"><circle cx="12" cy="12" r="10" /></svg>'), auto;
-			display: flex;
-			align-items: center;
-			box-shadow: 0 0px 10px green;
-		}
-
-		.connect-btn:hover {
-			background-color: green;
-			color: white;
-		}
-
-		.button-icon {
-			width: 20px;
-			height: auto;
-			margin-right: 8px;
-		}
-
-
-		@keyframes glow-animation1 {
-			0% {
-				text-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green;
-			}
-
-			50% {
-				text-shadow: 0 0 15px green, 0 0 25px green, 0 0 35px green;
-			}
-
-			100% {
-				text-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green;
-			}
-		}
-
-		.video-bg {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: fill;
-			z-index: -1;
-		}
-
-		.headvideo {
-			position: relative;
-			width: 100%;
-			height: 100%;
-			object-fit: fill;
-			z-index: -1;
-			box-shadow: 0 0 10px green;
-		}
-
-		@keyframes pulse {
-			from {
-				transform: scale(1);
-				opacity: 0.4;
-			}
-
-			to {
-				transform: scale(1.7);
-				opacity: 0;
-			}
-		}
-
-		@keyframes blastOut {
-			from {
-				transform: scale(0.9);
-				opacity: 0.4;
-			}
-
-			to {
-				transform: scale(10);
-				opacity: 0;
-			}
-		}
-
-		.section {
-			position: relative;
-			width: 100%;
-			height: auto;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: white;
-			overflow: hidden;
-			padding: 150px 0;
-			box-shadow: 0 0px 10px green;
-		}
-
-		.section video {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			z-index: -1;
-		}
-
-		.section-content {
-			z-index: 1;
-			text-align: center;
-		}
-
-		.section h2 {
-			font-size: 50px;
-			animation: glow-animation1 1.5s ease-in-out infinite alternate;
-		}
-
-		.CA {
-			font-size: 20px;
-			animation: glow-animation1 1.5s ease-in-out infinite alternate;
-			text-align: center;
-			color: white;
-		}
-
-		.about-content {
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
-			width: 80%;
-			margin: 0 auto;
-			opacity: 0.5;
-			transform: translateY(50px);
-			transition: opacity 1s, transform 1s;
-		}
-
-		.about-content.visible {
-			opacity: 1;
-			transform: translateY(0);
-		}
-
-		.about-text {
-			width: 45%;
-			font-size: 20px;
-			text-align: left;
-			animation: glow-animation1 1.5s ease-in-out infinite alternate;
-		}
-
-		.about-image {
-			width: 45%;
-			height: auto;
-			animation: glow-animation1 1.5s ease-in-out infinite alternate;
-		}
-
-		.tokenomics-boxes,
-		.how-to-buy-boxes {
-			display: flex;
-			justify-content: center;
-			gap: 20px;
-			flex-wrap: wrap;
-		}
-
-		.tokenomics-box,
-		.how-to-buy-box {
-			background-color: rgba(0, 128, 0, 0.2);
-			border: 2px solid green;
-			padding: 20px;
-			border-radius: 10px;
-			box-shadow: 0 0 10px green;
-			font-size: 20px;
-			width: 200px;
-			height: 200px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			opacity: 0.4;
-			transform: translateY(50px);
-			transition: opacity 1s, transform 1s;
-			animation: glow-animation1 1.5s ease-in-out infinite alternate;
-		}
-
-		.tokenomics-box img,
-		.how-to-buy-box img {
-			width: 100px;
-			height: auto;
-			margin-bottom: 10px;
-			/*         filter: grayscale(1) brightness(0.8) contrast(2) sepia(1) hue-rotate(90deg) saturate(3); */
-			filter: brightness(1) contrast(1) sepia(3) hue-rotate(60deg) saturate(3);
-		}
-
-		.tokenomics-box.visible,
-		.how-to-buy-box.visible {
-			opacity: 1;
-			transform: translateY(0);
-		}
-
-		.contact-boxes {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 20px;
-		}
-
-		.contact-box {
-			padding: 20px;
-			font-size: 20px;
-			width: 100%;
-			max-width: 600px;
-			height: auto;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			opacity: 1;
-			transform: translateY(50px);
-			transition: opacity 1s, transform 1s;
-			animation: glow-animation1 1.5s ease-in-out infinite alternate;
-			margin-top: -80px;
-		}
-
-		.contact-box h2 {
-			margin-bottom: 20px;
-		}
-
-		.contact.visible {
-			opacity: 1;
-			transform: translateY(0);
-		}
-
-		.slotcontainer {
-			position: fixed;
-			top: 7vh;
-			left: 0;
-			width: 100%;
-			height: 93vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			z-index: -1;
-			background: none;
-			overflow: hidden;
-		}
-
-		.slot {
-			display: inline-block;
-			width: 100px;
-			height: 100px;
-			text-align: center;
-			font-size: 15px;
-			font-family: Source Sans Pro;
-			line-height: 100px;
-			color: green;
-			text-shadow: 0px 2px 20px black;
-		}
-
-		#dexscreener-embed {
-			position: relative;
-			width: 90%;
-			height: 100vh;
-			margin: 0 auto;
-		}
-
-		#dexscreener-embed iframe {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			border: 0;
-			filter: grayscale(1) brightness(0.8) contrast(2) sepia(1) hue-rotate(90deg) saturate(3);
-			box-shadow: 0 0px 10px rgba(256, 256, 256, 1);
-			border-radius: 1%;
-		}
-
-
-		.memes-section {
-			position: relative;
-			width: 100%;
-			height: auto;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			color: white;
-			overflow: hidden;
-			padding: 100px 0;
-		}
-
-		.memes-section h2 {
-			font-size: 50px;
-			animation: glow-animation1 1.5s ease-in-out infinite alternate;
-			margin-bottom: 20px;
-		}
-
-		.meme-row {
-			display: flex;
-			width: 100%;
-			/*         overflow: hidden; */
-			position: relative;
-			justify-content: space-around;
-		}
-
-		.meme-row img {
-			width: 500px;
-			height: 500px;
-			margin: 0 20px;
-			border-radius: 10px;
-			box-shadow: 0 0px 10px green;
-			/*         filter: grayscale(1) brightness(1) contrast(1) sepia(3) hue-rotate(60deg) saturate(3); */
-			filter: brightness(1) contrast(1) sepia(3) hue-rotate(60deg) saturate(3);
-		}
-
-		.scroll-left {
-			animation: scroll-left 20s linear infinite;
-		}
-
-		.scroll-right {
-			animation: scroll-right 20s linear infinite;
-		}
-
-		@keyframes scroll-left {
-			0% {
-				transform: translateX(50%);
-			}
-
-			100% {
-				transform: translateX(-50%);
-			}
-		}
-
-		@keyframes scroll-right {
-			0% {
-				transform: translateX(-50%);
-			}
-
-			100% {
-				transform: translateX(50%);
-			}
-		}
-
-		.footer {
-			background-color: rgba(0, 128, 0, 0.8);
-			color: white;
-			text-align: center;
-			padding: 5px 10px;
-			position: relative;
-			width: 100%;
-			bottom: 0;
-			left: 0;
-			box-shadow: 0 0 10px green;
-		}
-
-		@media (max-width: 820px) {
-			.logo {
-				width: 50px;
-			}
-
-			.loading-text {
-				font-size: 12px;
-			}
-
-			.title {
-				font-size: 15px;
-			}
-
-			.connect-btn {
-				font-size: 0px;
-				padding: 1px 6px;
-				border-radius: 3px;
-			}
-
-			.button-icon {
-				width: 10px;
-			}
-
-			.subtitle {
-				font-size: 7px;
-			}
-
-			.about-text {
-				font-size: 10px;
-			}
-
-			.tokenomics-box,
-			.how-to-buy-box {
-				font-size: 15px;
-			}
-
-			.contact-box {
-				font-size: 15px;
-			}
-
-			.CA {
-				font-size: 15px;
-			}
-
-			.meme-row img {
-				width: 200px;
-				height: 200px;
-			}
-
-			.section h2 {
-				font-size: 30px;
-			}
-		}
-
-		.scrolling-container {
-			width: 100%;
-			overflow: hidden;
-			border: 2px solid green;
-			/*     margin-bottom: 20px; */
-			box-shadow: 0 0 10px green;
-		}
-
-		.scrolling-text-wrapper {
-			display: flex;
-			animation: scrolling-text 9s linear infinite;
-		}
-
-		.scrolling-text {
-			display: inline-block;
-			white-space: nowrap;
-			font-size: 20px;
-			color: white;
-			font-family: "YourFont", sans-serif;
-			padding-right: 20px;
-
-		}
-
-		@keyframes scrolling-text {
-			from {
-				transform: translateX(0);
-			}
-
-			to {
-				transform: translateX(-100%);
-			}
-		}
-
-		.anon-theme {
-			filter: grayscale(1) brightness(0.8) contrast(1) sepia(2) hue-rotate(90deg) saturate(3);
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABY PEPE - $ticker</title>
+    <link rel="stylesheet" href="https://babypepetoken.io/css/styles.css" media="all">
+    <link rel="icon" href="assets/logo200.png" type="image/x-icon">
+    <meta name="description" content="Welcome to the biggest PEPE token on BSC!">
+    <link rel="stylesheet" href="https://use.typekit.net/olg7onv.css">
 </head>
+
+
+<style>
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+    body {
+        background-color: #FDF7E9;
+        font-family: "peachy-keen-jf", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    section {
+        max-width: 1920px;
+        margin: auto;
+        box-sizing: border-box;
+        border-radius: 40px;
+        width: 80%;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .col-6 {
+        width:50%;
+    }
+
+    img {
+        max-width:100%;
+    }
+
+    #hero {
+        margin-top: 50px;
+        background-image: url("assets/herobg.svg");
+        background-size: cover;
+    }
+
+    #hero p {
+        font-size: 28px;
+    }
+
+    img.splash {
+        margin-top:-250px;
+    }
+
+    .herocont {
+        text-align:center;
+    }
+
+    .herocont p{
+        margin-top:-11vw;
+    }
+
+    #left {
+        padding: 50px;
+        padding-top:5VW;
+        padding-bottom:10VW;
+    }
+
+    #right {
+        align-items: flex-end;
+        display: flex;
+        float: right;
+        text-align: right;
+        justify-content: end;
+        transform: scale(1.05);
+    }
+
+    #right img {
+        width:80%;
+    }
+
+    .button a {
+        background-color: #FEEA05;
+        border: 2px solid #000000;
+        border-radius:50px;
+        color: black;
+        padding: 10px 30px;
+        width: fit-content;
+        margin: auto;
+        text-decoration: none;
+    }
+
+    #socials .row {
+        align-items: center;
+        margin-top:-4.5vw;
+        padding-left: 50px;
+    }
+
+    #socials .row img {
+        padding: 3px;
+    }
+
+    :root {
+  --polka-bg-image:
+    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%),
+    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%);
+  --polka-bg-position: 0px 0px, 12px 12px;
+  --polka-bg-size: 24px 24px;
+  --polka-bg-color: rgb(242, 234, 214);
+}
+
+/* ...or add this class to an element */
+.polka {
+  background-image: 
+    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%),
+    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%);
+  background-position: 0px 0px, 12px 12px;
+  background-size: 24px 24px;
+  background-color: rgb(242, 234, 214);
+}
+
+h2 {
+    font-size:36px;
+}
+
+p {
+    font-size: 22px;
+}
+
+.headline {
+    background-image: url("assets/headerbg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 40px;
+    margin-top:-50px;
+}
+
+.headline h2 {
+    padding-left: 40px;
+}
+
+#second, #fourth, #sixth {
+    margin-top: 100px;
+}
+
+.checklist {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.checklist img {
+    width: 30px;
+    transform: translateY(7px);
+    margin-right: 5px;
+}
+
+.checklist p {
+    margin: 3px;
+}
+
+    #left2 {
+        align-items: flex-end;
+        display: flex;
+        text-align: left;
+        transform: scale(1.05);
+    }
+
+#left2 img {
+    width:50%;
+}
+#right2 {
+    padding-bottom: 100px;
+}
+
+#third {
+    background-image: url("assets/roulettebg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    padding-bottom:100px;
+    margin-top:100px;
+    text-align: center;
+}
+
+#third .container {
+        display: inline-table;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+#third img {
+    width: 75%;
+}
+
+.roulettecontent {
+    width: 40%;
+    margin: auto;
+    margin-top:-10vw;
+}
+
+#left3 {
+padding-left: 50px;
+padding-top:  0px;
+padding-bottom:  100px;
+}
+
+    #right3 {
+        align-items: flex-end;
+        display: flex;
+        float: right;
+        text-align: right;
+        justify-content: end;
+        transform: scale(1.05);
+    }
+        #right img {
+        width:70%;
+    }
+
+    #fifth {
+        background-image: url("assets/pepenomicsbg.svg");
+        background-size: cover;
+        margin-top: 100px;
+    }
+
+    #left4{
+                align-items: flex-end;
+        display: flex;
+        text-align: left;
+        transform: scale(1.05);
+    } 
+
+    #left4 img{
+        transform: scaleX(-1);
+        width:50%;
+    }
+
+    #right4 {
+        padding-right: 100px;
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+
+    #right4 img {
+        width: 90%;
+    }
+
+#sixth .headline {
+    margin-top: 0px;
+    transform: translateY(-30px);
+    text-align: center;
+    width: fit-content;
+    margin:auto;
+}
+
+#sixth h2 {
+    margin-top: 10px;
+    padding: 0px 40PX;
+}
+
+#sixth .row {
+      transform: translateY(-30px);  
+      width: 60%;
+      margin: auto;
+}
+
+#left6 {
+    padding-left: 200px;
+padding-top:  0px;
+}
+
+#sixth {
+    margin-bottom: 100px;
+}
+@media(max-width: 1600px) {
+    section {
+        width: 90%;
+    }
+
+img.logoi{
+    width: 120px !important;
+}
+
+    #socials .row img {
+        width: 60px;
+    }
+
+    #left2 img {
+        width: 65%;
+    }
+    .roulettecontent {
+    width: 60%;
+    margin: auto;
+    margin-top:-13vw;
+}
+
+#right img {
+    width: 85%;
+}
+
+#left6 {
+    padding-left: 0px;
+}
+
+#left4 img {
+    width: 70%;
+}
+}
+
+@media(max-width: 767px) {
+     #second .headline {
+        transform:translateY(-50px);
+    }
+    .row {
+        display: block;
+    }
+    .col-6 {
+        width: 100%;
+    }
+
+    #right {
+        text-align: center;
+        display: block;
+        float: none;
+        padding-top: 50px;
+    }
+
+    section {
+        width: 100%;
+        border-radius: 20px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    #socials .row {
+        display: flex;
+        padding-left: 0px;
+        z-index: 1;
+        position: relative;
+    }
+
+    #hero {
+        padding-top: 50px;
+    }
+
+    .logoi {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    #hero .herocont p {
+        margin-top: -45vw;
+padding-left: 20px;
+padding-right: 20px;
+    }
+
+    #hero .mobile {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    #left {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .headline {
+        padding: 40px 20px;
+    }
+    #right2 img.mobile {
+        padding-top: 50px;
+        padding-bottom: 0px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #right2 {
+        padding-bottom: 0px;
+    }
+
+    #second, #fourth, #sixth {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #third img {
+        width: 100%;
+    }
+    #third {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .roulettecontent {
+        width: 85%;
+        margin-top: -60vw;
+    }
+    #left3 {
+        padding-left: 0px;
+    }
+    .headline h2 {
+        padding-left: 0px;
+    text-align: center;
+}
+#fourth .headline {
+        transform: translateY(-50px);
+        margin-top: 0px;
+}
+#fourth p {
+    transform: translateY(-50px);
+}
+#fourth .button {
+    transform: translateY(-50px);
+}
+#left3 {
+    padding-bottom: 0px;
+}
+#fourth #right img {
+        width: 100%;
+    }
+    #right4 {
+        padding-right: 0px;
+    }
+
+    #right4 img {
+        width: 100%;
+    }
+
+    #fifth .herocont p {
+        margin-top: -45vw;
+        padding-bottom: 150px;
+    }
+    #fifth {
+        background-position: center;
+    }
+
+    #fifth #right4 {
+        padding-bottom: 0px;
+    }
+    #sixth .headline {
+        width: 100%;
+    }
+
+    #sixth .row {
+        width: 100%;
+    }
+
+    #sixth .checklist {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    #sixth {
+        padding-bottom: 50px;
+    }
+}
+
+@media(min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+}
+
+@media(min-width:1601px) {
+    .herocont p {
+    margin-top: -9vw;
+}
+
+#left6 {
+    padding-left: 70px;
+    padding-top: 0px;
+}
+}
+#third img {
+    margin:auto;
+}
+
+
+
+</style>
 
 <body>
 
-	<div class="loading-container" id="loadingContainer" style="display: none;">
-		<img src="images/00pfpgif.gif" class="loading-image" alt="Loading Image">
-		<div style="text-align:center;">Anon Pepe, best viewed on large screens. <br> $NeoPepe is a crypto coin with no
-			intrinsic value or expectation of financial return. Just because some people are getting ridiculously rich
-			buying crypto doesn’t mean you definitely will. $NeoPepe is to be used strictly for getting laid and for
-			entertainment purposes only.</div>
-		<div class="loading-bar">
-			<div class="loading-bar-fill"></div>
-		</div>
-	</div>
+<section id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-6" id="left">
+                <div class="herocont">
 
+                    <img src="assets/herotx.svg" class="desktop">
+                    <img src="assets/herom.svg" class="mobile">
+                    <p> But his real name is $ticker! </p>
 
-	<video id="video-bg" class="video-bg" autoplay="" loop="" muted="" playsinline="">
-		<source src="media/22.webm" type="video/webm">
-		Your browser does not support the video tag.
-	</video>
+                    <div class="button">
+                        <a href="https://pump.fun/$ca_pumpfun" target="_blank">BUY $ticker!</a>
+                    </div>
 
-	<div class="header">
-		<div class="title-container">
-			<img src="images/00side12.gif" class="logo" alt="Logo">
-			<h1 class="title">$NeoPepe</h1>
+                </div>
+            </div>
 
-		</div>
+           <div class="col-6" id="right">
+                <img src="assets/mascott1.png">
+            </div> 
 
+        </div>
+    </div>
+</section>
 
-		<button id="toggle-theme-btn" class="connect-btn" onclick="toggleTheme()">
-			<img id="theme-icon" src="images/theme.webp" class="button-icon" alt="Theme Icon">
-			OG Theme
-		</button>
+<section id="socials">
+    <div class="container">
+    <div class="row">
+        <img src="assets/icons/logo.png" class="logoi"><a href="$twitter" target="_blank"><img src="assets/icons/x.svg"></a><a href="$telegram" target="_blank"><img src="assets/icons/tg.svg"></a>
+    </div>
 
+</section>
 
-		<div class="button-container">
-			<button id="twitter1" class="connect-btn" onclick="window.open('https://x.com/PepeInMatrixSOL', '_blank');">
-				<img src="images/twitter.svg" class="button-icon" alt="Twitter">
-				X
-			</button>
-			<button id="tg1" class="connect-btn" onclick="window.open('https://t.me/+b12-9EQqHD5jM2E8', '_blank');">
-				<img src="images/telegram.svg" class="button-icon" alt="Telegram">
-				Telegram
-			</button>
-			<button id="dext1" class="connect-btn" onclick="window.open('https://pump.fun/B648GYneqYbAeESggKGtFAcdj4Ej9DnktHBf8FApump', '_blank');">
-				<img style="filter: grayscale(100%) brightness(100%);" src="images/dextools1.webp" class="button-icon"
-					alt="Pump.fun">
-				Pump.fun
-			</button>
+<section id="second" class="polka">
+    <div class="container">
+        <div class="row">
 
+            <div class="col-6" id="left2">
+            <img src="assets/mascott2.png" class="desktop">
+            </div>
 
-		</div>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+                        <div class="col-6" id="right2">
+                            <div class="headline">
+            <h2> ABOUT $ticker </h2>
+        </div>
+      
+        <div class="checklist">
+              <p>Welcome to the original, most advanced Pepe accross all chains! </p>
+              <br>
+        <p><img src="assets/icons/check.svg">PumpFun Fair launch</p>
+        <p><img src="assets/icons/check.svg">Daily giveaways</p>
+        <p><img src="assets/icons/check.svg">Community utilities</p>
+        <p><img src="assets/icons/check.svg">Massive marketing</p>
+        <p><img src="assets/icons/check.svg">Renounced contract</p>
+        <p><img src="assets/icons/check.svg">Locked liquidity</p>
+    </div>
+    <div class="button">
+                        <a href="https://pump.fun/$ca_pumpfun" target="_blank">BUY NOW!</a>
+                    </div>
 
+                    <img src="assets/mascott2.png" class="mobile">
 
+            </div>
 
-	<div class="scrolling-container">
-		<div class="scrolling-text-wrapper">
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-		</div>
-	</div>
+    </div>
+</section>
 
+<section id="fourth" class="polka">
+    <div class="container">
+        <div class="row">
 
+                        <div class="col-6" id="left3">
+                            <div class="headline">
+            <h2> WHO'S $ticker? </h2>
+        </div>
+      
+        
+              <p>$ticker is a frog that loves gambling but his aspect as a baby version of the mighty Pepe made him achieve the alias "Baby Pepe". Although, he has everything the adult Pepe is missing. </p>
+                <p>Fun. Cool vibes. Charm. Cuteness and huge growth potential.</p>
 
-	<video class="headvideo" autoplay="" muted="" loop="" playsinline="">
-		<source src="media/headanon.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
+                <p>Pepe is here to make meme coins on SOL great again.</p>
 
+                <p>Pre-launched on PumpFun with a hard cap of 750M.</p>
 
-	<div class="scrolling-container">
-		<div class="scrolling-text-wrapper">
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-		</div>
-	</div>
-	<br>
-	<br>
-	<h2 class="CA">CA : B648GYneqYbAeESggKGtFAcdj4Ej9DnktHBf8FApump</h2>
-	<br>
-	<br>
-	<div class="section" id="about">
-		<video autoplay="" loop="" muted="" playsinline="">
-			<source src="media/22.webm" type="video/webm">
-			Your browser does not support the video tag.
-		</video>
-		<div class="section-content">
-			<h2>About</h2>
-			<div class="about-content">
-				<div class="about-text">
-					<p>In the shadowy realms of the digital world, Anon Pepe moves with purpose and precision. Cloaked
-						in anonymity, he prioritizes financial freedom above all, navigating the cryptosphere with
-						unparalleled strategy. <br> <br> By night, he hunts down jeets, those impulsive traders,
-						ensuring market stability. Fudders, who spread fear and misinformation, are swiftly silenced by
-						his informed counter-narratives. His sophisticated tactics blend traditional financial wisdom
-						with blockchain innovation, securing his investments. <br> <br> Anon Pepe’s legacy is one of
-						resilience and unyielding commitment to financial sovereignty. As a silent guardian, he ensures
-						his realm remains prosperous and unshaken, embodying the ultimate pursuit of freedom.</p>
-				</div>
-				<img src="images/00side12.gif" class="about-image" alt="About Image">
-			</div>
-		</div>
-	</div>
+                <p>Renounced Contract with a locked liquidity.</p>
+              <br>
+        
+    <div class="button">
+                        <a href="https://pump.fun/$ca_pumpfun" target="_blank">BUY NOW!</a>
+                    </div>
 
-	<div class="scrolling-container">
-		<div class="scrolling-text-wrapper">
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-		</div>
-	</div>
+            </div>
 
-	<div class="section" id="tokenomics">
-		<video autoplay="" loop="" muted="" playsinline="">
-			<source src="media/22.webm" type="video/webm">
-			Your browser does not support the video tag.
-		</video>
-		<div class="section-content">
-			<h2>Anonomics</h2>
-			<div class="tokenomics-boxes">
-				<div class="tokenomics-box">
-					<img src="images/tax.webp" alt="Icon 1">
-					<br>0/0 Tax<br><br>.
-				</div>
-				<div class="tokenomics-box">
-					<img src="images/supply.webp" alt="Icon 2">
-					<br>1 Billion Supply <br> 92,9 SOL LP.
-				</div>
-				<div class="tokenomics-box">
-					<img src="images/lp_lockf.webp" alt="Icon 3">
-					<br>100 [percent] LP Locked for 4.2Y.
-				</div>
-				<div class="tokenomics-box">
-					<img src="images/ca.webp" alt="Icon 4">
-					<br>Owner Renounced<br>.
-				</div>
-			</div>
-		</div>
-	</div>
+                        <div class="col-6" id="right">
+            <img src="assets/mascott3.png">
+            </div>
 
-	<h2 class="CA">CA : zGpNqMjypEMHTuHpxxcqVwPupCFUsmYKyhgY9LWpump</h2>
-	<div class="scrolling-container">
-		<div class="scrolling-text-wrapper">
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-		</div>
-	</div>
+    </div>
+</section>
 
-	<div class="section" id="how-to-buy">
-		<video autoplay="" loop="" muted="" playsinline="">
-			<source src="media/22.webm" type="video/webm">
-			Your browser does not support the video tag.
-		</video>
-		<div class="section-content">
-			<h2>How to Buy</h2>
-			<div class="how-to-buy-boxes">
-				<div class="how-to-buy-box">
-					<img src="images/mm.webp"
-						style="filter: grayscale(1) brightness(0.8) contrast(2) sepia(1) hue-rotate(90deg) saturate(3);"
-						alt="Step 1 Icon">
-					<br>Step 1 <br> Create Phantom wallet.
-				</div>
-				<div class="how-to-buy-box">
-					<img src="images/eth.png"
-						style="filter: grayscale(1) brightness(0.8) contrast(2) sepia(1) hue-rotate(90deg) saturate(3);"
-						alt="Step 2 Icon">
-					<br>Step 2 <br> Get Some $SOL.
-				</div>
-				<div class="how-to-buy-box">
-					<img src="images/pump.png"
-						style="filter: grayscale(1) brightness(1) contrast(1) sepia(1) hue-rotate(90deg) saturate(5);"
-						alt="Step 3 Icon">
-					<br>Step 3 <br> Go To Pump.fun.
-				</div>
-				<div class="how-to-buy-box">
-					<img src="images/01pfp.webp" alt="Step 4 Icon">
-					<br>Step 4 <br> Swap $SOL to $NeoPepe.
-				</div>
-			</div>
-		</div>
-	</div>
+<section id="fifth">
+    <div class="container">
+        <div class="row">
+            <div class="col-6" id="left4">
 
-	<div class="scrolling-container">
-		<div class="scrolling-text-wrapper">
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-		</div>
-	</div>
+                <img src="assets/mascott4.png" class="desktop">
+            </div>
 
+           <div class="col-6" id="right4">
+                    <div class="herocont">
 
-	<!--   <div class="slotcontainer"> <div class="slot"> <div id="scroll1"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll2"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll3"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll4"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll5"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll6"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll7"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll8"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll9"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll10"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll11"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll12"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll13"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll14"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll15"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll16"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll17"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll18"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll19"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> <div class="slot"> <div id="scroll20"> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> <div>1</div> <div>0</div> </div> </div> </div> -->
+                    <img src="assets/tokenomics.png" class="desktop">
+                    <p> 1B Total supply<br>0% Tax</p>
+               
+               <img src="assets/mascott4.png" class="mobile">
 
-	<div class="slotcontainer">
-		<div class="slot">
-			<div id="scroll1" style="transform: translateY(-51.3476%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll2" style="transform: translateY(-43.4324%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll3" style="transform: translateY(-37.6431%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll4" style="transform: translateY(-29.7216%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll5" style="transform: translateY(-40.3459%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll6" style="transform: translateY(-35.2841%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll7" style="transform: translateY(-51.3476%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll8" style="transform: translateY(-40.3459%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll9" style="transform: translateY(-43.4324%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll10" style="transform: translateY(-31.366%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll11" style="transform: translateY(-29.7216%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll12" style="transform: translateY(-37.6431%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll13" style="transform: translateY(-51.3476%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll14" style="transform: translateY(-56.4758%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll15" style="transform: translateY(-33.2099%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll16" style="transform: translateY(-51.3476%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll17" style="transform: translateY(-40.3459%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll18" style="transform: translateY(-40.3459%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll19" style="transform: translateY(-51.3476%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-		<div class="slot">
-			<div id="scroll20" style="transform: translateY(-31.366%);">
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-				<div>A</div>
-				<div>N</div>
-				<div>O</div>
-				<div>N</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div> 
 
+        </div>
+    </div>
+</section>
 
+<section id="sixth" class="polka">
+    <div class="container">
+         <div class="headline">
+            <h2>ROADMAP</h2>
+        </div>
+        <div class="row">
 
+                        <div class="col-6" id="left6">
+                           
+      
+        
+        <div class="checklist">
+        <p><img src="assets/icons/check.svg">PumpFun Presale</p>
+        <p><img src="assets/icons/check.svg">100 Telegram Members</p>
+        <p><img src="assets/icons/uncheck.svg">King Of The Hill Achieved</p>
+        <p><img src="assets/icons/uncheck.svg">Raydium Pool Creation</p>
+        <p><img src="assets/icons/uncheck.svg">Dexscreener marketing</p>
+        <p><img src="assets/icons/uncheck.svg">CG & CMC listing</p>
+        <p><img src="assets/icons/uncheck.svg">Roulette Utility</p>
+        <p><img src="assets/icons/uncheck.svg">Contests & Giveaways</p>
+        </div>
 
-	<div class="scrolling-container">
-		<div class="scrolling-text-wrapper">
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-		</div>
-	</div>
+            </div>
 
+            <div class="col-6" id="right6">
+                        <div class="checklist">
+        <p><img src="assets/icons/uncheck.svg">Bitmart listing</p>
+        <p><img src="assets/icons/uncheck.svg">MEXC listing</p>
+        <p><img src="assets/icons/uncheck.svg">Gate.io listing</p>
+        <p><img src="assets/icons/uncheck.svg">Binance listing</p>
+        <p><img src="assets/icons/uncheck.svg">3x Mercedes Benz Contest </p>
+        <p><img src="assets/icons/uncheck.svg">Partnerships & Sponsoring </p>
+        <p><img src="assets/icons/uncheck.svg">Secret $ticker Utility  </p>
+        </div>
+     
+            </div>
 
-	<div class="section memes-section" id="memes">
-		<h2>MEMES</h2>
-		<br>
-		<br>
-		<div class="meme-row scroll-left" style="width: calc(950%);">
-			<img src="images/34.webp" alt="Meme 01">
-			<img src="images/37.webp" alt="Meme 02">
-			<img src="images/40.webp" alt="Meme 03">
-			<img src="images/00.webp" alt="Meme 1">
-			<img src="images/2.webp" alt="Meme 2">
-			<img src="images/3.webp" alt="Meme 3">
-			<img src="images/4.webp" alt="Meme 4">
-			<img src="images/5.webp" alt="Meme 5">
-			<img src="images/46.webp" alt="Meme 04">
-			<img src="images/49.webp" alt="Meme 05">
-			<img src="images/11.webp" alt="Meme 11">
-			<img src="images/13.webp" alt="Meme 13">
-			<img src="images/02.webp" alt="Meme 14">
-			<img src="images/15.webp" alt="Meme 15">
-			<img src="images/16.webp" alt="Meme 16">
-			<img src="images/17.webp" alt="Meme 17">
-			<img src="images/25.webp" alt="Meme 25">
-			<img src="images/26.webp" alt="Meme 26">
-			<img src="images/27.webp" alt="Meme 27">
-
-		</div>
-		<br>
-		<br>
-		<div class="meme-row scroll-right" style="width: calc(950%);">
-			<img src="images/6.webp" alt="Meme 6">
-			<img src="images/7.webp" alt="Meme 7">
-			<img src="images/8.webp" alt="Meme 8">
-			<img src="images/9.webp" alt="Meme 9">
-			<img src="images/10.webp" alt="Meme 10">
-			<img src="images/12.webp" alt="Meme 12">
-			<img src="images/18.webp" alt="Meme 18">
-			<img src="images/19.webp" alt="Meme 19">
-			<img src="images/20.webp" alt="Meme 20">
-			<img src="images/21.webp" alt="Meme 21">
-			<img src="images/22.webp" alt="Meme 22">
-			<img src="images/28.webp" alt="Meme 28">
-			<img src="images/01.webp" alt="Meme 29">
-			<img src="images/30.webp" alt="Meme 30">
-			<img src="images/50.webp" alt="Meme 31">
-			<img src="images/53.webp" alt="Meme 32">
-			<img src="images/57.webp" alt="Meme 33">
-			<img src="images/58.webp" alt="Meme 34">
-			<img src="images/60.webp" alt="Meme 35">
-		</div>
-	</div>
-
-	<div class="scrolling-container">
-		<div class="scrolling-text-wrapper">
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-		</div>
-	</div>
-
-	<div class="section" id="contact">
-		<video autoplay="" loop="" muted="" playsinline="">
-			<source src="media/22.webm" type="video/webm">
-			Your browser does not support the video tag.
-		</video>
-		<div class="section-content">
-			<h2>Contact</h2>
-			<div class="contact-boxes">
-				<div class="contact-box">Though his face may never be known, the legacy of Anon Pepe is etched into the
-					very fabric of the digital landscape. He is a symbol of resilience, intelligence, and unyielding
-					commitment to financial sovereignty. Those who follow in his footsteps are inspired by his example,
-					striving to emulate his success and uphold the principles he holds dear.<br> <br> <br></div>
-				<br>
-				<br>
-				<br>
-				<div class="button-container">
-					<button id="twitter" class="connect-btn" onclick="window.open('https://x.com/PepeInMatrixSOL', '_blank');">
-						<img src="images/twitter.svg" class="button-icon" alt="Twitter">
-						X
-					</button>
-					<button id="tg" class="connect-btn" onclick="window.open('https://t.me/+b12-9EQqHD5jM2E8', '_blank');">
-						<img src="images/telegram.svg" class="button-icon" alt="Telegram">
-						Telegram
-					</button>
-					<button id="dext" class="connect-btn"
-						onclick="window.open('https://pump.fun/B648GYneqYbAeESggKGtFAcdj4Ej9DnktHBf8FApump', '_blank');">
-						<img style="filter: grayscale(100%) brightness(100%);" src="images/dextools1.webp"
-							class="button-icon" alt="Pump.fun">
-						Pump.fun
-					</button>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="scrolling-container">
-		<div class="scrolling-text-wrapper">
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-			<div class="scrolling-text">
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe $NeoPepe $NeoPepe
-				$NeoPepe $NeoPepe
-			</div>
-		</div>
-	</div>
-
-
-	<div class="footer">
-		<p>© 2024 Anon Pepe. All rights reserved. <br> $NeoPepe CONVICTION: $NeoPepe is a crypto coin with no intrinsic
-			value or expectation of financial return. Just because some people are getting ridiculously rich buying
-			crypto doesn’t mean you definitely will. $NeoPepe is to be used strictly for getting laid and for
-			entertainment purposes only.</p>
-	</div>
-
-
-
-	<script>
-
-		window.addEventListener('load', function () {
-			const loadingContainer = document.getElementById('loadingContainer');
-			loadingContainer.style.display = 'none';
-		});
-
-		var numberSpin = function (selector) {
-			var element = document.getElementById(selector);
-			var factor = 10 + Math.floor(Math.random() * 10);
-			var num = 50;
-			var section = 100 / (num + 1);
-			var stopValue = 1;
-			var spin = function (flag, x) {
-				var value = element.style.transform;
-				value = value ? parseFloat(value.split("(")[1].split(")").join("")) : 0;
-				if (flag && flag == true) {
-					if (
-						stopValue != 1 &&
-						(value <= stopValue || value - section / factor <= stopValue) &&
-						typeof x != "undefined" &&
-						value >= x * -section &&
-						value <=
-						(x - 0.5 >= 0 ? x - 0.5 : stopValue == 0 ? 0 : 0.5) * -section
-					) {
-						element.style.transform = "translateY(" + stopValue + "%)";
-						stopValue = 1;
-						return true;
-					}
-					stopValue =
-						Math.floor(value / section) >= -num
-							? Math.floor(value / section) * section
-							: 0;
-				}
-				if (value && value <= -(section * num)) {
-					element.style.transform = "translateY(" + section + "%)";
-					value = 0;
-				} else {
-					value -= section / factor;
-				}
-				element.style.transform = "translateY(" + value + "%)";
-				return false;
-			};
-
-			var spinTimer = setInterval(spin, 10);
-
-			function stop(delay, x) {
-				setTimeout(function () {
-					clearTimeout(spinTimer);
-					var stopTimer = setInterval(function () {
-						if (spin(true, x)) {
-							clearInterval(stopTimer);
-						}
-					}, 10);
-				}, delay);
-			}
-			return {
-				stop: function (delay, x) {
-					return stop(delay, x);
-				},
-			};
-		};
-		numberSpin("scroll1");
-		numberSpin("scroll2");
-		numberSpin("scroll3");
-		numberSpin("scroll4");
-		numberSpin("scroll5");
-		numberSpin("scroll6");
-		numberSpin("scroll7");
-		numberSpin("scroll8");
-		numberSpin("scroll9");
-		numberSpin("scroll10");
-		numberSpin("scroll11");
-		numberSpin("scroll12");
-		numberSpin("scroll13");
-		numberSpin("scroll14");
-		numberSpin("scroll15");
-		numberSpin("scroll16");
-		numberSpin("scroll17");
-		numberSpin("scroll18");
-		numberSpin("scroll19");
-		numberSpin("scroll20");
-
-		window.addEventListener('load', function () {
-			const memeRows = document.querySelectorAll('.meme-row');
-			memeRows.forEach(row => {
-				row.style.width = 'calc(50% * ' + row.children.length + ')';
-			});
-		});
-
-
-		function handleScroll() {
-			const aboutContent = document.querySelector('.about-content');
-			const tokenomicsBoxes = document.querySelectorAll('.tokenomics-box');
-			const howToBuyBoxes = document.querySelectorAll('.how-to-buy-box');
-
-			if (isElementInViewport(aboutContent)) {
-				aboutContent.classList.add('visible');
-			}
-
-			tokenomicsBoxes.forEach((box, index) => {
-				if (isElementInViewport(box)) {
-					setTimeout(() => {
-						box.classList.add('visible');
-					}, index * 200);
-				}
-			});
-
-			howToBuyBoxes.forEach((box, index) => {
-				if (isElementInViewport(box)) {
-					setTimeout(() => {
-						box.classList.add('visible');
-					}, index * 200);
-				}
-			});
-		}
-
-		function isElementInViewport(el) {
-			const rect = el.getBoundingClientRect();
-			return (
-				rect.top >= 0 &&
-				rect.left >= 0 &&
-				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-			);
-		}
-
-		window.addEventListener('scroll', handleScroll);
-
-
-		function toggleTheme() {
-			const body = document.body;
-			const button = document.getElementById('toggle-theme-btn');
-
-			body.classList.toggle('anon-theme');
-
-			if (body.classList.contains('anon-theme')) {
-				button.innerHTML = `
-          <img id="theme-icon" src="https://cdn.glitch.global/75d4bced-f813-4941-ba14-1b43819cb770/theme.webp" class="button-icon" alt="Theme Icon" />
-          PENON Theme
-        `;
-			} else {
-				button.innerHTML = `
-          <img id="theme-icon" src="https://cdn.glitch.global/75d4bced-f813-4941-ba14-1b43819cb770/theme.webp" class="button-icon" alt="Theme Icon" />
-          OG Theme
-        `;
-			}
-		}
-
-
-	</script>
+    </div>
+</section>
 
 </body>
 
