@@ -2,671 +2,220 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BABY PEPE - $ticker</title>
-    <link rel="stylesheet" href="https://babypepetoken.io/css/styles.css" media="all">
-    <link rel="icon" href="assets/logo200.png" type="image/x-icon">
-    <meta name="description" content="Welcome to the biggest PEPE token on BSC!">
-    <link rel="stylesheet" href="https://use.typekit.net/olg7onv.css">
+    <meta name="description" content="$ticker Owl Memecoin: Fueled by Fun, Powered by community">
+    
+    <meta property="og:url" content="https://www.sunowl.fun/">
+    <meta property="og:title" content="$ticker Owl Memecoin">
+    <meta property="og:site_name" content="$ticker Owl Memecoin">
+    <meta property="og:description" content="$ticker Memecoin Fueled by Fun, Powered by community">
+    <meta property="og:image" content="https://www.sunowl.fun/og-sunowl-icon.png">
+    <meta property="og:type" content="website">
+    
+    <title>SunOWL Memecoin: Fueled by Fun, Powered by community</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest.html">
+
 </head>
-
-
-<style>
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-
-    body {
-        background-color: #FDF7E9;
-        font-family: "peachy-keen-jf", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    section {
-        max-width: 1920px;
-        margin: auto;
-        box-sizing: border-box;
-        border-radius: 40px;
-        width: 80%;
-    }
-
-    .row {
-        display: flex;
-    }
-
-    .col-6 {
-        width:50%;
-    }
-
-    img {
-        max-width:100%;
-    }
-
-    #hero {
-        margin-top: 50px;
-        background-image: url("assets/herobg.svg");
-        background-size: cover;
-    }
-
-    #hero p {
-        font-size: 28px;
-    }
-
-    img.splash {
-        margin-top:-250px;
-    }
-
-    .herocont {
-        text-align:center;
-    }
-
-    .herocont p{
-        margin-top:-11vw;
-    }
-
-    #left {
-        padding: 50px;
-        padding-top:5VW;
-        padding-bottom:10VW;
-    }
-
-    #right {
-        align-items: flex-end;
-        display: flex;
-        float: right;
-        text-align: right;
-        justify-content: end;
-        transform: scale(1.05);
-    }
-
-    #right img {
-        width:80%;
-    }
-
-    .button a {
-        background-color: #FEEA05;
-        border: 2px solid #000000;
-        border-radius:50px;
-        color: black;
-        padding: 10px 30px;
-        width: fit-content;
-        margin: auto;
-        text-decoration: none;
-    }
-
-    #socials .row {
-        align-items: center;
-        margin-top:-4.5vw;
-        padding-left: 50px;
-    }
-
-    #socials .row img {
-        padding: 3px;
-    }
-
-    :root {
-  --polka-bg-image:
-    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%),
-    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%);
-  --polka-bg-position: 0px 0px, 12px 12px;
-  --polka-bg-size: 24px 24px;
-  --polka-bg-color: rgb(242, 234, 214);
-}
-
-/* ...or add this class to an element */
-.polka {
-  background-image: 
-    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%),
-    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%);
-  background-position: 0px 0px, 12px 12px;
-  background-size: 24px 24px;
-  background-color: rgb(242, 234, 214);
-}
-
-h2 {
-    font-size:36px;
-}
-
-p {
-    font-size: 22px;
-}
-
-.headline {
-    background-image: url("assets/headerbg.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 40px;
-    margin-top:-50px;
-}
-
-.headline h2 {
-    padding-left: 40px;
-}
-
-#second, #fourth, #sixth {
-    margin-top: 100px;
-}
-
-.checklist {
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-
-.checklist img {
-    width: 30px;
-    transform: translateY(7px);
-    margin-right: 5px;
-}
-
-.checklist p {
-    margin: 3px;
-}
-
-    #left2 {
-        align-items: flex-end;
-        display: flex;
-        text-align: left;
-        transform: scale(1.05);
-    }
-
-#left2 img {
-    width:50%;
-}
-#right2 {
-    padding-bottom: 100px;
-}
-
-#third {
-    background-image: url("assets/roulettebg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-    padding-bottom:100px;
-    margin-top:100px;
-    text-align: center;
-}
-
-#third .container {
-        display: inline-table;
-    margin: auto;
-    text-align: center;
-    width: 100%;
-}
-
-#third img {
-    width: 75%;
-}
-
-.roulettecontent {
-    width: 40%;
-    margin: auto;
-    margin-top:-10vw;
-}
-
-#left3 {
-padding-left: 50px;
-padding-top:  0px;
-padding-bottom:  100px;
-}
-
-    #right3 {
-        align-items: flex-end;
-        display: flex;
-        float: right;
-        text-align: right;
-        justify-content: end;
-        transform: scale(1.05);
-    }
-        #right img {
-        width:70%;
-    }
-
-    #fifth {
-        background-image: url("assets/pepenomicsbg.svg");
-        background-size: cover;
-        margin-top: 100px;
-    }
-
-    #left4{
-                align-items: flex-end;
-        display: flex;
-        text-align: left;
-        transform: scale(1.05);
-    } 
-
-    #left4 img{
-        transform: scaleX(-1);
-        width:50%;
-    }
-
-    #right4 {
-        padding-right: 100px;
-        padding-top: 100px;
-        padding-bottom: 200px;
-    }
-
-    #right4 img {
-        width: 90%;
-    }
-
-#sixth .headline {
-    margin-top: 0px;
-    transform: translateY(-30px);
-    text-align: center;
-    width: fit-content;
-    margin:auto;
-}
-
-#sixth h2 {
-    margin-top: 10px;
-    padding: 0px 40PX;
-}
-
-#sixth .row {
-      transform: translateY(-30px);  
-      width: 60%;
-      margin: auto;
-}
-
-#left6 {
-    padding-left: 200px;
-padding-top:  0px;
-}
-
-#sixth {
-    margin-bottom: 100px;
-}
-@media(max-width: 1600px) {
-    section {
-        width: 90%;
-    }
-
-img.logoi{
-    width: 120px !important;
-}
-
-    #socials .row img {
-        width: 60px;
-    }
-
-    #left2 img {
-        width: 65%;
-    }
-    .roulettecontent {
-    width: 60%;
-    margin: auto;
-    margin-top:-13vw;
-}
-
-#right img {
-    width: 85%;
-}
-
-#left6 {
-    padding-left: 0px;
-}
-
-#left4 img {
-    width: 70%;
-}
-}
-
-@media(max-width: 767px) {
-     #second .headline {
-        transform:translateY(-50px);
-    }
-    .row {
-        display: block;
-    }
-    .col-6 {
-        width: 100%;
-    }
-
-    #right {
-        text-align: center;
-        display: block;
-        float: none;
-        padding-top: 50px;
-    }
-
-    section {
-        width: 100%;
-        border-radius: 20px;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    #socials .row {
-        display: flex;
-        padding-left: 0px;
-        z-index: 1;
-        position: relative;
-    }
-
-    #hero {
-        padding-top: 50px;
-    }
-
-    .logoi {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .desktop {
-        display: none;
-    }
-
-    #hero .herocont p {
-        margin-top: -45vw;
-padding-left: 20px;
-padding-right: 20px;
-    }
-
-    #hero .mobile {
-        width: 100%;
-    }
-
-    h2 {
-        font-size: 26px;
-    }
-
-    #left {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .headline {
-        padding: 40px 20px;
-    }
-    #right2 img.mobile {
-        padding-top: 50px;
-        padding-bottom: 0px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    #right2 {
-        padding-bottom: 0px;
-    }
-
-    #second, #fourth, #sixth {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    #third img {
-        width: 100%;
-    }
-    #third {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .roulettecontent {
-        width: 85%;
-        margin-top: -60vw;
-    }
-    #left3 {
-        padding-left: 0px;
-    }
-    .headline h2 {
-        padding-left: 0px;
-    text-align: center;
-}
-#fourth .headline {
-        transform: translateY(-50px);
-        margin-top: 0px;
-}
-#fourth p {
-    transform: translateY(-50px);
-}
-#fourth .button {
-    transform: translateY(-50px);
-}
-#left3 {
-    padding-bottom: 0px;
-}
-#fourth #right img {
-        width: 100%;
-    }
-    #right4 {
-        padding-right: 0px;
-    }
-
-    #right4 img {
-        width: 100%;
-    }
-
-    #fifth .herocont p {
-        margin-top: -45vw;
-        padding-bottom: 150px;
-    }
-    #fifth {
-        background-position: center;
-    }
-
-    #fifth #right4 {
-        padding-bottom: 0px;
-    }
-    #sixth .headline {
-        width: 100%;
-    }
-
-    #sixth .row {
-        width: 100%;
-    }
-
-    #sixth .checklist {
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    #sixth {
-        padding-bottom: 50px;
-    }
-}
-
-@media(min-width: 768px) {
-    .mobile {
-        display: none;
-    }
-
-    .desktop {
-        display: block;
-    }
-
-}
-
-@media(min-width:1601px) {
-    .herocont p {
-    margin-top: -9vw;
-}
-
-#left6 {
-    padding-left: 70px;
-    padding-top: 0px;
-}
-}
-#third img {
-    margin:auto;
-}
-
-
-
-</style>
-
 <body>
+    <header>
+        <div class="logo">
+            <img src="static/images/so-logo.png" alt="SunOWL Logo" style="border-radius: 50%;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#about">About $ticker</a></li>
+                <li><a href="index.html#howtobuy">How to Buy</a></li>
+                <li><a href="index.html#roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+            <button class="pixel-button-s" onclick='window.open("https://pump.fun/$ca_pumpfun", "_blank")'>
+                Buy on PumpFun
+                <span class="pixel-corner"></span>
+                <span class="pixel-corner"></span>
+                <span class="pixel-corner"></span>
+                <span class="pixel-corner"></span>
+            </button>
+    </header>
 
-<section id="hero">
-    <div class="container">
-        <div class="row">
-            <div class="col-6" id="left">
-                <div class="herocont">
+    <main>
+        <section>
+            <h1 class="yellow-title">$ticker Memecoin: Number One authentic Owl Memecoin on SOL</h1>
+            <div class="hero-image">
+                <img class="xk-lazy" src="static/images/so-hero.gif" alt="SunOWL">    
+            </div>
+            
+            <button class="pixel-button" onclick='window.open("https://pump.fun/$ca_pumpfun", "_blank")'>
+                Buy on PumpFun
+                <span class="pixel-corner"></span>
+                <span class="pixel-corner"></span>
+                <span class="pixel-corner"></span>
+                <span class="pixel-corner"></span>
+            </button>
+            
+            <h3>Owlficial Links</h3>
+            <div class="community-links">
+                <a href="$twitter" target="_blank"><img src="static/images/logo-x.png" alt="X (Twitter)"></a>
+                <a href="$telegram" target="_blank"><img src="static/images/logo-tg.png" alt="Telegram"></a>
+            </div>
+        </section>
 
-                    <img src="assets/herotx.svg" class="desktop">
-                    <img src="assets/herom.svg" class="mobile">
-                    <p> But his real name is $ticker! </p>
+        <a name="about"></a>
+        <section class="about-container">
+            <div class="owl">
+                <img class="xk-lazy" src="static/images/so-logo.png" style="border-radius: 50%;">
+            </div>
+            <h2 class="yellow-title">$ticker Memecoin is Fueled by Fun, Powered by community</h2>
+            <p>In the far reaches of space, the $ticker Owl created tokens to share its radiant energy with holders and crypto enthusiasts alike. $ticker Tokens are beacons of hope and prosperity, illuminating a path toward a brighter future.</p>
+        </section>
 
-                    <div class="button">
-                        <a href="https://pump.fun/$ca_pumpfun" target="_blank">BUY $ticker!</a>
-                    </div>
-
+        <section class="token-container">
+            <div class="token-info">
+                <div class="moon-image">
+                    <img class="xk-lazy" src="static/images/moon.png">
                 </div>
+                <h2 class="yellow-title">Owlnomics</h2> 
+                <p class="token-label">Ticker:</p>
+                <h2 class="token-value">$ticker</h2>
+                <p class="token-label">Total Supply:</p>
+                <h2 class="token-value"><span class="xk-counter" data-from-value="0" data-to-value="1000000000" data-duration="2000">1000000000</span> $ticker</h2>
             </div>
-
-           <div class="col-6" id="right">
-                <img src="assets/mascott1.png">
-            </div> 
-
-        </div>
-    </div>
-</section>
-
-<section id="socials">
-    <div class="container">
-    <div class="row">
-        <img src="assets/icons/logo.png" class="logoi"><a href="$twitter" target="_blank"><img src="assets/icons/x.svg"></a><a href="$telegram" target="_blank"><img src="assets/icons/tg.svg"></a>
-    </div>
-
-</section>
-
-<section id="second" class="polka">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-6" id="left2">
-            <img src="assets/mascott2.png" class="desktop">
-            </div>
-
-                        <div class="col-6" id="right2">
-                            <div class="headline">
-            <h2> ABOUT $ticker </h2>
-        </div>
-      
-        <div class="checklist">
-              <p>Welcome to the original, most advanced Pepe accross all chains! </p>
-              <br>
-        <p><img src="assets/icons/check.svg">PumpFun Fair launch</p>
-        <p><img src="assets/icons/check.svg">Daily giveaways</p>
-        <p><img src="assets/icons/check.svg">Community utilities</p>
-        <p><img src="assets/icons/check.svg">Massive marketing</p>
-        <p><img src="assets/icons/check.svg">Renounced contract</p>
-        <p><img src="assets/icons/check.svg">Locked liquidity</p>
-    </div>
-    <div class="button">
-                        <a href="https://pump.fun/$ca_pumpfun" target="_blank">BUY NOW!</a>
-                    </div>
-
-                    <img src="assets/mascott2.png" class="mobile">
-
-            </div>
-
-    </div>
-</section>
-
-<section id="fourth" class="polka">
-    <div class="container">
-        <div class="row">
-
-                        <div class="col-6" id="left3">
-                            <div class="headline">
-            <h2> WHO'S $ticker? </h2>
-        </div>
-      
+        </section>
         
-              <p>$ticker is a frog that loves gambling but his aspect as a baby version of the mighty Pepe made him achieve the alias "Baby Pepe". Although, he has everything the adult Pepe is missing. </p>
-                <p>Fun. Cool vibes. Charm. Cuteness and huge growth potential.</p>
+        <a name="howtobuy"></a>
+        <section>
+            <div class="how-tobuy">
+                <h2 class="yellow-title-l">How to Buy $ticker</h2>
+                <ol>
+                    <li>Download <a href="https://www.phantom.app" target="_blank">Phantom Wallet</a> (Android, iOS, Chrome)</li>
+                    <li>Deposit Solana ($SOL) into the wallet from any exchange</li>
+                    <li>Visit <a href="https://pump.fun/$ca_pumpfun" target="_blank">Pump.Fun</a> and buy the token!</li>
+                </ol>
+                <button class="pixel-button" onclick='window.open("https://pump.fun/$ca_pumpfun", "_blank")'>
+                    Buy on PumpFun
+                    <span class="pixel-corner"></span>
+                    <span class="pixel-corner"></span>
+                    <span class="pixel-corner"></span>
+                    <span class="pixel-corner"></span>
+                </button>
 
-                <p>Pepe is here to make meme coins on SOL great again.</p>
-
-                <p>Pre-launched on PumpFun with a hard cap of 750M.</p>
-
-                <p>Renounced Contract with a locked liquidity.</p>
-              <br>
+            </div>
+        </section>
         
-    <div class="button">
-                        <a href="https://pump.fun/$ca_pumpfun" target="_blank">BUY NOW!</a>
-                    </div>
-
+        <a name="roadmap"></a>
+        <section class="roadmap-container">
+            <h2 class="yellow-title">Roadmap</h2>
+            <p>☀️&nbsp;&nbsp;Phase 1: Get Listed on PumpFun</p>
+            <p>💎&nbsp;&nbsp;Phase 2: Meme and HODL</p>
+            <p>🎨&nbsp;&nbsp;Phase 3: Launch Stickers + NFT</p>
+            <p>😎&nbsp;&nbsp;Phase 4: Get Attention of <b>Donald Trump</b></p>
+            <p>👕&nbsp;&nbsp;Phase 5: Launch Owl Merch</p>
+            <p>🧨&nbsp;&nbsp;Phase 6: Owl Meme Takeover</p>
+            <div class="cool-owl">
+                <img class="xk-lazy" src="static/images/cool-owl.png">
             </div>
-
-                        <div class="col-6" id="right">
-            <img src="assets/mascott3.png">
-            </div>
-
-    </div>
-</section>
-
-<section id="fifth">
-    <div class="container">
-        <div class="row">
-            <div class="col-6" id="left4">
-
-                <img src="assets/mascott4.png" class="desktop">
-            </div>
-
-           <div class="col-6" id="right4">
-                    <div class="herocont">
-
-                    <img src="assets/tokenomics.png" class="desktop">
-                    <p> 1B Total supply<br>0% Tax</p>
-               
-               <img src="assets/mascott4.png" class="mobile">
-
-                </div>
-            </div> 
-
-        </div>
-    </div>
-</section>
-
-<section id="sixth" class="polka">
-    <div class="container">
-         <div class="headline">
-            <h2>ROADMAP</h2>
-        </div>
-        <div class="row">
-
-                        <div class="col-6" id="left6">
-                           
-      
+            <h2 class="violet-title">For those who are tired of the same old cats and dogs</h2>
+        </section>
         
-        <div class="checklist">
-        <p><img src="assets/icons/check.svg">PumpFun Presale</p>
-        <p><img src="assets/icons/check.svg">100 Telegram Members</p>
-        <p><img src="assets/icons/uncheck.svg">King Of The Hill Achieved</p>
-        <p><img src="assets/icons/uncheck.svg">Raydium Pool Creation</p>
-        <p><img src="assets/icons/uncheck.svg">Dexscreener marketing</p>
-        <p><img src="assets/icons/uncheck.svg">CG & CMC listing</p>
-        <p><img src="assets/icons/uncheck.svg">Roulette Utility</p>
-        <p><img src="assets/icons/uncheck.svg">Contests & Giveaways</p>
+    </main>
+    
+    <footer>
+        <h2 class="yellow-title">Owl in One Place! <span class="emoji">🦉</span></h2>
+        <h3>Owlficial Links</h3>
+        <div class="community-links">
+            <a href="$twitter" target="_blank"><img src="static/images/logo-x.png" alt="X (Twitter)"></a>
+            <a href="$telegram" target="_blank"><img src="static/images/logo-tg.png" alt="Telegram"></a>
         </div>
+        <p class="small-text">$OWL is a meme token intended for entertainment purposes only. It does not promise or guarantee any financial returns. $ticker are not in any way associated with the official SOL dao.</p>
+    </footer>
 
-            </div>
+    <script type="text/javascript">
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let elem = entry.target;
+                
+                if (elem.classList.contains('xk-lazy')) {
+                    elem.classList.add('xk-lazy-loading');
+                    let img = new Image();
+                    img.src = elem.dataset.src || elem.getAttribute('src');
+                    img.onload = () => {
+                        if (elem.tagName.toLowerCase() === 'img') {
+                            elem.setAttribute('src', img.src);
+                        } else {
+                            elem.style.backgroundImage = `url(${img.src})`;
+                        }
+                        elem.classList.add('xk-lazy-loaded');
+                        elem.classList.remove('xk-lazy-loading');
+                        if (elem.dataset.afterLoad) {
+                            eval(elem.dataset.afterLoad);
+                        }
+                    };
+                }
+                
+                if (elem.classList.contains('xk-counter')) {
+                    let startValue = parseInt(elem.dataset.fromValue);
+                    let endValue = parseInt(elem.dataset.toValue);
+                    let duration = parseInt(elem.dataset.duration);
+                    let startTime = null;
+                    
+                    function formatNumber(value) {
+                        return value.toLocaleString('de-DE');
+                    }
+                    
+                    function step(timestamp) {
+                        if (!startTime) startTime = timestamp;
+                        let progress = Math.min((timestamp - startTime) / duration, 1);
+                        let currentValue = Math.round(startValue + (endValue - startValue) * progress);
+                        elem.textContent = formatNumber(currentValue); // Используем отформатированное значение
+                        if (progress < 1) {
+                            window.requestAnimationFrame(step);
+                        }
+                    }
+                    
+                    window.requestAnimationFrame(step);
+                }
 
-            <div class="col-6" id="right6">
-                        <div class="checklist">
-        <p><img src="assets/icons/uncheck.svg">Bitmart listing</p>
-        <p><img src="assets/icons/uncheck.svg">MEXC listing</p>
-        <p><img src="assets/icons/uncheck.svg">Gate.io listing</p>
-        <p><img src="assets/icons/uncheck.svg">Binance listing</p>
-        <p><img src="assets/icons/uncheck.svg">3x Mercedes Benz Contest </p>
-        <p><img src="assets/icons/uncheck.svg">Partnerships & Sponsoring </p>
-        <p><img src="assets/icons/uncheck.svg">Secret $ticker Utility  </p>
-        </div>
-     
-            </div>
+                if (elem.classList.contains('xk-typewriter')) {
+                    let text = elem.textContent;
+                    let duration = parseInt(elem.dataset.duration);
+                    let charDuration = duration / text.length;
+                    elem.innerHTML = `<span class="xk-typewriter-visible"></span><span class="xk-typewriter-invisible" style="opacity: 0">${text}</span>`;
+                    
+                    function typeCharacter() {
+                        let invisibleSpan = elem.querySelector('.xk-typewriter-invisible');
+                        let visibleSpan = elem.querySelector('.xk-typewriter-visible');
+                        
+                        if (invisibleSpan.textContent.length > 0) {
+                            let char = invisibleSpan.textContent.charAt(0);
+                            invisibleSpan.textContent = invisibleSpan.textContent.substring(1);
+                            visibleSpan.textContent += char;
+                            setTimeout(typeCharacter, charDuration);
+                        }
+                    }
+                    
+                    typeCharacter();
+                }
+                
+                observer.unobserve(elem);
+            }
+        });
+    }, {});
 
-    </div>
-</section>
+    const observeEntries = [
+        '.xk-counter',
+        '.xk-typewriter',
+        '.xk-lazy:not(.te-lazy-loaded)'
+    ];
 
+    observeEntries.forEach(selector => {
+        document.querySelectorAll(selector).forEach(elem => {
+            observer.observe(elem);
+        });
+    });
+</script>
 </body>
-
 </html>
