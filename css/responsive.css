@@ -1,0 +1,478 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+
+
+@media screen and (min-width: 1700px) and (max-width: 2000px) {
+    .hero-area{
+        height: 900px;
+    }
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .logo img {
+        width: 160px;
+    }
+    .menu-bar {
+        display: block;
+    }
+   
+    .menu-item {
+        display: none !important;
+    }
+
+    .mobile-icon-ss {
+        margin-top: -5px;
+        margin-right: 1px !important;
+        display: block !important;
+        margin-left: 0px;
+    }
+    .s-icon {
+        display: none;
+    }
+    .mobile-icon-ss ul {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .mobile-icon-ss ul li img {
+        width: 40px;
+    }
+    .menu-bar-wraper {
+        display: flex;
+        align-items: center;
+    }
+    nav {
+     
+        border-radius: 15px;
+        padding: 3px 7px;
+    }
+    header {
+        padding: 10px 0px;
+        position: fixed;
+        margin: auto;
+        width: 100%;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+   
+    .h-t {
+        color: #FE8C42;
+        text-align: center;
+        font-family: "Nerko One";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        text-transform: uppercase;
+        display: inline-block;
+        border-radius: 100px;
+        background: #161B32;
+        padding: 11px 40px;
+        position: absolute;
+        top: -23px;
+        margin: auto;
+    }
+    .hero-area{
+        padding-top: 80px;
+        background-image: url(../img/h-mob.png);
+        /* background-size: 100% 100%; */
+        background-position: 54% 50%;
+        object-fit: cover;
+    }
+    .hero-item {
+        display: block;
+    }
+    .hero-left ul {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .hero-left ul li{
+       width: 50%;
+       margin-bottom: 10px;
+      }
+    .hero-left ul li a {
+        display: block;
+        padding: 10px 0;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .hero-right {
+        display: block;
+       
+    }
+    .hero-right ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .Tokenomics-area{
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .Token_Address p {
+        color: #161B32;
+        font-family: "Steel City Comic";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        border-radius: 5px;
+        border: 3px solid #161B32;
+        background: #FE8C42;
+        box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.12);
+        padding: 10px 5px;
+        cursor: pointer;
+    }
+    .token-title {
+        margin-bottom: 23px;
+    }
+    .tokenomics-items{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .tokenomics-items h2 {
+        font-size: 63px;
+        margin-bottom: 5px;
+    }
+
+    .tokenomics-items p {
+        font-size: 39px;
+    }
+
+    .trc-top {
+        margin-top: 0px;
+    }
+
+
+
+
+
+    .about-left {
+        
+        height: 100%;
+        padding: 27px;
+        border: none;
+    }
+  
+    .about-left::before {
+        content: "";
+        width: 2000px;
+        height: 100%;
+        background-color: FFE135;
+        display: block;
+        position: absolute;
+        left: -1578px;
+        top: 0px;
+        background-color: #FFE135;
+    }
+    .about-right {
+        text-align: center;
+        margin-top: 103px;
+    }
+    .buy-right {
+        border-left: 0px solid #161B32;
+        border-top: 3px solid #161B32;
+        background: #F6B7D0;
+        padding: 25px 14px;
+    }
+
+    .about-left p {
+     
+        font-size: 22px;
+    }
+
+    .buy-title h2 {
+        color: #161B32;
+        font-family: "Nerko One";
+        font-size: 47px;
+      text-align: center;
+    }
+
+    .buy-area {
+        padding: 35px 0;
+    }
+ 
+    footer p br{
+        display: none;
+    }
+    footer p {
+        color: #161B32;
+        text-align: center;
+        font-family: "Steel City Comic";
+        font-size: 14px;
+    }
+    footer h2{
+        text-align: center;
+    }
+    footer ul{
+        justify-content: center;
+    }
+
+    .name-contain-inner {
+        display: block;
+
+    }
+    .name-md {
+       text-align: center;
+    }
+
+    footer h2 {
+       
+        margin-top: 46px;
+    }
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+
+@media screen and (max-width: 767px) {
+    .logo img {
+        width: 160px;
+    }
+    .menu-bar {
+        display: block;
+    }
+   
+    .menu-item {
+        display: none !important;
+    }
+
+    .mobile-icon-ss {
+        margin-top: -5px;
+        margin-right: 1px !important;
+        display: block !important;
+        margin-left: 0px;
+    }
+    .s-icon {
+        display: none;
+    }
+    .mobile-icon-ss ul {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .mobile-icon-ss ul li img {
+        width: 40px;
+    }
+    .menu-bar-wraper {
+        display: flex;
+        align-items: center;
+    }
+    nav {
+     
+        border-radius: 15px;
+        padding: 3px 7px;
+    }
+    header {
+        padding: 10px 0px;
+        position: fixed;
+        margin: auto;
+        width: 100%;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+   
+    .h-t {
+        color: #FE8C42;
+        text-align: center;
+        font-family: "Nerko One";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        text-transform: uppercase;
+        display: inline-block;
+        border-radius: 100px;
+        background: #161B32;
+        padding: 11px 40px;
+        position: absolute;
+        top: -23px;
+        margin: auto;
+    }
+    .hero-area{
+        padding-top: 80px;
+        background-image: url(../img/h-mob.png);
+        background-size: 383% 93%;
+        background-position: 56% -14%;
+        object-fit: cover;
+    }
+    .hero-item {
+        display: block;
+    }
+    .hero-left ul {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .hero-left ul li{
+       width: 50%;
+       margin-bottom: 10px;
+      }
+    .hero-left ul li a {
+        display: block;
+        padding: 10px 0;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .hero-right {
+        display: block;
+       
+    }
+    .hero-right ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .Tokenomics-area{
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .Token_Address p {
+        color: #161B32;
+        font-family: "Steel City Comic";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        border-radius: 5px;
+        border: 3px solid #161B32;
+        background: #FE8C42;
+        box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.12);
+        padding: 10px 5px;
+        cursor: pointer;
+    }
+    .token-title {
+        margin-bottom: 23px;
+    }
+    .tokenomics-items{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .tokenomics-items h2 {
+        font-size: 63px;
+        margin-bottom: 5px;
+    }
+
+    .tokenomics-items p {
+        font-size: 39px;
+    }
+
+    .trc-top {
+        margin-top: 0px;
+    }
+
+
+
+
+
+    .about-left {
+        
+        height: 100%;
+        padding: 27px;
+        border: none;
+    }
+    .about-left::before {
+        content: "";
+        width: 1000px;
+        height: 542px;
+
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        /* background-color: #FFE135; */
+    }
+    .buy-right {
+        border-left: 0px solid #161B32;
+        border-top: 3px solid #161B32;
+        background: #F6B7D0;
+        padding: 25px 14px;
+    }
+
+    .about-left p {
+     
+        font-size: 22px;
+    }
+
+    .buy-title h2 {
+        color: #161B32;
+        font-family: "Nerko One";
+        font-size: 47px;
+      text-align: center;
+    }
+
+    .buy-area {
+        padding: 35px 0;
+    }
+ 
+    footer p br{
+        display: none;
+    }
+    footer p {
+        color: #161B32;
+        text-align: center;
+        font-family: "Steel City Comic";
+        font-size: 14px;
+    }
+    footer h2{
+        text-align: center;
+    }
+    footer ul{
+        justify-content: center;
+    }
+
+    .name-contain-inner {
+        display: block;
+
+    }
+    .name-md {
+       text-align: center;
+    }
+
+    footer h2 {
+       
+        margin-top: 46px;
+    }
+    .king-icon {
+        position: absolute;
+        top: -169px;
+        left: 50px;
+        text-align: center;
+        margin: auto;
+        display: none;
+    }
+
+}
