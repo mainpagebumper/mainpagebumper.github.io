@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="463" height="463" viewBox="0 0 463 463">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_2465" data-name="Rechteck 2465" width="285.069" height="175.793" transform="translate(654.679 -412.341)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_6262" data-name="Gruppe 6262" transform="translate(-7034 -1861)">
+    <g id="Gruppe_6261" data-name="Gruppe 6261" transform="translate(505 -1)">
+      <g id="Gruppe_6259" data-name="Gruppe 6259" transform="translate(1010)">
+        <g id="Gruppe_6253" data-name="Gruppe 6253" transform="translate(4200 1760)">
+          <g id="Gruppe_6239" data-name="Gruppe 6239" transform="translate(1307 83)">
+            <circle id="Ellipse_3" data-name="Ellipse 3" cx="231.5" cy="231.5" r="231.5" transform="translate(12 19)" fill="#ff6200" opacity="0.548"/>
+            <circle id="Ellipse_2" data-name="Ellipse 2" cx="213" cy="213" r="213" transform="translate(30 37)" fill="#ff6200" opacity="0.548"/>
+            <circle id="Ellipse_1" data-name="Ellipse 1" cx="195.5" cy="195.5" r="195.5" transform="translate(48 55)" fill="#fb471e" opacity="0.998"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_6498807fc628c150d281416a_огеркупац" data-name="6498807fc628c150d281416a_огеркупац" transform="translate(6468.287 2418.945)" clip-path="url(#clip-path)">
+      <path id="Pfad_1015" data-name="Pfad 1015" d="M12.526,144.2A12.575,12.575,0,1,0,0,131.622,12.551,12.551,0,0,0,12.526,144.2Z" transform="translate(654.762 -456.113)" fill="#fff"/>
+      <path id="Pfad_1016" data-name="Pfad 1016" d="M150.372,225.147a12.575,12.575,0,1,0-12.526-12.575A12.551,12.551,0,0,0,150.372,225.147Z" transform="translate(603.843 -486.015)" fill="#fff"/>
+      <path id="Pfad_1017" data-name="Pfad 1017" d="M301.41,78.214c-3.132-2.892-5.887-3.269-8.392-3.017-.5,0-.877-.126-1.378-.126H158.487a62.38,62.38,0,0,1,105.094-31.94,12.47,12.47,0,1,0,17.787-17.479,86.9,86.9,0,0,0-116.492-6.162c-6.889,5.281-12.025,5.533-22.923,5.533H121.035a12.594,12.594,0,0,0-12.526,12.952c.125,6.79,6.138,12.072,12.9,12.072H154.6l-12.651,2.263a4.259,4.259,0,0,0-3.382,2.766,130.686,130.686,0,0,0-4.259,14.084c-1.128,4.149-7.39,6.036-16.409,6.036H72.433a12.872,12.872,0,0,0-13.027,12.2,12.593,12.593,0,0,0,12.526,12.952h78.539l-12.9,2.138a3.884,3.884,0,0,0-3.132,4.779c8.894,38.981,43.59,68.28,85.177,68.28,46.723,0,85.052-37.1,87.307-83.5A18.15,18.15,0,0,0,301.41,78.214Zm-81.8,72.053a62.429,62.429,0,0,1-61.127-50.047H280.742A62.636,62.636,0,0,1,219.615,150.267Z" transform="translate(632.821 -412.139)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
