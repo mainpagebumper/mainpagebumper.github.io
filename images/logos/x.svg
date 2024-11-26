@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="463" height="463" viewBox="0 0 463 463">
+  <g id="Gruppe_7592" data-name="Gruppe 7592" transform="translate(-1466 -3747)">
+    <g id="Gruppe_7588" data-name="Gruppe 7588" transform="translate(-3555 414)">
+      <g id="Gruppe_7500" data-name="Gruppe 7500" transform="translate(712 759)">
+        <g id="Gruppe_6254" data-name="Gruppe 6254" transform="translate(2990 2472)">
+          <g id="Gruppe_6239" data-name="Gruppe 6239" transform="translate(1307 83)">
+            <circle id="Ellipse_3" data-name="Ellipse 3" cx="231.5" cy="231.5" r="231.5" transform="translate(12 19)" opacity="0.548"/>
+            <circle id="Ellipse_2" data-name="Ellipse 2" cx="213" cy="213" r="213" transform="translate(30 37)" opacity="0.548"/>
+            <circle id="Ellipse_1" data-name="Ellipse 1" cx="195.5" cy="195.5" r="195.5" transform="translate(48 55)" opacity="0.998"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="logo" d="M98.431,71.571,160,0h-14.59L91.949,62.144,49.249,0H0L64.571,93.973,0,169.026H14.591L71.048,103.4l45.094,65.626h49.249L98.427,71.571ZM78.446,94.8,71.9,85.443,19.849,10.984H42.26L84.269,71.075l6.542,9.358,54.607,78.109H123.007L78.446,94.8Z" transform="translate(1614.804 3893.987)" fill="#fff"/>
+  </g>
+</svg>

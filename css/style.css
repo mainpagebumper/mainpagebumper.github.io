@@ -1,0 +1,788 @@
+@font-face {
+    font-family: 'genotics';
+    src: url('../fonts/genotics-webfont.woff2') format('woff2'), /* Replace with the actual path */
+         url('../fonts/genotics-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+body{
+    font-family: 'genotics', sans-serif;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: #353434;
+
+}
+body::before {
+    position: fixed;
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .hero{
+    display: flex;
+
+    height: 100vh;
+
+  margin: 0;
+  padding: 0;
+  }
+  .hero-layer{
+    margin: auto;
+    width: 100%;
+    height: 55%;
+  }
+  .hero-content{
+    margin: auto;
+    flex: 0 0 60%;
+    max-width: 60%;
+    text-align: center;
+  }
+  .hero-img img{
+    width: 120px;
+    margin-bottom: 30px;
+  }
+.btnwrap {
+  margin-top: 30px;
+}
+  .hero-button{
+    margin: 10px;
+    padding: 15px 20px 10px 20px;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 500;
+    border: 1px solid #FF6200;
+    text-shadow: 1px 2px 0px #000000;
+    color: #FF6200;
+    background-color: #00000040;
+    border-radius: 8px 8px 8px 8px;
+    margin-left: 0px;
+  }
+  .hero-text{
+    color: #FFF;
+    font-size: 2.1vw;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-shadow: 3px 4px 0px #000000;
+    margin: 0 0 3% 0;
+    padding: 0;
+  }
+
+  #bonkroyale .hero-button{
+    margin: 10px;
+    padding: 15px 20px 10px 20px;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 500;
+    border: 1px solid #a403f4;
+    text-shadow: 1px 2px 0px #000000;
+    color: #a403f4;
+    background-color: #00000040;
+    border-radius: 8px 8px 8px 8px;
+    margin-left: 0px;
+  }
+
+  h1{
+    margin: auto;
+    color: #FF6200;
+    font-size: 8vw;
+    font-weight: 100;
+    line-height: 6.8rem;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 3px;
+    stroke-width: 3px;
+    -webkit-text-stroke-color: #150d02;
+    stroke: #FFFFFF;
+    text-shadow: 5px 6px 0px #000000;
+    margin-bottom: 50px;
+  }
+  h2{
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 5vw;
+    font-weight: 100;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 03px;
+    stroke-width: 3px;
+    -webkit-text-stroke-color: #150d02;
+    stroke: #FFFFFF;
+    text-shadow: 5px 6px 0px #000000;
+    margin-bottom: 0px;
+  }
+  section{
+    margin: 5% auto;
+  }
+  .video-section{
+    width: 70%;
+    border-radius: 20px;
+    padding: 5% 0 5% 0;
+    background: #00000069;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+
+#nfts {
+     padding: 5% 0 0 0;
+}
+#nfts img{
+  border-radius: 20px;
+  transform: translateY(4px);
+}
+.video-layer{
+text-align: center;
+}
+#autoplay-video{
+    position: relative;
+    width: 80%; /* Adjust the width of the video container */
+    max-width: 800px; /* Set a maximum width for larger screens */
+    margin: 50px auto; /* Center the video container on the page */
+    overflow: hidden;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    border-radius: 10px;
+}
+.youtube-button {
+    font-family: 'Roboto', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF0000; /* YouTube red color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Space between icon and text */
+  .youtube-button svg {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Hover effect */
+  .youtube-button:hover {
+    background-color: #CC0000; /* Slightly darker red on hover */
+    color: #fff;
+  }
+
+  .fade-in-trigger {
+    height: 100vh; /* Adjust the height as needed */
+
+}
+.fade-in-text {
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen to the right */
+    /* Optionally, add transition for a smooth fade effect */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Adjust the duration and timing function as needed */
+  }
+
+  /* Add the fade-in class to make the text visible and move into view */
+  .fade-in-text-visible {
+    opacity: 1;
+    transform: translateX(0); /* Move into view (0% from the right) */
+  }
+  .about-section{
+    padding: 0;
+    width: 70%;
+    border-radius: 20px;
+    background: #00000069;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+  }
+  .partner-section{
+    padding: 5%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.8), rgba(51, 51, 51, 0.8));
+  }
+ 
+  p{
+    padding: 0 10%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 34px;
+    font-weight: 100;
+  }
+  .about-content.col-6 p {
+    font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+    font-size: 20px;
+    text-shadow: none;
+    color: grey;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+        height: -webkit-fill-available;
+  }
+
+  #bimg {
+    text-align: center;
+  }
+
+  #bimg img {
+    width: 70%;
+  }
+
+  #socials {
+    margin-top: 50px;
+    padding-left: 50px;
+  }
+
+  .col-6{
+    text-align: left;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+.col-6 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.col-6 h2, .col-6 p{
+  text-align: left;
+  padding: 0 50px;
+} 
+.about-content.col-6 {
+      margin: auto;
+      padding:  150px 0px;
+}
+
+  .about-section img{
+    max-width: 100%;
+    border-radius: 0 20px 20px 0;
+
+  }
+  .video-section p{
+    margin: auto;
+    width: 40%;
+  }
+  .slider p{
+    margin: auto;
+    width: 40%;
+  }
+  .partner-section h2{
+    width: 100%;
+    max-width: 100%;
+  }
+  .partner-images{
+    text-align: center;
+  }
+  .partner-images img{
+    width: 10%;
+    margin: 5%;
+  }
+  .news-section{
+       padding: 0;
+    width: 70%;
+    border-radius: 20px;
+    background: #00000069;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
+  }
+
+  .top-text{
+    padding: 0;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+ 
+.news-layer .col-4 {
+  padding: 20px;
+}
+
+.news-layer {
+  padding: 7% 0 7% 0;
+}
+
+  .col-4{
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 33.3333%; 
+    text-align: center;
+    background-color: #151618;
+    padding: 40px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 32px;
+  }
+  .col-4 h4 {
+    margin: 10px;
+    font-weight: 100;
+  }
+  .col-4 img{
+    width: 100%;
+    border-radius: 15px;
+  }
+
+
+
+  .col-3{
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 25%; 
+    text-align: center;
+    background-color: #151618;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 26px;
+  }
+  .col-3 h4 {
+    margin: 10px;
+    font-weight: 100;
+    text-transform: lowercase;
+  }
+  .col-3 img{
+    width: 40px;
+    height: 40px;
+  }
+
+
+
+  .news-section a{
+    text-decoration: none;
+  }
+  .news-para{
+    padding: 0;
+    width: fit-content;
+    font-size: 40px;
+    margin: 25px 0px;
+  }
+  .news-content{
+    padding: 0;
+    text-align: left;
+    margin: 15px 0px;
+    font-size: 31px;
+    color: #a0a0a0;
+    display: flex;
+    align-items: flex-start;
+  }
+  .news-content img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .container-news{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 30px 0px 30px;
+    gap: 20px;
+  }
+  .mobile-img{
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .modal-content {
+      width: 80% !important;
+      margin: 25% auto !important;
+    }
+   .col-4{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin: 15px auto;
+   }
+   .row {
+    display: block;
+    height: auto !important;
+   }
+   .container-news{
+    display: block;
+    padding: 0px;
+    width: 90%;
+
+   }
+   .news-section{
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+   }
+     .scndwrap {
+    border-radius: 20px 20px 0px 0px !important;
+    padding-top: 50px !important;
+  }
+  .bigcol {
+    width: 90% !important;
+  }
+   .mobile-img{
+    width: 60%;
+    display: inline;
+   }
+   .hero-content{
+    max-width: 100%;
+    width: 100%;
+    flex: 0 0 100%;
+   }
+   .hero-layer{
+    width: 90%;
+    height: auto;
+   }
+   .hero-img img {
+    width: 220px;
+   }
+   h1{
+    font-size: 22vw;
+    line-height: 2.8rem;
+    margin-bottom: 50px;
+   }
+   .partners img {
+    width: 35px !important;
+   }
+   .hero-button{
+    font-size: 23px;
+    margin: 5px;
+    padding: 15px 18px 15px 18px;
+   }
+   .hero-text{
+    font-size: 7vw;
+    text-shadow: 1px 2px 0px #000000;    
+   }
+
+   h2{
+    font-size: 55px;
+    text-shadow: 2px 3px 0px #000000;
+    stroke-width: 1px;
+    -webkit-text-stroke-width: 1px;
+   }
+   p{
+    font-size: 26px;
+   }
+   .col-3 {
+    width: 100%;
+    margin: 10px auto;
+   }
+   .video-section{
+    padding-top: 30px !important;
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+   }
+   .video-section p{
+    width: 100%;
+    margin: inherit;
+    box-sizing: border-box;
+    padding-top: 15px;
+    margin-bottom: 0PX;
+   }
+  #autoplay-video{
+    width: 100%;
+    height: 30vh;
+    padding: 30px 0;
+    margin: 0;
+    box-shadow: none;
+  } 
+  .background-slider{
+    width: 100%;
+  }
+  .slider p {
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.youtube-button{
+    font-size: 20px;
+}
+.about-section{
+    width: 95%;
+    display: block;
+    margin-bottom: 50px;
+
+}
+#bonkroyale{
+  background-position: bottom !important;
+  margin-bottom: 50px;
+  background-image: url(../images/brmo.png) !important;
+  height: auto !important;
+}
+.col-6 h2, .col-6 p {
+  padding: 0px 20px;
+}
+#bonkroyale #socials {
+  padding-left: 20px;
+  zoom: 0.65;
+}
+  #socials {
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+#bonkroyale .about-content.col-6 {
+  padding-top: 30px;
+  padding-bottom: 400px;
+}
+.about-content.col-6 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.col-6{
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about-section img{
+    border-radius: 0 0 20px 20px;
+    padding-top: 8%;
+}
+.contract{
+    word-wrap: break-word;
+}
+
+.video-layer img {
+      height: 200px;
+    object-fit: cover;
+  }
+}
+
+.scndwrap {
+  background-image: url("../images/bbbg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+  border-radius: 50px 50px 0px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-repeat: no-repeat;
+}
+
+#bonkroyale {
+background:  url("../images/IMG_1425sss.png");
+background-size: contain;
+background-position: right;
+background-repeat: no-repeat;
+height: 70%;
+backdrop-filter: blur(50px);
+-webkit-backdrop-filter: blur(50px);
+background-color: #00000069;
+align-items: center;
+}
+
+
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 15% 32px;
+    line-height: 1.5;
+    text-align: center;
+    z-index: -1;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #00000070;
+  border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #64686C; 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #64686C; 
+}
+
+
+.progress{
+  position: relative;
+  margin: 4px;
+  text-align: center;
+    margin: auto;
+    color: #00FE7F;
+    font-size: 30px;
+}
+.barOverflow{ /* Wraps the rotating .bar */
+  position: relative;
+  overflow: hidden; /* Comment this line to understand the trick */
+  width: 150px; height: 75px; /* Half circle (overflow) */
+  margin: auto auto -26px auto;
+}
+.bar{
+  position: absolute;
+  top: 0; left: 0;
+  width: 150px; height: 150px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 20px solid #3F4142;     /* half gray, */
+  border-bottom-color: #00FE7F;  /* half azure */
+  border-right-color: #00FE7F;
+}
+
+.bigcol {
+    width: 80%;
+    margin: auto;
+    background-color: #151618;
+    text-align: center;
+    padding: 30px 30px 0px 30px;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+.bigcol h4 {
+    color: #00fe7f;
+    font-size: 26px;
+    margin: 20px;
+    font-weight: 100;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #151618;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 20px;
+  width: 520px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close, .second-close {
+  color: #a5a5a5;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.second-close:hover,
+.second-close:focus{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buybutton {
+    border: 1px solid #ffffff29;
+    padding: 10px 20px;
+    background-color: #212122;
+    margin: 10px auto;
+    border-radius: 8px;
+    width: 60%;
+    color: #FF6200;
+    font-size: 28px;
+    text-align: center;
+}
+
+
+.buybutton a {
+  display: flex;
+  color: #FF6200;
+  text-decoration:  none;
+  justify-content: center;
+}
+
+.buybutton p {
+margin: 15px 0px 10px 0px;
+padding: 0px;
+}
+
+.buybutton img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.partners {
+    display: flex;
+    margin: 30px auto;
+    JUSTIFY-CONTENT: center;
+    transition: color 0.3s;
+    gap: 5px;
+}
+
+.partners img {
+  width: 40px;
+}
+
+.news-layer .news-content{
+      align-items: center !important;
+}
+
+
+@media only screen and (max-width: 1440px) and (min-width: 769px) {
+
+.video-section, .about-section, .news-section {
+  width: 90% !important;
+}
+#bonkroyale .col-6 {
+  padding: 50px 0px !important;
+  flex: 0 0 70% !important;
+    max-width: 70% !important;
+}
+.about-content.col-6 {
+  padding: 50px 0px !important;
+}
+.bigcol, .container-news {
+  width: 90% !important;
+}
+#bonkroyale {
+      background-position: 135% !important;
+}
+
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
