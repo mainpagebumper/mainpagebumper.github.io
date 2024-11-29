@@ -1,0 +1,124 @@
+.sphere-block {
+  background-image: url(../img/sea.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  text-align: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  background-position: center;
+  height: 85vh;
+  padding: 0 10px 0 10px;
+}
+
+.sphere-items {
+  width: 95px;
+  height: 95px;
+}
+
+.img-sphere-items {
+  width: 95px;
+  height: 95px;
+}
+
+.sphere-info {
+  max-width: 350px;
+  color: black;
+  background-color: rgb(255 255 255 / 41%);
+  border-radius: 15px;
+  padding: 60px 40px 60px 40px;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 75px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.button-sphere-info {
+  padding: 20px 30px 20px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #fdfddd;
+}
+
+.a-button-sphere-info p {
+  font-size: 1.5rem;
+  color: black;
+}
+
+@media screen and (max-width: 750px) {
+  .sphere-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 130vh;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .sphere-info {
+    gap: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 0;
+    max-width: 550px;
+    min-height: 350px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.7em;
+  }
+
+  #mycanvasx {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 800px) {
+  .sphere-info {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .sphere-info {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 900px) {
+  .sphere-info {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 900px) {
+  #mycanvasx {
+    width: 50vw;
+  }
+}

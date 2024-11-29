@@ -1,0 +1,339 @@
+
+.title-block {
+  width: 100%;
+  padding: 120px 0 120px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #bffeff;
+  z-index: 4;
+  position: relative;
+  margin-top: -2px;
+}
+
+
+
+.title-block-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000000;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1124px;
+  gap: 50px;
+}
+
+
+
+.title-block-logo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.img-title-block {
+  max-width: 330px;
+  max-height: 330px;
+  border-radius: 500px;
+}
+
+
+
+.title-block-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+  padding-bottom: 0.8em;
+}
+
+
+
+.ticker-title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.ticker-title-block p {
+  font-size: 3em;
+}
+
+
+
+/******************************BUTTON-BUY******************************/
+@property --a {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+.button-buy a {
+  color: black;
+}
+
+.dark .button-buy {
+  --a: 0%;
+  --hue: 170deg;
+  --x: 50;
+  --y: 50;
+  --button: hsl(var(--hue), 76%, 76%);
+  --edge: 20px;
+  --size: 2em;
+  border: none;
+  background: none;
+  color: hsla(var(--hue), 80%, 30%, 0.7);
+  font-size: 2em;
+  position: relative;
+  padding: calc(var(--size)) calc(var(--size)*1.5);
+  -webkit-animation: color 7s linear infinite both;
+  animation: color 7s linear infinite both;
+  transition: --a .3s ease-in-out,
+    scale var(--spring-duration) var(--spring-easing);
+  scale: 0.92;
+  isolation: isolate;
+  cursor: pointer;
+
+  &:hover {
+    --a: 100%;
+    -webkit-transition-duration: .5s, 1s;
+    -o-transition-duration: .5s, 1s;
+    transition-duration: .5s, 1s;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.button-buy:before {
+  content: "";
+  position: absolute;
+  inset: 0em;
+  /** here's the magic. A blur and a svg filter */
+  -webkit-filter: blur(12px) url(auto-title-block.css) drop-shadow(0 .25em .5em hsla(0deg, 0%, 0%, 0));
+  filter: blur(12px) url(auto-title-block.css) drop-shadow(0 .25em .5em hsla(0deg, 0%, 0%, 0));
+  /** followed by a radial-gradient which causes the
+  gooey effect to follow mouse-position */
+  background-image:
+    -o-linear-gradient(bottom, var(--button), var(--button)),
+    -o-radial-gradient(calc(var(--x) * 1%) calc(var(--y) * 1%),
+      40% 70%,
+      hsla(var(--hue), 77%, 77%, var(--a)) 0%,
+      transparent 90%);
+  background-image:
+    -webkit-gradient(linear, left bottom, left top, from(var(--button)), to(var(--button))),
+    radial-gradient(40% 70% at calc(var(--x) * 1%) calc(var(--y) * 1%),
+      hsla(var(--hue), 77%, 77%, var(--a)) 0%,
+      transparent 90%);
+  background-image:
+    linear-gradient(0deg, var(--button), var(--button)),
+    radial-gradient(40% 70% at calc(var(--x) * 1%) calc(var(--y) * 1%),
+      hsla(var(--hue), 77%, 77%, var(--a)) 0%,
+      transparent 90%);
+  /** and finally a background-clip so the radial-gradient
+  is larger than the linear-gradient */
+  background-clip: content-box, border-box;
+  padding: 30px;
+  z-index: -1;
+  border: inherit;
+  -webkit-animation: color 20s linear infinite both;
+  animation: color 20s linear infinite both;
+}
+
+@property --hue {
+  syntax: "<angle>";
+  initial-value: 170deg;
+  inherits: false;
+}
+
+@-webkit-keyframes color {
+  from {
+    --hue: 170deg;
+  }
+
+  to {
+    --hue: 530deg;
+  }
+}
+
+@keyframes color {
+  from {
+    --hue: 170deg;
+  }
+
+  to {
+    --hue: 530deg;
+  }
+}
+
+.dark {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: var(--light);
+  text-align: center;
+}
+
+:root {
+  --spring-easing: linear(0, 0.002, 0.01 0.9%, 0.038 1.8%, 0.156, 0.312 5.8%, 0.789 11.1%, 1.015 14.2%,
+      1.096, 1.157, 1.199, 1.224 20.3%, 1.231, 1.231, 1.226, 1.214 24.6%,
+      1.176 26.9%, 1.057 32.6%, 1.007 35.5%, 0.984, 0.968, 0.956, 0.949 42%,
+      0.946 44.1%, 0.95 46.5%, 0.998 57.2%, 1.007, 1.011 63.3%, 1.012 68.3%,
+      0.998 84%, 1);
+  --spring-duration: 1.66s;
+}
+
+/*********************************************************************/
+
+
+
+.copy-address {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+.button_copy {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.copy-address-wrapper {
+  border: none;
+  background-color: rgba(255, 255, 255, 0%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  width: 285px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.copy-address-wrapper p {
+  font-size: 1.7em;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.img-copy-address {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.title-block-cocial-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .title-block-logo {
+    width: 100%;
+  }
+  .title-block-content {
+    width: 100%;
+  }
+
+  .title-block-wrapper {
+    gap: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .ticker-title-block p {
+    font-size: 4em;
+    gap: 10px;
+  }
+
+  .title-block {
+    padding: 0px 0 120px 0;
+  }
+}
+
+.copy-address-wrapper.copied {
+  color: red;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

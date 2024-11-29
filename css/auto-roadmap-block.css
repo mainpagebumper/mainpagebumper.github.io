@@ -1,0 +1,138 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.roadmap-block {
+    /* margin-bottom: 150px; */
+    background-color: #fbfbdb;
+}
+
+.block-table-of-contents {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.slider-items {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px 30px 30px 30px;
+    overflow-x: scroll;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    scrollbar-width: none;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.slider-items::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-item {
+    width: 440px;
+    min-width: 440px;
+    height: 400px;
+    overflow: hidden;
+    color: #ffffff;
+    border-radius: 25px;
+    background-size: cover;
+    line-height: 1.7;
+    box-shadow: 6px 6px 12px 0px rgb(147 136 104);
+    font-size: 1.3em;
+    -webkit-box-shadow: 6px 6px 12px 0px rgb(147 136 104);
+}
+
+.slider-item-info {
+    height: 100%;
+    background-color: rgb(81 81 81 / 69%);
+    width: 100%;
+    padding: 15px;
+    font-weight: 500;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.slider-item-info-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 32px;
+}
+
+
+.slider-item:first-child {
+    background-image: url('https://pino-trx.com/files/img/article/css_gorizontalnaya_prokrutka/slide1.png');
+    background-size: contain;
+}
+
+#slider-item-1 {
+    background-image: url(../img/img-slider-item-1.png);
+    background-size: cover;
+    background-position: top;
+}
+
+#slider-item-1 .slider-item-info {
+    color: #7be348;
+    background-color: rgb(116 116 116 / 76%);
+}
+
+#slider-item-2 {
+    background-image: url(../img/img-slider-item-2.png);
+    background-position: top;
+}
+
+#slider-item-2 .slider-item-info {
+    color: #7be348;
+    background-color: rgb(116 116 116 / 76%);
+    -webkit-box-shadow: 6px 6px 0px 0px rgb(147 136 104);
+    box-shadow: 6px 6px 0px 0px rgb(147 136 104);
+}
+
+#slider-item-3 {
+    background-image: url(../img/img-slider-item-3.png);
+    background-position: center;
+}
+
+#slider-item-4 {
+    background-image: url(../img/img-slider-item-4.PNG);
+    background-position: center;
+}
+
+#slider-item-5 {
+    background-image: url(../img/img-slider-item-5.png);
+    background-position: bottom;
+}
+
+@media screen and (max-width: 550px) {
+    .slider-item {
+        width: 300px;
+        min-width: 300px;
+        height: 440px;
+        font-size: 1.1em;
+    }
+
+    .block-table-of-contents {
+        font-size: 2.5em;
+    }
+}

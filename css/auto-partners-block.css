@@ -1,0 +1,78 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.partners-block {
+  padding-bottom: 150px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbfbdb), color-stop(60%), to(#c6f1ff));
+  background: -o-linear-gradient(#fbfbdb, 60%, #c6f1ff);
+  background: linear-gradient(#fbfbdb, 60%, #c6f1ff);
+  padding-top: 150px;
+}
+
+.partners-block-title {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 50px;
+}
+
+.partners-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 0 25px 0 25px;
+}
+
+.partners-block-list-unit {
+  border: none;
+  background-color: rgba(255, 255, 255, 0%);
+  /* width: 150px; */
+  margin: 10px 10px 20px 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-partners-block-list-unit {
+  max-width: 120px;
+  height: auto;
+}
+
+.partners-block-list-unit-name {
+  text-align: center;
+  font-size: 3em;
+  color: #000000;
+}
+
+@media screen and (min-width: 700px) {
+  .partners-block-title {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .partners-block-title {
+    font-size: 2.5em;
+  }
+
+  .img-partners-block-list-unit {
+    height: 100px;
+  }
+
+  .partners-block-list-unit-name {
+    font-size: 1.7em;
+  }
+}

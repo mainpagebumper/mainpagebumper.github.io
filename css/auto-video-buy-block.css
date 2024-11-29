@@ -1,0 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.video-buy-instr-block {
+  margin: 150px 0 250px 0;
+}
+
+.video-buy {
+  border-radius: 25px;
+  margin-bottom: 50px;
+  height: 555px;
+  width: 453px;
+}
+
+@media (min-width: 1px) and (max-width:500px) {
+  .video-buy {
+    height: 555px;
+    width: 313px;
+  }
+}
