@@ -1,672 +1,260 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BABY PEPE - $PETE</title>
-    <link rel="stylesheet" href="https://babypepetoken.io/css/styles.css" media="all">
-    <link rel="icon" href="assets/logo200.png" type="image/x-icon">
-    <meta name="description" content="Welcome to the biggest PEPE token on BSC!">
-    <link rel="stylesheet" href="https://use.typekit.net/olg7onv.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>BABY $ticker - THE BABY DOG COIN OF THE PEOPLE</title>
+	<link rel="shortcut icon" href="images/bblogo1.svg">
+    <meta property="og:title" content="BABY BONK" />
+    <meta property="og:description" content="THE BABY DOG COIN OF THE PEOPLE" />
+    <meta property="og:url" content="https://babybonkcoin.io/" />
+    <meta property="og:image" content="images/card.jpg" />
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="stylesheet" href="css/slider.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/fci8ixc.css">
+
 </head>
-
-
-<style>
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-
-    body {
-        background-color: #FDF7E9;
-        font-family: "peachy-keen-jf", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    section {
-        max-width: 1920px;
-        margin: auto;
-        box-sizing: border-box;
-        border-radius: 40px;
-        width: 80%;
-    }
-
-    .row {
-        display: flex;
-    }
-
-    .col-6 {
-        width:50%;
-    }
-
-    img {
-        max-width:100%;
-    }
-
-    #hero {
-        margin-top: 50px;
-        background-image: url("assets/herobg.svg");
-        background-size: cover;
-    }
-
-    #hero p {
-        font-size: 28px;
-    }
-
-    img.splash {
-        margin-top:-250px;
-    }
-
-    .herocont {
-        text-align:center;
-    }
-
-    .herocont p{
-        margin-top:-11vw;
-    }
-
-    #left {
-        padding: 50px;
-        padding-top:5VW;
-        padding-bottom:10VW;
-    }
-
-    #right {
-        align-items: flex-end;
-        display: flex;
-        float: right;
-        text-align: right;
-        justify-content: end;
-        transform: scale(1.05);
-    }
-
-    #right img {
-        width:80%;
-    }
-
-    .button a {
-        background-color: #FEEA05;
-        border: 2px solid #000000;
-        border-radius:50px;
-        color: black;
-        padding: 10px 30px;
-        width: fit-content;
-        margin: auto;
-        text-decoration: none;
-    }
-
-    #socials .row {
-        align-items: center;
-        margin-top:-4.5vw;
-        padding-left: 50px;
-    }
-
-    #socials .row img {
-        padding: 3px;
-    }
-
-    :root {
-  --polka-bg-image:
-    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%),
-    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%);
-  --polka-bg-position: 0px 0px, 12px 12px;
-  --polka-bg-size: 24px 24px;
-  --polka-bg-color: rgb(242, 234, 214);
-}
-
-/* ...or add this class to an element */
-.polka {
-  background-image: 
-    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%),
-    radial-gradient(rgb(238, 224, 196) 10%, transparent 22.4%);
-  background-position: 0px 0px, 12px 12px;
-  background-size: 24px 24px;
-  background-color: rgb(242, 234, 214);
-}
-
-h2 {
-    font-size:36px;
-}
-
-p {
-    font-size: 22px;
-}
-
-.headline {
-    background-image: url("assets/headerbg.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 40px;
-    margin-top:-50px;
-}
-
-.headline h2 {
-    padding-left: 40px;
-}
-
-#second, #fourth, #sixth {
-    margin-top: 100px;
-}
-
-.checklist {
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-
-.checklist img {
-    width: 30px;
-    transform: translateY(7px);
-    margin-right: 5px;
-}
-
-.checklist p {
-    margin: 3px;
-}
-
-    #left2 {
-        align-items: flex-end;
-        display: flex;
-        text-align: left;
-        transform: scale(1.05);
-    }
-
-#left2 img {
-    width:50%;
-}
-#right2 {
-    padding-bottom: 100px;
-}
-
-#third {
-    background-image: url("assets/roulettebg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-    padding-bottom:100px;
-    margin-top:100px;
-    text-align: center;
-}
-
-#third .container {
-        display: inline-table;
-    margin: auto;
-    text-align: center;
-    width: 100%;
-}
-
-#third img {
-    width: 75%;
-}
-
-.roulettecontent {
-    width: 40%;
-    margin: auto;
-    margin-top:-10vw;
-}
-
-#left3 {
-padding-left: 50px;
-padding-top:  0px;
-padding-bottom:  100px;
-}
-
-    #right3 {
-        align-items: flex-end;
-        display: flex;
-        float: right;
-        text-align: right;
-        justify-content: end;
-        transform: scale(1.05);
-    }
-        #right img {
-        width:70%;
-    }
-
-    #fifth {
-        background-image: url("assets/pepenomicsbg.svg");
-        background-size: cover;
-        margin-top: 100px;
-    }
-
-    #left4{
-                align-items: flex-end;
-        display: flex;
-        text-align: left;
-        transform: scale(1.05);
-    } 
-
-    #left4 img{
-        transform: scaleX(-1);
-        width:50%;
-    }
-
-    #right4 {
-        padding-right: 100px;
-        padding-top: 100px;
-        padding-bottom: 200px;
-    }
-
-    #right4 img {
-        width: 90%;
-    }
-
-#sixth .headline {
-    margin-top: 0px;
-    transform: translateY(-30px);
-    text-align: center;
-    width: fit-content;
-    margin:auto;
-}
-
-#sixth h2 {
-    margin-top: 10px;
-    padding: 0px 40PX;
-}
-
-#sixth .row {
-      transform: translateY(-30px);  
-      width: 60%;
-      margin: auto;
-}
-
-#left6 {
-    padding-left: 200px;
-padding-top:  0px;
-}
-
-#sixth {
-    margin-bottom: 100px;
-}
-@media(max-width: 1600px) {
-    section {
-        width: 90%;
-    }
-
-img.logoi{
-    width: 120px !important;
-}
-
-    #socials .row img {
-        width: 60px;
-    }
-
-    #left2 img {
-        width: 65%;
-    }
-    .roulettecontent {
-    width: 60%;
-    margin: auto;
-    margin-top:-13vw;
-}
-
-#right img {
-    width: 85%;
-}
-
-#left6 {
-    padding-left: 0px;
-}
-
-#left4 img {
-    width: 70%;
-}
-}
-
-@media(max-width: 767px) {
-     #second .headline {
-        transform:translateY(-50px);
-    }
-    .row {
-        display: block;
-    }
-    .col-6 {
-        width: 100%;
-    }
-
-    #right {
-        text-align: center;
-        display: block;
-        float: none;
-        padding-top: 50px;
-    }
-
-    section {
-        width: 100%;
-        border-radius: 20px;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    #socials .row {
-        display: flex;
-        padding-left: 0px;
-        z-index: 1;
-        position: relative;
-    }
-
-    #hero {
-        padding-top: 50px;
-    }
-
-    .logoi {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .desktop {
-        display: none;
-    }
-
-    #hero .herocont p {
-        margin-top: -45vw;
-padding-left: 20px;
-padding-right: 20px;
-    }
-
-    #hero .mobile {
-        width: 100%;
-    }
-
-    h2 {
-        font-size: 26px;
-    }
-
-    #left {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .headline {
-        padding: 40px 20px;
-    }
-    #right2 img.mobile {
-        padding-top: 50px;
-        padding-bottom: 0px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    #right2 {
-        padding-bottom: 0px;
-    }
-
-    #second, #fourth, #sixth {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    #third img {
-        width: 100%;
-    }
-    #third {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .roulettecontent {
-        width: 85%;
-        margin-top: -60vw;
-    }
-    #left3 {
-        padding-left: 0px;
-    }
-    .headline h2 {
-        padding-left: 0px;
-    text-align: center;
-}
-#fourth .headline {
-        transform: translateY(-50px);
-        margin-top: 0px;
-}
-#fourth p {
-    transform: translateY(-50px);
-}
-#fourth .button {
-    transform: translateY(-50px);
-}
-#left3 {
-    padding-bottom: 0px;
-}
-#fourth #right img {
-        width: 100%;
-    }
-    #right4 {
-        padding-right: 0px;
-    }
-
-    #right4 img {
-        width: 100%;
-    }
-
-    #fifth .herocont p {
-        margin-top: -45vw;
-        padding-bottom: 150px;
-    }
-    #fifth {
-        background-position: center;
-    }
-
-    #fifth #right4 {
-        padding-bottom: 0px;
-    }
-    #sixth .headline {
-        width: 100%;
-    }
-
-    #sixth .row {
-        width: 100%;
-    }
-
-    #sixth .checklist {
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    #sixth {
-        padding-bottom: 50px;
-    }
-}
-
-@media(min-width: 768px) {
-    .mobile {
-        display: none;
-    }
-
-    .desktop {
-        display: block;
-    }
-
-}
-
-@media(min-width:1601px) {
-    .herocont p {
-    margin-top: -9vw;
-}
-
-#left6 {
-    padding-left: 70px;
-    padding-top: 0px;
-}
-}
-#third img {
-    margin:auto;
-}
-
-
-
-</style>
-
 <body>
 
-<section id="hero">
-    <div class="container">
-        <div class="row">
-            <div class="col-6" id="left">
-                <div class="herocont">
-
-                    <img src="assets/herotx.svg" class="desktop">
-                    <img src="assets/herom.svg" class="mobile">
-                    <p> But his real name is $PETE! </p>
-
-                    <div class="button">
-                        <a href="https://pump.fun/ntLC2vDi9z5WUwSYWJeKzeY5xeT5PZopht6XdfWpump" target="_blank">BUY $PETE!</a>
-                    </div>
-
+    <video id="background-video" playsinline autoplay loop muted>
+  <source src="video/bonk-vid2.mp4" type="video/mp4">
+</video>
+  <div class="overlay">
+  </div>
+    <section class="hero">
+        <div class="hero-layer">
+            <div class="hero-content">
+                <div class="hero-img">
+                <img src="./hero.png" alt="">
+            </div>
+             <p class="hero-text">THE BABY DOG COIN OF THE PEOPLE</p>
+                <h1>BABY $ticker</h1>
+               <div class="btnwrap">
+                <a class="hero-button" href="index.html#" id="myBtn">BUY $ticker</a>
+                <a class="hero-button"  href="index.html#" id="mySecondBtn">SOCIALS</a>
                 </div>
             </div>
 
-           <div class="col-6" id="right">
-                <img src="assets/mascott1.png">
-            </div> 
-
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="socials">
-    <div class="container">
-    <div class="row">
-        <img src="assets/icons/logo.png" class="logoi"><a href="https://x.com/BabyPepeAtSol" target="_blank"><img src="assets/icons/x.svg"></a><a href="https://t.me/+fxj0VpKfE8A0Mzk0" target="_blank"><img src="assets/icons/tg.svg"></a>
-    </div>
 
-</section>
 
-<section id="second" class="polka">
-    <div class="container">
+             <section class="video-section" id="nfts">
+                <div style="text-align: center; margin-bottom:20px"><img src="images/bonkroyale.png" width="120px"></div>
+            <h2>BABY $ticker NFTs</h2>
+            <p>1000 unique NFTs, that will be launched once the token bonds on PumpFun and hits Raydium</p><br><br>
+            <div class="center">
+             <a href="https://pump.fun/$ca_pumpfun" class="hero-button">Soon!</a>
+         </div>
+            <div class="video-layer">
+                <img src="images/nfts1.png" width="100%">
+            </div>
+        </section>
+
+
+    <section class="about-section" id="bonkroyale">
+
         <div class="row">
-
-            <div class="col-6" id="left2">
-            <img src="assets/mascott2.png" class="desktop">
-            </div>
-
-                        <div class="col-6" id="right2">
-                            <div class="headline">
-            <h2> ABOUT $PETE </h2>
-        </div>
-      
-        <div class="checklist">
-              <p>Welcome to the original, most advanced Pepe accross all chains! </p>
-              <br>
-        <p><img src="assets/icons/check.svg">PumpFun Fair launch</p>
-        <p><img src="assets/icons/check.svg">Daily giveaways</p>
-        <p><img src="assets/icons/check.svg">Community utilities</p>
-        <p><img src="assets/icons/check.svg">Massive marketing</p>
-        <p><img src="assets/icons/check.svg">Renounced contract</p>
-        <p><img src="assets/icons/check.svg">Locked liquidity</p>
-    </div>
-    <div class="button">
-                        <a href="https://pump.fun/ntLC2vDi9z5WUwSYWJeKzeY5xeT5PZopht6XdfWpump" target="_blank">BUY NOW!</a>
-                    </div>
-
-                    <img src="assets/mascott2.png" class="mobile">
-
-            </div>
-
-    </div>
-</section>
-
-<section id="fourth" class="polka">
-    <div class="container">
-        <div class="row">
-
-                        <div class="col-6" id="left3">
-                            <div class="headline">
-            <h2> WHO'S $PETE? </h2>
-        </div>
-      
-        
-              <p>$PETE is a frog that loves gambling but his aspect as a baby version of the mighty Pepe made him achieve the alias "Baby Pepe". Although, he has everything the adult Pepe is missing. </p>
-                <p>Fun. Cool vibes. Charm. Cuteness and huge growth potential.</p>
-
-                <p>Pepe is here to make meme coins on SOL great again.</p>
-
-                <p>Pre-launched on PumpFun with a hard cap of 750M.</p>
-
-                <p>Renounced Contract with a locked liquidity.</p>
-              <br>
-        
-    <div class="button">
-                        <a href="https://pump.fun/ntLC2vDi9z5WUwSYWJeKzeY5xeT5PZopht6XdfWpump" target="_blank">BUY NOW!</a>
-                    </div>
-
-            </div>
-
-                        <div class="col-6" id="right">
-            <img src="assets/mascott3.png">
-            </div>
-
-    </div>
-</section>
-
-<section id="fifth">
-    <div class="container">
-        <div class="row">
-            <div class="col-6" id="left4">
-
-                <img src="assets/mascott4.png" class="desktop">
-            </div>
-
-           <div class="col-6" id="right4">
-                    <div class="herocont">
-
-                    <img src="assets/tokenomics.png" class="desktop">
-                    <p> 1B Total supply<br>0% Tax</p>
-               
-               <img src="assets/mascott4.png" class="mobile">
-
+                <div class="about-content col-6">
+                    <h2>BONK ROYALE</h2>
+                   <p> The cutting-edge Web3 NFT card browser game where your Baby $ticker NFTs come to life! Dive into an arena where players from around the globe bring their unique NFTs into action-packed battles. Whether you’re competing against other players for Baby $ticker tokens, facing challenging CPU opponents, or honing your skills, Bonk Royale offers an immersive experience for all.
+</p>
+<p>Showcase your strategic prowess in our weekly tournaments, where the stakes are high, and the rewards are even higher. Winners walk away with a bounty of $ticker tokens, SOL, exclusive NFTs, and more! </p>
+                    <div class="btnwrap" id="socials">
+                    <a href="https://pump.fun/$ca_pumpfun" class="hero-button">Get some $ticker</a>
                 </div>
-            </div> 
+                </div>
+                <div class="col-6" id="bimg">
+                    
+                </div>
+            </div>
+            </section>
 
-        </div>
-    </div>
-</section>
+<div class="scndwrap">
 
-<section id="sixth" class="polka">
-    <div class="container">
-         <div class="headline">
-            <h2>ROADMAP</h2>
-        </div>
+            <section class="video-section">
+                
+                    <h2>BONKENOMICS</h2>
+                   
+                   <div class="bigcol">
+                    <h4> SECURITY SCORE </h4>
+
+                    <div class="progress">
+  <div class="barOverflow">
+    <div class="bar"></div>
+  </div>
+  <span>100</span>%
+</div>
+
+                   </div>
+                    <div class="container-news">
+                    <div class="col-4">
+                        <h4> 0% BUY NOR SELL TAX </h4>
+                    </div>
+                     <div class="col-4">
+                        <h4> 1B TOTAL SUPPLY </h4>
+                    </div>
+                     <div class="col-4">
+                        <h4> LOCKED LIQUIDITY </h4>
+                    </div>
+</div>
+            </section>
+
+                <section class="about-section">
         <div class="row">
+                <div class="about-content col-6">
+                    <h2>ABOUT</h2>
+                   <p> Baby $ticker, initially launched as a simple Memecoin, has evolved into one of the most significant tokens on SOL, drawing inspiration from its precursor memes.<br><br>The token is further strengthened by daily buybacks and regular token burns, which enhance the value and appeal. Baby $ticker's growth is propelled by forming new partnerships daily, coupled with aggressive marketing strategies. A key highlight is BONK ROYALE, Baby Bonk's NFT card game, which fully integrates NFTs with gambling. </p>
+                    <p class="contract">$ca_pumpfun</p>
+                    <div class="btnwrap" id="socials">
+                    <a href="$telegram" class="hero-button">TELEGRAM</a>
+                    <a href="$twitter" class="hero-button">TWITTER</a>
+                </div>
+                </div>
+                <div class="col-6" id="bimg">
+                    <img src="./about.png" alt="">
+                </div>
+            </div>
+            </section>
 
-                        <div class="col-6" id="left6">
-                           
-      
-        
-        <div class="checklist">
-        <p><img src="assets/icons/check.svg">PumpFun Presale</p>
-        <p><img src="assets/icons/check.svg">100 Telegram Members</p>
-        <p><img src="assets/icons/uncheck.svg">King Of The Hill Achieved</p>
-        <p><img src="assets/icons/uncheck.svg">Raydium Pool Creation</p>
-        <p><img src="assets/icons/uncheck.svg">Dexscreener marketing</p>
-        <p><img src="assets/icons/uncheck.svg">CG & CMC listing</p>
-        <p><img src="assets/icons/uncheck.svg">Roulette Utility</p>
-        <p><img src="assets/icons/uncheck.svg">Contests & Giveaways</p>
+
+
+
+
+            <section class="video-section">
+                
+                    <h2>WHY BABY $ticker?</h2>
+                   
+                <div class="container-news">
+                     <div class="col-3">
+                        <img src="images/icons/gotbit.svg">
+                        <h4> Gotbit mm </h4>
+                    </div>
+                     <div class="col-3">
+                        <img src="images/icons/partner.svg">
+                        <h4> +100 PARTNERSHIPS </h4>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/icons/exp.svg">
+                        <h4> Experienced team </h4>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/icons/marketing.svg">
+                        <h4> DAILY MARKETING </h4>
+                    </div>
+                </div>
+
+                <div class="container-news">
+                    
+                     <div class="col-3">
+                        <img src="images/icons/buyback.svg">
+                        <h4> DAILY BUYBACKS </h4>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/icons/game.svg">
+                        <h4> P2e game </h4>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/logos/pumpfun.svg">
+                        <h4> PF's biggest meme </h4>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/icons/nft.svg">
+                        <h4> NFTS </h4>
+                    </div>
+                </div>
+    </section>
+    <section class="news-section">
+        <div class="news-layer">
+            <h2>WOOFMAP</h2>
+            <div class="container-news">
+            <div class="col-4">
+                    <img src="images/1.jpg" alt="">
+                    <p class="news-para">Phase One</p>
+                    <p class="news-content"><img src="images/icons/check.svg">Website Development</p>
+                    <p class="news-content"><img src="images/icons/check.svg">Twitter Creation</p>
+                     <p class="news-content"><img src="images/icons/check.svg">Telegram Development</p>
+                      <p class="news-content"><img src="images/icons/check.svg">Community Increase</p>
+                       <p class="news-content"><img src="images/icons/check.svg">Custom Sticker Pack</p>
+                       <p class="news-content"><img src="images/icons/check.svg">Telegram Group preparation</p>
+             
+            </div>
+            <div class="col-4">
+                    <img src="images/2.jpg" alt="">
+                    <p class="news-para">Phase Two</p>
+                    <p class="news-content"><img src="images/icons/check.svg">Custom BumpBot</p>
+                    <p class="news-content"><img src="images/icons/check.svg">PumpFun Launch</p>
+                     <p class="news-content"><img src="images/icons/g/check.svg">Reach KOTH</p>
+                      <p class="news-content"><img src="images/icons/g/check.svg">Reach Raydium</p>
+                       <p class="news-content"><img src="images/icons/g/check.svg">Buying Dexscreener</p>
+                       <p class="news-content"><img src="images/icons/g/check.svg">Bulk Marketing</p>
+             
+            </div>
+            <div class="col-4">
+                    <img src="images/3.jpg" alt="">
+                    <p class="news-para">Phase Three</p>
+                    <p class="news-content"><img src="images/icons/g/check.svg">Kucoin Listing</p>
+                    <p class="news-content"><img src="images/icons/g/check.svg">Bybit Listing</p>
+                     <p class="news-content"><img src="images/icons/g/check.svg">OKX Listing</p>
+                      <p class="news-content"><img src="images/icons/g/check.svg">NFT Drop</p>
+                       <p class="news-content"><img src="images/icons/g/check.svg">Gaming Partnerships</p>
+                       <p class="news-content"><img src="images/icons/g/check.svg">$250K Lambo Giveaway</p>
+             
+            </div>
         </div>
-
+    </section>
             </div>
 
-            <div class="col-6" id="right6">
-                        <div class="checklist">
-        <p><img src="assets/icons/uncheck.svg">Bitmart listing</p>
-        <p><img src="assets/icons/uncheck.svg">MEXC listing</p>
-        <p><img src="assets/icons/uncheck.svg">Gate.io listing</p>
-        <p><img src="assets/icons/uncheck.svg">Binance listing</p>
-        <p><img src="assets/icons/uncheck.svg">3x Mercedes Benz Contest </p>
-        <p><img src="assets/icons/uncheck.svg">Partnerships & Sponsoring </p>
-        <p><img src="assets/icons/uncheck.svg">Secret $PETE Utility  </p>
-        </div>
+            <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>BUY BABY BONK</p>
+
+
+<div class="buybutton">
+    <a href="https://pump.fun/$ca_pumpfun" target="_blank">
+           <p>PumpFun</p>
+     </a>   
+ </div>
+  <div class="buybutton">
+    <a href="https://jup.ag/swap/SOL-$ca_pumpfun" target="_blank">
+            <p>Jupiter Swap</p>
+     </a>   
      
-            </div>
-
     </div>
-</section>
+    </div>
+</div>
+
+
+<!-- The Second Modal -->
+<div id="mySecondModal" class="modal">
+  <div class="modal-content">
+    <span class="second-close">&times;</span>
+    <p>BABY $ticker SOCIALS</p>
+
+
+    <div class="buybutton">
+    <a href="$telegram" target="_blank"><img src="images/logos/telegram.svg">
+           <p>TELEGRAM</p>
+     </a>   
+ </div>
+ <div class="buybutton">
+    <a href="$twitter" target="_blank"><img src="images/logos/x.svg">
+            <p>X (TWITTER)</p>
+     </a>   
+ </div>
+  </div>
+</div>
 
 </body>
+<script>
 
+    </script>
+<script src="js/script.js"></script>
 </html>
